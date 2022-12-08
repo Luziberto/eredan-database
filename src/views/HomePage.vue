@@ -45,6 +45,7 @@ import LocaleButton from "@/components/global/LocaleButton.vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import CardDataService from "@/services/CardDataService"
+import { delay } from "@/utils/Global"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -73,10 +74,9 @@ const searchCards = () => {
     cardsTable.value?.refreshCards([], true)
     return
   }
-  const responseData = CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION)
-  setTimeout(() => {
-    cardsTable.value?.refreshCards(responseData, false)
-  }, 1000)
+  delay(async function () {
+    await CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION).then(response => cardsTable.value?.refreshCards(response, false))
+  }, 500);
 
 }
 
