@@ -69,14 +69,14 @@ computed(() => {
 })
 
 const searchCards = () => {
-  if (search.value.length < 3) {
+  if (search.value.length === 0) {
     cardsTable.value?.refreshCards([], true)
     return
   }
+  const responseData = CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION)
   setTimeout(() => {
-    const responseData = CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION)
     cardsTable.value?.refreshCards(responseData, false)
-  }, 500)
+  }, 1000)
 
 }
 

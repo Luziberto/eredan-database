@@ -27,12 +27,12 @@
               </td>
             </tr>
           </tbody>
+          <Loading v-show="activeInfiniteScroll" />
           <CardListObserver
             v-if="activeInfiniteScroll"
             @more-data="pushCards"
             @finish-data="activeInfiniteScroll = false"
           />
-          <Loading v-show="activeInfiniteScroll" />
         </table>
       </div>
     </div>
