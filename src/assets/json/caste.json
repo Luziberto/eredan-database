@@ -1,0 +1,405 @@
+[
+  {
+    "id": 1,
+    "script_slug": "sorcelame",
+    "labels": {
+      "en_us": {
+        "name": "WitchBlade"
+      },
+      "pt_br": {
+        "name": "L\u00e2mina M\u00edstica"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 2,
+    "script_slug": "chevalier_dragon",
+    "labels": {
+      "en_us": {
+        "name": "Dragon Knight"
+      },
+      "pt_br": {
+        "name": "Cavaleiro Drag\u00e3o"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 3,
+    "script_slug": "traqueur",
+    "labels": {
+      "en_us": {
+        "name": "Tracker"
+      },
+      "pt_br": {
+        "name": "Rastreador"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 4,
+    "script_slug": "tsoutai",
+    "labels": {
+      "en_us": {
+        "name": "Tsouta\u00ef"
+      },
+      "pt_br": {
+        "name": "Tsoutai"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 5,
+    "script_slug": "eclipse",
+    "labels": {
+      "en_us": {
+        "name": "Eclipse"
+      },
+      "pt_br": {
+        "name": "Eclipse"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 7,
+    "script_slug": "corbeau",
+    "labels": {
+      "en_us": {
+        "name": "Crow"
+      },
+      "pt_br": {
+        "name": "Corvo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 8,
+    "script_slug": "circus",
+    "labels": {
+      "en_us": {
+        "name": "Circus"
+      },
+      "pt_br": {
+        "name": "Circo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 9,
+    "script_slug": "la_meute",
+    "labels": {
+      "en_us": {
+        "name": "The Pack"
+      },
+      "pt_br": {
+        "name": "A Trupe"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 10,
+    "script_slug": "courtisan",
+    "labels": {
+      "en_us": {
+        "name": "Courtier"
+      },
+      "pt_br": {
+        "name": "Cortes\u00e3o"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 11,
+    "script_slug": "compendium",
+    "labels": {
+      "en_us": {
+        "name": "Compendium"
+      },
+      "pt_br": {
+        "name": "Compendium"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 12,
+    "script_slug": "gardien_du_temple",
+    "labels": {
+      "en_us": {
+        "name": "Temple Guardian"
+      },
+      "pt_br": {
+        "name": "Guardi\u00e3o do Templo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 13,
+    "script_slug": "tempus",
+    "labels": {
+      "en_us": {
+        "name": "Tempus"
+      },
+      "pt_br": {
+        "name": "Tempus"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 14,
+    "script_slug": "arbre_monde",
+    "labels": {
+      "en_us": {
+        "name": "World-Tree"
+      },
+      "pt_br": {
+        "name": "\u00c1rvore-Mundo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 15,
+    "script_slug": "mecaniste",
+    "labels": {
+      "en_us": {
+        "name": "Mechanist "
+      },
+      "pt_br": {
+        "name": "Mec\u00e2nico"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 16,
+    "script_slug": "immortel",
+    "labels": {
+      "en_us": {
+        "name": "Immortal "
+      },
+      "pt_br": {
+        "name": "Imortal"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 17,
+    "script_slug": "chasseur_de_demons",
+    "labels": {
+      "en_us": {
+        "name": "Demon Hunter"
+      },
+      "pt_br": {
+        "name": "Ca\u00e7ador de Dem\u00f4nios"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 18,
+    "script_slug": "avalonien",
+    "labels": {
+      "en_us": {
+        "name": "Avalonian"
+      },
+      "pt_br": {
+        "name": "Aval\u00f4nio"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 19,
+    "script_slug": "archonte",
+    "labels": {
+      "en_us": {
+        "name": "Archon"
+      },
+      "pt_br": {
+        "name": "Arconte"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 20,
+    "script_slug": "necromancien",
+    "labels": {
+      "en_us": {
+        "name": "Necromancian"
+      },
+      "pt_br": {
+        "name": "Necromante"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 21,
+    "script_slug": "champion",
+    "labels": {
+      "en_us": {
+        "name": "Champion"
+      },
+      "pt_br": {
+        "name": "Campe\u00e3o"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 22,
+    "script_slug": "traquemage",
+    "labels": {
+      "en_us": {
+        "name": "Mystic Slayer"
+      },
+      "pt_br": {
+        "name": "Ca\u00e7ador de M\u00edsticos"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 23,
+    "script_slug": "abara",
+    "labels": {
+      "en_us": {
+        "name": "Abara"
+      },
+      "pt_br": {
+        "name": "Abara"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 24,
+    "script_slug": "colosse",
+    "labels": {
+      "en_us": {
+        "name": "Colossus"
+      },
+      "pt_br": {
+        "name": "Colossal"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 25,
+    "script_slug": "tenebromancien",
+    "labels": {
+      "en_us": {
+        "name": "Shadowmancer"
+      },
+      "pt_br": {
+        "name": "Sombramante"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 26,
+    "script_slug": "dompteur",
+    "labels": {
+      "en_us": {
+        "name": "Tamer"
+      },
+      "pt_br": {
+        "name": "Domador"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 27,
+    "script_slug": "terreur_nocturne",
+    "labels": {
+      "en_us": {
+        "name": "Night Terror "
+      },
+      "pt_br": {
+        "name": "Terror Noturno"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 28,
+    "script_slug": "supporter",
+    "labels": {
+      "en_us": {
+        "name": "Supporter"
+      },
+      "pt_br": {
+        "name": "Suporte"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 29,
+    "script_slug": "capitaine",
+    "labels": {
+      "en_us": {
+        "name": "Captain"
+      },
+      "pt_br": {
+        "name": "Capit\u00e3o"
+      }
+    },
+    "id_parent": 21
+  },
+  {
+    "id": 30,
+    "script_slug": "sable_corrosif",
+    "labels": {
+      "en_us": {
+        "name": "Corrosive Sand"
+      },
+      "pt_br": {
+        "name": "Areia Corrosiva"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 31,
+    "script_slug": "gladiateur",
+    "labels": {
+      "en_us": {
+        "name": "Gladiator"
+      },
+      "pt_br": {
+        "name": "Gladiador"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 32,
+    "script_slug": "chevaliers_maudits",
+    "labels": {
+      "en_us": {
+        "name": "Cursed Knight"
+      },
+      "pt_br": {
+        "name": "Cavaleiro Amaldi\u00e7oado"
+      }
+    },
+    "id_parent": 0
+  }
+]

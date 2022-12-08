@@ -1,0 +1,49 @@
+[
+  {
+    "grade_id": 1,
+    "rights": [
+      "rien"
+    ]
+  },
+  {
+    "grade_id": 2,
+    "rights": [
+      "rien",
+      "message_mur"
+    ]
+  },
+  {
+    "grade_id": 3,
+    "rights": [
+      "rien",
+      "message_mur",
+      "achat_boutique",
+      "demote",
+      "exclure",
+      "inviter",
+      "message_jour",
+      "promote",
+      "supprimer_invitation",
+      "vitrine"
+    ]
+  },
+  {
+    "grade_id": 4,
+    "rights": [
+      "rien",
+      "message_mur",
+      "achat_boutique",
+      "demote",
+      "exclure",
+      "inviter",
+      "message_jour",
+      "promote",
+      "supprimer_invitation",
+      "vitrine",
+      "description",
+      "destruction",
+      "embleme",
+      "recrutement"
+    ]
+  }
+]

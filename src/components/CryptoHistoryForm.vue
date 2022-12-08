@@ -13,7 +13,7 @@
     </div>
     <button
       class="h-10 bg-green-600 border rounded-md px-2 -py-2 ml-4 mt-auto font-bold text-white hover:bg-green-500">{{
-          translate.SEARCH
+    translate.SEARCH
       }}</button>
     <!-- @click="getAssetHistory()" -->
   </div>
@@ -21,9 +21,7 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from "vue"
-import CardDataService from "@/services/CardDataService"
 import { Card } from "@/types/Card"
-// import { CardHistory } from "@/types/CardHistory"
 import { format } from "date-fns"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"

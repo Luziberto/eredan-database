@@ -1,0 +1,42 @@
+[
+  {
+    "evolution": 0,
+    "xp": 160
+  },
+  {
+    "evolution": 1,
+    "xp": 480
+  },
+  {
+    "evolution": 2,
+    "xp": 1120
+  },
+  {
+    "evolution": 3,
+    "xp": 2400
+  },
+  {
+    "evolution": 4,
+    "xp": 4960
+  },
+  {
+    "evolution": 5,
+    "xp": 9600
+  },
+  {
+    "evolution": 6,
+    "xp": 19200
+  },
+  {
+    "evolution": 7,
+    "xp": 40000
+  },
+  {
+    "evolution": 8,
+    "xp": 80000
+  },
+  {
+    "evolution": 9,
+    "xp": 200000
+  }
+]

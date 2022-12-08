@@ -13,6 +13,7 @@ export interface Currency {
 
 export interface Translate {
   IMG_FOLDER: string,
+  LANGUAGE_ABBREVIATION: string,
   SEARCH: string
 }
 
@@ -34,11 +35,13 @@ export enum EN_US_CURRENCY {
 
 export enum PT_BR_TRANSLATE {
   IMG_FOLDER = "br",
+  LANGUAGE_ABBREVIATION = "pt_br",
   SEARCH = "Buscar"
 }
 
 export enum EN_US_TRANSLATE {
   IMG_FOLDER = "us",
+  LANGUAGE_ABBREVIATION = "en_us",
   SEARCH = "Search"
 }
 

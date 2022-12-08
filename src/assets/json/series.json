@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "nb_cards": 212,
+    "labels": {
+      "en_us": {
+        "name": "Act I - Fallen from the Sky"
+      },
+      "pt_br": {
+        "name": "Ato I - Ca\u00edda do C\u00e9u"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 10,
+    "nb_cards": 467,
+    "labels": {
+      "en_us": {
+        "name": "Special"
+      },
+      "pt_br": {
+        "name": "Especial"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 11,
+    "nb_cards": 52,
+    "labels": {
+      "en_us": {
+        "name": "Epic Cards"
+      },
+      "pt_br": {
+        "name": "Cartas \u00c9picas"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 15,
+    "nb_cards": 14,
+    "labels": {
+      "en_us": {
+        "name": "Act I - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato I - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 16,
+    "nb_cards": 22,
+    "labels": {
+      "en_us": {
+        "name": "Destiny Cards"
+      },
+      "pt_br": {
+        "name": "Cartas do Destino"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 17,
+    "nb_cards": 20,
+    "labels": {
+      "en_us": {
+        "name": "Act II - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato II - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 19,
+    "nb_cards": 21,
+    "labels": {
+      "en_us": {
+        "name": "Act III - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato III - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 20,
+    "nb_cards": 64,
+    "labels": {
+      "en_us": {
+        "name": "Invisible Cards"
+      },
+      "pt_br": {
+        "name": "Cartas Invis\u00edveis"
+      }
+    },
+    "visible": false,
+    "end_format_standard": null
+  },
+  {
+    "id": 21,
+    "nb_cards": 8,
+    "labels": {
+      "en_us": {
+        "name": "Tutorial"
+      },
+      "pt_br": {
+        "name": "Tutorial"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 22,
+    "nb_cards": 258,
+    "labels": {
+      "en_us": {
+        "name": "Act II - The Crystal's Song"
+      },
+      "pt_br": {
+        "name": "Ato II - A Can\u00e7\u00e3o do Cristal"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 23,
+    "nb_cards": 170,
+    "labels": {
+      "en_us": {
+        "name": "Act III - Dazzling Illumination"
+      },
+      "pt_br": {
+        "name": "Ato 3 - Ilumina\u00e7\u00e3o Fascinante"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 24,
+    "nb_cards": 221,
+    "labels": {
+      "en_us": {
+        "name": "Act IV - With Fire and Blood"
+      },
+      "pt_br": {
+        "name": "Ato 4 - Fogo e Sangue"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 25,
+    "nb_cards": 21,
+    "labels": {
+      "en_us": {
+        "name": "Act IV - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato 4 - Fogo e Sangue"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 26,
+    "nb_cards": 9,
+    "labels": {
+      "en_us": {
+        "name": "Pokeredan Cards"
+      },
+      "pt_br": {
+        "name": "Cartas Pokeredan"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 35,
+    "nb_cards": 264,
+    "labels": {
+      "en_us": {
+        "name": "Act V- The War of Sol'ra"
+      },
+      "pt_br": {
+        "name": "Ato 5 - A Guerra de Sol'Ra"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 36,
+    "nb_cards": 24,
+    "labels": {
+      "en_us": {
+        "name": "Act V- Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato V - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 37,
+    "nb_cards": 6,
+    "labels": {
+      "en_us": {
+        "name": "Event the Return of the Scragh"
+      },
+      "pt_br": {
+        "name": "Evento do Retorno de Scragh"
+      }
+    },
+    "visible": false,
+    "end_format_standard": null
+  },
+  {
+    "id": 39,
+    "nb_cards": 92,
+    "labels": {
+      "en_us": {
+        "name": "Adventure "
+      },
+      "pt_br": {
+        "name": "Aventura"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 41,
+    "nb_cards": 328,
+    "labels": {
+      "en_us": {
+        "name": "Act VI - A Broken World "
+      },
+      "pt_br": {
+        "name": "Ato 6 - Um Mundo Quebrado"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 42,
+    "nb_cards": 25,
+    "labels": {
+      "en_us": {
+        "name": "Act VI - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato VI - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 43,
+    "nb_cards": 190,
+    "labels": {
+      "en_us": {
+        "name": "Act VII - The Doors to Infinity"
+      },
+      "pt_br": {
+        "name": "Ato VII - As Portas do Infinito"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 44,
+    "nb_cards": 18,
+    "labels": {
+      "en_us": {
+        "name": "Act VII - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato VII - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 46,
+    "nb_cards": 452,
+    "labels": {
+      "en_us": {
+        "name": "Basic Set: Origin"
+      },
+      "pt_br": {
+        "name": "Forma\u00e7\u00e3o B\u00e1sica: Origem"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 48,
+    "nb_cards": 176,
+    "labels": {
+      "en_us": {
+        "name": "Act VIII - Equinox"
+      },
+      "pt_br": {
+        "name": "Ato VIII - Equin\u00f3cio"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 49,
+    "nb_cards": 17,
+    "labels": {
+      "en_us": {
+        "name": "Act VIII - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato VIII - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 50,
+    "nb_cards": 213,
+    "labels": {
+      "en_us": {
+        "name": "Act IX - The Heritage of Eredan"
+      },
+      "pt_br": {
+        "name": "Ato IX - A Heran\u00e7a de Eredan"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 51,
+    "nb_cards": 16,
+    "labels": {
+      "en_us": {
+        "name": "Act IX - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato IX - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 52,
+    "nb_cards": 393,
+    "labels": {
+      "en_us": {
+        "name": "Act X - Shipwreck "
+      },
+      "pt_br": {
+        "name": "Ato X - Naufr\u00e1gio"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 53,
+    "nb_cards": 17,
+    "labels": {
+      "en_us": {
+        "name": "Act X - Event Cards"
+      },
+      "pt_br": {
+        "name": "Ato X - Cartas de Evento"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 54,
+    "nb_cards": 332,
+    "labels": {
+      "en_us": {
+        "name": "Act 11 - Distortion"
+      },
+      "pt_br": {
+        "name": "Ato 11 - Distor\u00e7\u00e3o"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 55,
+    "nb_cards": 395,
+    "labels": {
+      "en_us": {
+        "name": "Act 12 - Emergence"
+      },
+      "pt_br": {
+        "name": "Ato 12 - Emerg\u00eancia"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 57,
+    "nb_cards": 1521,
+    "labels": {
+      "en_us": {
+        "name": "Act 13 - Colossal Requiem"
+      },
+      "pt_br": {
+        "name": "Ato 13 - R\u00e9quiem Colossal"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  },
+  {
+    "id": 67,
+    "nb_cards": 150,
+    "labels": {
+      "en_us": {
+        "name": "Act 14 - Renewed Guem"
+      },
+      "pt_br": {
+        "name": "Ato 14 - Guem Renovada"
+      }
+    },
+    "visible": true,
+    "end_format_standard": null
+  }
+]

@@ -1,7 +1,7 @@
-export interface GetAssetsRequestData {
+export interface GetCardsRequestData {
   assets: Array<string>;
 }
 
-export interface SearchAssetsRequestData {
+export interface SearchCardsRequestData {
   search: string;
 }

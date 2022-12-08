@@ -23,14 +23,9 @@
 
 <script lang="ts" setup>
 import { useLocaleStore } from "@/store/locale"
-import { storeToRefs } from "pinia"
 
 const localeStore = useLocaleStore()
-const { translate } = storeToRefs(localeStore)
 
-// export default defineComponent({
-//   name: 'App'
-// });
 </script>
 
 <style>

@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "script_slug": "dais",
+    "picture": "483c073b7343e496eaa25fba082f71d6.png",
+    "labels": {
+      "en_us": {
+        "nom": "Dais"
+      },
+      "pt_br": {
+        "name": "Dais"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 2,
+    "script_slug": "elfine",
+    "picture": "4b00fff59335948b8c6d8fdcad810801.png",
+    "labels": {
+      "en_us": {
+        "nom": "Elfine"
+      },
+      "pt_br": {
+        "name": "Elfine"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 3,
+    "script_slug": "hom_chai",
+    "picture": "152855ae321d645b01f9abbabb560032.png",
+    "labels": {
+      "en_us": {
+        "nom": "Hom'Chai"
+      },
+      "pt_br": {
+        "name": "Hom'chai"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 5,
+    "script_slug": "humain",
+    "picture": "b8fd7156eb2accbe248edb830e51a31a.png",
+    "labels": {
+      "en_us": {
+        "nom": "Human"
+      },
+      "pt_br": {
+        "name": "Humano"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 6,
+    "script_slug": "guemelite",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Guemelite"
+      },
+      "pt_br": {
+        "name": "Guemelite"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 7,
+    "script_slug": "inconnue",
+    "picture": "39440e8aafd7141e552e7e749b6f9434.png",
+    "labels": {
+      "en_us": {
+        "nom": "Unknown"
+      },
+      "pt_br": {
+        "name": "Desconhecido"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 8,
+    "script_slug": "solarian",
+    "picture": "823d4e6b6bcbe3faaded772e983aad99.png",
+    "labels": {
+      "en_us": {
+        "nom": "Solarian"
+      },
+      "pt_br": {
+        "name": "Solariano"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 9,
+    "script_slug": "golem",
+    "picture": "e547a92251e2cae83e3a471fbbc17aad.png",
+    "labels": {
+      "en_us": {
+        "nom": "Golem"
+      },
+      "pt_br": {
+        "name": "Golem"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 10,
+    "script_slug": "bete",
+    "picture": "bc76cea60a2b788a609071bdd2e90108.png",
+    "labels": {
+      "en_us": {
+        "nom": "Beast"
+      },
+      "pt_br": {
+        "name": "Fera"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 11,
+    "script_slug": "guemelite_air",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Air Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Ar"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 12,
+    "script_slug": "guemelite_eau",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Water Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite \u00c1gua"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 13,
+    "script_slug": "guemelite_terre",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Earth Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Terra"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 14,
+    "script_slug": "guemelite_nature",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Nature Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Natureza"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 15,
+    "script_slug": "guemelite_feu",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Fire Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Fogo"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 16,
+    "script_slug": "guemelite_temps",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Time Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Tempo"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 17,
+    "script_slug": "guemelite_ombre",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Shadow Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Sombra"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 18,
+    "script_slug": "guemelite_fantomatique",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Ghost Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Fantasma"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 19,
+    "script_slug": "guemelite_guem",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Guem Guemelite"
+      },
+      "pt_br": {
+        "name": "Guemelite Guem"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 20,
+    "script_slug": "guemelite_guerre",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "War Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Guerra"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 21,
+    "script_slug": "guemelite_dragon",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Dragon Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite Drag\u00e3o"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 22,
+    "script_slug": "guemelite_foudre",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Lightning Guemelite "
+      },
+      "pt_br": {
+        "name": "Guemelite do Trov\u00e3o"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 23,
+    "script_slug": "non_mort",
+    "picture": "0da168c6ff621b0692cd508c06ad0d95.png",
+    "labels": {
+      "en_us": {
+        "nom": "Undead"
+      },
+      "pt_br": {
+        "name": "Morto-Vivo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 24,
+    "script_slug": "elfe_de_glace",
+    "picture": "9278d654a93371f8ce51d69d5d2403b5.png",
+    "labels": {
+      "en_us": {
+        "nom": "Ice Elf"
+      },
+      "pt_br": {
+        "name": "Elfo do Gelo"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 25,
+    "script_slug": "demon",
+    "picture": "38756aa33295294c290508b39d0ff7f2.png",
+    "labels": {
+      "en_us": {
+        "nom": "Demon"
+      },
+      "pt_br": {
+        "name": "Dem\u00f4nio"
+      }
+    },
+    "id_parent": 0
+  },
+  {
+    "id": 26,
+    "script_slug": "guemelite_nehant",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Nehant Guemelite"
+      },
+      "pt_br": {
+        "name": "Guemelite Ne\u00e2ntico"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 27,
+    "script_slug": "guemelite_mental",
+    "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
+    "labels": {
+      "en_us": {
+        "nom": "Mental Guemelite"
+      },
+      "pt_br": {
+        "name": "Guemelite Mental"
+      }
+    },
+    "id_parent": 6
+  },
+  {
+    "id": 28,
+    "script_slug": "eltarite",
+    "picture": "f29a6246fcb3b07b631c1f07737ffe9d.png",
+    "labels": {
+      "en_us": {
+        "nom": "Eltarite"
+      },
+      "pt_br": {
+        "name": "Eltarite"
+      }
+    },
+    "id_parent": 0
+  }
+]

@@ -1,17 +1,16 @@
-import http from "@/plugins/axios"
-// import { GetAssetsRequestData, SearchAssetsRequestData } from "@/types/Asset/RequestData"
-// import { GetAssetsResponseData } from "@/types/Asset/ResponseData"
-import {AxiosResponse} from "axios"
-import CardJson from "@/assets/cards.json"
+import CardJson from "@/assets/json/cards.json"
+import { Card, CardLabel } from "@/types/Card"
 
 class CardDataService {
-  // getAssets(data: GetAssetsRequestData): Promise<AxiosResponse> {
-  //   return http.post<GetAssetsResponseData[]>("/assets", data)
-  // }
+  getAllCards(page: number, itemsPerPage: number): Array<Card> {
+    return CardJson.slice((page - 1) * (itemsPerPage - 1), page * itemsPerPage)
+  }
 
-  // getAllAssets(page: number, itemsPerPage: number): Promise<AxiosResponse> {
-  //   return http.post<GetAssetsResponseData[]>("/assets", { assets: CardJson.slice((page - 1) * itemsPerPage, page * itemsPerPage) })
-  // }
+  searchCards(term: string, language: string): Array<Card> {
+    return CardJson.filter((card: Card) => {
+      return card.labels[language as keyof CardLabel].name.toLowerCase().includes(term)
+    })
+  }
 }
 
 export default new CardDataService

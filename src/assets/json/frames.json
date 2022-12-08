@@ -1,0 +1,222 @@
+[
+  {
+    "id": 16,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "9ece13100a92340379dd29bee30af72d.png",
+    "cadre_autre": "2e1ddf4b20bf4cd7e8e112e8f8f8860d.png"
+  },
+  {
+    "id": 17,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 1,
+    "cadre_perso": "aa936b495f484c71959508807b0546bb.png",
+    "cadre_autre": "3220bffc5296e8d40a5ffc0b35c1c290.png"
+  },
+  {
+    "id": 18,
+    "id_maquette": 1,
+    "id_rarete": 4,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "9642a1ca9db312af5eb0017fe6264c32.png",
+    "cadre_autre": "57048e2e5e381321f6eb173c5a26e809.png"
+  },
+  {
+    "id": 19,
+    "id_maquette": 1,
+    "id_rarete": 5,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "e433574b233824f0f43928b076135ed1.png",
+    "cadre_autre": "b8ad0c6998057f21649f6a80ec846856.png"
+  },
+  {
+    "id": 20,
+    "id_maquette": 1,
+    "id_rarete": 10,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "c3c5609c3bacdfd078b199e855d10cef.png",
+    "cadre_autre": null
+  },
+  {
+    "id": 21,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 5,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "9d4653cfd5fc7766287fda04c80589ed.png",
+    "cadre_autre": "5f9c1be3c15e1e2258c452064941934a.png"
+  },
+  {
+    "id": 22,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 4,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "cb6c2ba9dc44826d59310ab181bce696.png",
+    "cadre_autre": "3eecb549a897c489b9c9e5e655b709b0.png"
+  },
+  {
+    "id": 23,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 10,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "1e4dd8a6ce3aca39f5ccfe7254719d2c.png",
+    "cadre_autre": "1f43d249310b7db8b6c8bf9677b76926.png"
+  },
+  {
+    "id": 24,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 2,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "389aa36c73c27e50d47aaf68665772c9.png",
+    "cadre_autre": "9b536f735a02f6c9f4491a9a0114a073.png"
+  },
+  {
+    "id": 25,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 1,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "c53b9099ffe55082c16541fc9ab6b44c.png",
+    "cadre_autre": "252073105632acd7cde69766e2bbd9c8.png"
+  },
+  {
+    "id": 26,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 11,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "1e1fb3affaef60caf5463f1440bc1729.png",
+    "cadre_autre": "4b8c4c4bce731d147fa80725a8eb85c9.png"
+  },
+  {
+    "id": 28,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 9,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "6ebbfac143739afef5fa63cca63a96f3.png",
+    "cadre_autre": "52b5a97f0afa71ed517ef51ae4d724e4.png"
+  },
+  {
+    "id": 29,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 7,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "20515e86fc65f3ca5548aa4c2176fcb3.png",
+    "cadre_autre": "d8462a2899dc943a20d03f3b7b6da7d4.png"
+  },
+  {
+    "id": 30,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": 6,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "bf7b0ed39958563c5046c36e8198279e.png",
+    "cadre_autre": "f2bc064899ed3c9cd900e61fbe836be0.png"
+  },
+  {
+    "id": 31,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 87,
+    "foil": 0,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 32,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 87,
+    "foil": 1,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 33,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 86,
+    "foil": 0,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 34,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 86,
+    "foil": 1,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 35,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 82,
+    "foil": 0,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 36,
+    "id_maquette": 1,
+    "id_rarete": null,
+    "id_guilde": null,
+    "id_type_carte": 82,
+    "foil": 1,
+    "cadre_perso": null,
+    "cadre_autre": "b848ad590e89b4a3e0130a382985a040.png"
+  },
+  {
+    "id": 37,
+    "id_maquette": 1,
+    "id_rarete": 21,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "b7277d0b6ab892516ad872ac15b9c0a6.png",
+    "cadre_autre": "8c92824ecb50d303e065b5a017c30945.png"
+  },
+  {
+    "id": 38,
+    "id_maquette": 1,
+    "id_rarete": 22,
+    "id_guilde": null,
+    "id_type_carte": null,
+    "foil": 0,
+    "cadre_perso": "80bb8e277fbad73169ab66516273b65c.png",
+    "cadre_autre": "e01eb27c011d4186158f62105147c3e5.png"
+  }
+]

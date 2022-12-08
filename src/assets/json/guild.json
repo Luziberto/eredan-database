@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "script_slug": "noz",
+    "labels": {
+      "en_us": {
+        "nom": "Noz'Dingard Envoys",
+        "description": "Powerful magicians devoted to Dragon. "
+      },
+      "pt_br": {
+        "name": "Enviados de Noz'Dingard ",
+        "description": "Poderosos magos devotos ao Drag\u00e3o."
+      }
+    },
+    "picture": "6d67edf96a5395213ce3734526c04f0f.png",
+    "color": "5099CF"
+  },
+  {
+    "id": 2,
+    "script_slug": "zil",
+    "labels": {
+      "en_us": {
+        "nom": "Zil Warriors",
+        "description": "The masters of shadow and other kinds of swindlers are part of the psychedelic circus"
+      },
+      "pt_br": {
+        "name": "Guerreiros Zil",
+        "description": "Os mestres das sombras e outros tipos de trapaceiros fazem parte do Circo psicod\u00e9lico."
+      }
+    },
+    "picture": "ab53ea879665aa998ffff246d8a25ba5.png",
+    "color": "AF569A"
+  },
+  {
+    "id": 4,
+    "script_slug": "kotoba",
+    "labels": {
+      "en_us": {
+        "nom": "Kotoba",
+        "description": "Proud warriors from the Empire of Xzia who pursue honor"
+      },
+      "pt_br": {
+        "name": "Kotoba",
+        "description": "Orgulhosos guerreiros do Imp\u00e9rio de Xzia, seguindo o caminho da honra."
+      }
+    },
+    "picture": "462fe73b74a8f01f54fdd33eaba323b7.png",
+    "color": "AD0313"
+  },
+  {
+    "id": 5,
+    "script_slug": "coeur_de_seve",
+    "labels": {
+      "en_us": {
+        "nom": "Sap Heart",
+        "description": "Children of the World-Tree who keep the ancestral forest. "
+      },
+      "pt_br": {
+        "name": "Cora\u00e7\u00e3o de Seiva",
+        "description": "Filhos da \u00c1rvore-Mundo; aqueles que protegem a Floresta Ancestral. "
+      }
+    },
+    "picture": "c110c36a81557aa66fc777345f149969.png",
+    "color": "3F8516"
+  },
+  {
+    "id": 6,
+    "script_slug": "pirates",
+    "labels": {
+      "en_us": {
+        "nom": "Pirates",
+        "description": "Warriors of the air and expert in powder weapons.  "
+      },
+      "pt_br": {
+        "name": "Piratas",
+        "description": "Guerreiros do ar e mestres no manuseio de Armas de P\u00f3lvora."
+      }
+    },
+    "picture": "18b157d54ea51490d87fa5289dd43c38.png",
+    "color": "C35E15"
+  },
+  {
+    "id": 7,
+    "script_slug": "nameades",
+    "labels": {
+      "en_us": {
+        "nom": "Desert Nomads",
+        "description": "Coming from the four corners of the world, they are the servants of the King of Mineptra. "
+      },
+      "pt_br": {
+        "name": "N\u00f4mades do Deserto",
+        "description": "Vindos dos quatro cantos do mundo, eles s\u00e3o os servos do Rei de Mineptra."
+      }
+    },
+    "picture": "25fd5740bc64712b8353b56cd6a65bda.png",
+    "color": "F0C26B"
+  },
+  {
+    "id": 8,
+    "script_slug": "non_affilies",
+    "labels": {
+      "pt_br": {
+        "nom": "Mercenaries",
+        "description": "Valorous adventurers who offer their services to the highest bidder or to just causes. "
+      },
+      "en_us": {
+        "name": "Mercen\u00e1rios",
+        "description": "Dois bravos aventureiros que oferecem seus servi\u00e7os \u00e0quele que pagar mais ou para causas justas."
+      }
+    },
+    "picture": "db0b06c586298efe1c579a8e7ab5febc.png",
+    "color": "CECCA4"
+  },
+  {
+    "id": 9,
+    "script_slug": "nehantistes",
+    "labels": {
+      "en_us": {
+        "nom": "Nehantists",
+        "description": "The masters of the demons and of will manipulation. "
+      },
+      "pt_br": {
+        "name": "Neantistas",
+        "description": "Os mestres dos dem\u00f4nios e da manipula\u00e7\u00e3o dos desejos."
+      }
+    },
+    "picture": "fe7aa75fa9f3031c09aa1849b915deb4.png",
+    "color": "2F4763"
+  },
+  {
+    "id": 10,
+    "script_slug": "legion_runique",
+    "labels": {
+      "en_us": {
+        "nom": "Runic Legion",
+        "description": "The warriors and servants of the Pantheon of Tantad."
+      },
+      "pt_br": {
+        "name": "Legi\u00e3o R\u00fanica",
+        "description": "Os guerreiros e servos do Pante\u00e3o de Tantad."
+      }
+    },
+    "picture": "57a941ada9c0991d04945d7d221f75c1.png",
+    "color": "A77F24"
+  },
+  {
+    "id": 11,
+    "script_slug": "lieurs_de_pierres",
+    "labels": {
+      "en_us": {
+        "nom": "Stone linkers",
+        "description": null
+      },
+      "pt_br": {
+        "name": "Liga L\u00edtica",
+        "description": null
+      }
+    },
+    "picture": "a97d336f6ad4cbee527ff1fe9f5bb4ec.png",
+    "color": 0
+  }
+]

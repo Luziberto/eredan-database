@@ -9,27 +9,27 @@
             for="search"
             class="font-bold"
           >{{ translate.SEARCH }}</label>
-          <!-- <input
+          <input
             v-model="search"
             name="search"
             type="text"
             class="block w-full py-1 pl-2 pr-10 mt-1 text-sm font-bold placeholder-gray-400 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-green-500 focus:border-green-500 ring-2"
             @keyup="searchCards"
-          /> -->
+          />
         </div>
       </div>
     </div>
 
     <CardsTable
-      ref="assetTable"
+      ref="cardsTable"
       @open-modal="openModal"
     />
-    <!-- <CardDialog
+    <CardDetailsDialog
       v-if="dialog"
       :selected-card="selectedCard"
       @close="dialog = false"
       @error="error"
-    /> -->
+    />
   </div>
 </template>
 
@@ -38,13 +38,13 @@
 import { ref, computed, onMounted } from "vue"
 import { Card } from "@/types/Card"
 import CardsTable from "@/components/CardsTable.vue"
-import CryptoDialog from "@/components/CryptoDialog.vue"
+import CardDetailsDialog from "@/components/CardDetailsDialog.vue"
 import { ALERT_TYPES } from "@/constants/AlertConstants"
-import CardDataService from "@/services/CardDataService"
 import Alert from "@/components/global/AlertPopup.vue"
 import LocaleButton from "@/components/global/LocaleButton.vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
+import CardDataService from "@/services/CardDataService"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -61,7 +61,7 @@ const selectedCard = ref<Card>({
 
 const dialog = ref<boolean>(false)
 const search = ref<string>("")
-const assetTable = ref<InstanceType<typeof CardsTable> | null>(null)
+const cardsTable = ref<InstanceType<typeof CardsTable> | null>(null)
 const alert = ref<InstanceType<typeof Alert> | null>(null)
 
 computed(() => {
@@ -69,16 +69,15 @@ computed(() => {
 })
 
 const searchCards = () => {
-  if (search.value.length === 0) {
-    assetTable.value?.refreshCards([], true)
+  if (search.value.length < 3) {
+    cardsTable.value?.refreshCards([], true)
     return
   }
+  setTimeout(() => {
+    const responseData = CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION)
+    cardsTable.value?.refreshCards(responseData, false)
+  }, 500)
 
-  // CardDataService.searchCards({ search: search.value }).then((response) => {
-  //   assetTable.value?.refreshAssets(response.data, false)
-  // }).catch((e) => {
-  //   alert.value?.show(e.response.data, ALERT_TYPES.ERROR)
-  // })
 }
 
 const openModal = (card: Card) => {
@@ -91,8 +90,7 @@ const error = (errors: unknown[]) => {
 }
 
 onMounted(() => {
-
-  // searchCards()
+  searchCards()
 })
 
 </script>

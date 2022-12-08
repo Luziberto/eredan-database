@@ -1,4 +1,5 @@
 export interface Card {
+  id: string,
   level: number,
   collection_id: number,
   type_id: number,
@@ -33,7 +34,17 @@ export interface Card {
   hasNextEvo: boolean,
   ancestorCards: string,
   descendantCards: string,
-  name: string,
-  description: string
+  labels: CardLabel
+}
+
+export interface CardLabel {
+  pt_br: {
+    name: string,
+    description: string
+  },
+  en_us: {
+    name: string,
+    description: string
+  }
 }
 

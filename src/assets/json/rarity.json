@@ -1,0 +1,893 @@
+[
+  {
+    "id": 1,
+    "ordre": 1,
+    "labels": {
+      "en_us": {
+        "name": "Common"
+      },
+      "pt_br": {
+        "name": "Comum"
+      }
+    },
+    "picture": "aa7edaab44e41c14e39531dc2476916e.png",
+    "cadre_perso": null,
+    "cadre_autre": null,
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "7049fa1b46523170cd8fc01ac7a18798.png"
+      },
+      {
+        "id_serie": 18,
+        "picture": "c81335708e3d6d656d6543fe4a09a615.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "93e8fa0c3e5c2dd602853e67eaf6091e.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "f919d68a75b66e6420ca58455a9cb3f8.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "05f08bb1b96e965774bdfb41544b1545.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "f87c0ac8fc393e6c4e1d4d25b9958715.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "824fe723790cf0a88ee2b7d00ced9d31.png"
+      },
+      {
+        "id_serie": 40,
+        "picture": "824fe723790cf0a88ee2b7d00ced9d31.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "0e6d4fafe1353a1ce25c7b6031288b34.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "4e0706f7f9a98fcbdfe5bd57a7d79925.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "f511945a2e94d59715987e1b3136a721.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "cb8179fdeb76d235c173e58f53f0db22.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "8d27b148dff79bb5d20b9b0697126ea8.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "833b34af2a24cde61ddf5244ffe28ab1.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "c81335708e3d6d656d6543fe4a09a615.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "1c347e9ab8f370b18a16ac49485e7122.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "0cfb554bfe536f2bf402eedfa87a2292.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte13_commune_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "ordre": 2,
+    "labels": {
+      "en_us": {
+        "name": "Uncommon"
+      },
+      "pt_br": {
+        "name": "Incomum"
+      }
+    },
+    "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
+    "cadre_perso": null,
+    "cadre_autre": null,
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "43369f1af917574eb355ea3660651daf.png"
+      },
+      {
+        "id_serie": 18,
+        "picture": "131f81af0ce850fd72176ebd696ce523.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "fdd06f2003bf3e82a1d42f9bef3c581f.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "44b7682d2d65a57c2ff3e05f08cb5f43.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "455479d14a44411690a6fe73e79d2d41.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "e1c9f0937421323ae212790455ab909e.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "ac804237e9b0dca1403bc09713ea8fee.png"
+      },
+      {
+        "id_serie": 40,
+        "picture": "ac804237e9b0dca1403bc09713ea8fee.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "76f4117f9ea4a6962f549b50a6baad16.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "6786e8ffa29f80c75ee4c6c62a1bc225.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "1f87d922c1b46e1685f69ce688c62848.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "df21b5f5461bd7d579b0082458410799.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "da9fa915c4969853be63c47923d6d724.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "571edb28c962c1f02a346ba92bfd87e3.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "131f81af0ce850fd72176ebd696ce523.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "ab8b943d94cfd32d03518ef04a226366.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "b9ef1eedf3da9906a59c303188669357.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte13_peu_commune_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "ordre": 3,
+    "labels": {
+      "en_us": {
+        "name": "Rare"
+      },
+      "pt_br": {
+        "name": "Rara"
+      }
+    },
+    "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
+    "cadre_perso": null,
+    "cadre_autre": null,
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "85a65c0ec77279709b76aceafd70de86.png"
+      },
+      {
+        "id_serie": 18,
+        "picture": "9defb83ab4250c28a09e521e43748d3a.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "481c1fea8553e7cbb61cfcafbe32bc8f.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "7d1b24d9b67e98936ec602e234dd43d7.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "21ad945cb88bbc1af19fe2cb471f1171.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "893342332c6a5d5f3d3e1f387c971d42.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "dc859b4fb3bd167bc4d9e4f0dbfb12b1.png"
+      },
+      {
+        "id_serie": 40,
+        "picture": "dc859b4fb3bd167bc4d9e4f0dbfb12b1.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "49ff5a3d47bf338adc3a84c40fccc33f.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "d26577245a76b33ff6727d4b4edd97ec.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "9c27a8fcf7aa2542794a772b324e7625.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "ade9dc762ee740440334f1ef238444c4.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "437e95198a05710501ff12d93bdfde9d.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "9479783c121d45eef69e8dce3ab0d471.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "9defb83ab4250c28a09e521e43748d3a.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "bd846140b82948c49109f600ac14761c.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "604f95b3e0ac7425ea5f9015976cb219.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte14_rare_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "ordre": 4,
+    "labels": {
+      "en_us": {
+        "name": "Collector"
+      },
+      "pt_br": {
+        "name": "Colecionador"
+      }
+    },
+    "picture": "dbb064518b6b359cd33a39bd4155931f.png",
+    "cadre_perso": null,
+    "cadre_autre": null,
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "3d53f2d20dfb8391d3f6fd57b00c6798.png"
+      },
+      {
+        "id_serie": 15,
+        "picture": "3d53f2d20dfb8391d3f6fd57b00c6798.png"
+      },
+      {
+        "id_serie": 17,
+        "picture": "d011003422d6457747283cf477c5c9de.png"
+      },
+      {
+        "id_serie": 19,
+        "picture": "eb787f32c6be13308bcce56c59f84723.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "d011003422d6457747283cf477c5c9de.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "eb787f32c6be13308bcce56c59f84723.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "eae4b3d84909cc32283345cf0a9a16fa.png"
+      },
+      {
+        "id_serie": 25,
+        "picture": "eae4b3d84909cc32283345cf0a9a16fa.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "81110577ee3c20e680d7e8dea203f17e.png"
+      },
+      {
+        "id_serie": 36,
+        "picture": "81110577ee3c20e680d7e8dea203f17e.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "ff1e6f4a7e59c82f2837bc16b2854306.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "0bcef6f9e9344a5ec615e88cef4b9b52.png"
+      },
+      {
+        "id_serie": 42,
+        "picture": "0bcef6f9e9344a5ec615e88cef4b9b52.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "6c9fd328146246fa9a35560054256960.png"
+      },
+      {
+        "id_serie": 44,
+        "picture": "6c9fd328146246fa9a35560054256960.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "b90f8604cbe700d378746ef83bd4da4b.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "aa710c1f3a37baa364109df1cedd2e14.png"
+      },
+      {
+        "id_serie": 49,
+        "picture": "aa710c1f3a37baa364109df1cedd2e14.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "eaf0a10e924b4bf6913ba5c480ebec55.png"
+      },
+      {
+        "id_serie": 51,
+        "picture": "eaf0a10e924b4bf6913ba5c480ebec55.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "5b497c781f9a9ef16e56233bbd18f360.png"
+      },
+      {
+        "id_serie": 53,
+        "picture": "5b497c781f9a9ef16e56233bbd18f360.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "cbfc8de22f18e519da62351cdc429197.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "f776c70b6787564cf4ea7539a4e872a5.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "142e06e4a2f83b588588d4485fa3dc82.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte13_promo_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "ordre": 5,
+    "labels": {
+      "en_us": {
+        "name": "Exploit"
+      },
+      "pt_br": {
+        "name": "Lucro"
+      }
+    },
+    "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
+    "cadre_perso": null,
+    "cadre_autre": null,
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 39,
+        "picture": "ff1e6f4a7e59c82f2837bc16b2854306.png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "ordre": 6,
+    "labels": {
+      "en_us": {
+        "name": "Artwork"
+      },
+      "pt_br": {
+        "name": "Arte-alternativa"
+      }
+    },
+    "picture": "dbb064518b6b359cd33a39bd4155931f.png",
+    "cadre_perso": null,
+    "cadre_autre": "164850d71b535b80442d632d74a254b6.png",
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "3d53f2d20dfb8391d3f6fd57b00c6798.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "d011003422d6457747283cf477c5c9de.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "eb787f32c6be13308bcce56c59f84723.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "eae4b3d84909cc32283345cf0a9a16fa.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "81110577ee3c20e680d7e8dea203f17e.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "0bcef6f9e9344a5ec615e88cef4b9b52.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "6c9fd328146246fa9a35560054256960.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "b90f8604cbe700d378746ef83bd4da4b.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "aa710c1f3a37baa364109df1cedd2e14.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "eaf0a10e924b4bf6913ba5c480ebec55.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "5b497c781f9a9ef16e56233bbd18f360.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "cbfc8de22f18e519da62351cdc429197.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "f776c70b6787564cf4ea7539a4e872a5.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "142e06e4a2f83b588588d4485fa3dc82.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "ordre": 7,
+    "labels": {
+      "en_us": {
+        "name": "Legendary"
+      },
+      "pt_br": {
+        "name": "Legend\u00e1ria"
+      }
+    },
+    "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
+    "cadre_perso": "c1ae0eea14f55b0585faa68f83b31c60.png",
+    "cadre_autre": "131ea35db8f37ab4c223d45fd3ecc5bc.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "85a65c0ec77279709b76aceafd70de86.png"
+      },
+      {
+        "id_serie": 18,
+        "picture": "9defb83ab4250c28a09e521e43748d3a.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "481c1fea8553e7cbb61cfcafbe32bc8f.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "7d1b24d9b67e98936ec602e234dd43d7.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "21ad945cb88bbc1af19fe2cb471f1171.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "893342332c6a5d5f3d3e1f387c971d42.png"
+      },
+      {
+        "id_serie": 40,
+        "picture": "dc859b4fb3bd167bc4d9e4f0dbfb12b1.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "49ff5a3d47bf338adc3a84c40fccc33f.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "d26577245a76b33ff6727d4b4edd97ec.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "9c27a8fcf7aa2542794a772b324e7625.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "ade9dc762ee740440334f1ef238444c4.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "437e95198a05710501ff12d93bdfde9d.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "9479783c121d45eef69e8dce3ab0d471.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "9defb83ab4250c28a09e521e43748d3a.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "bd846140b82948c49109f600ac14761c.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "604f95b3e0ac7425ea5f9015976cb219.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte14_rare_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "ordre": 8,
+    "labels": {
+      "en_us": {
+        "name": "Iced"
+      },
+      "pt_br": {
+        "name": "Gelado"
+      }
+    },
+    "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
+    "cadre_perso": "91bbe68aaab12c6750b78b9830ee2da6.png",
+    "cadre_autre": null,
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "3d53f2d20dfb8391d3f6fd57b00c6798.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "81110577ee3c20e680d7e8dea203f17e.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "ff1e6f4a7e59c82f2837bc16b2854306.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "cbfc8de22f18e519da62351cdc429197.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "f776c70b6787564cf4ea7539a4e872a5.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "142e06e4a2f83b588588d4485fa3dc82.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "ordre": 9,
+    "labels": {
+      "en_us": {
+        "name": "Pokeredan"
+      },
+      "pt_br": {
+        "name": "Pokeredan"
+      }
+    },
+    "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
+    "cadre_perso": "da72c55563adb8844bb7b461d43ef386.png",
+    "cadre_autre": null,
+    "couleur_texte": "#ffffff",
+    "couleur_fond_perso": "#11441e",
+    "icones_par_serie": []
+  },
+  {
+    "id": 11,
+    "ordre": 10,
+    "labels": {
+      "en_us": {
+        "name": "Common Romantic"
+      },
+      "pt_br": {
+        "name": "Rom\u00e2ntico comum"
+      }
+    },
+    "picture": "aa7edaab44e41c14e39531dc2476916e.png",
+    "cadre_perso": "dc86c90166f5084d4531ebf921726223.png",
+    "cadre_autre": "fcbf8b20c419d18f7de1b15413cbdba7.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": []
+  },
+  {
+    "id": 14,
+    "ordre": 11,
+    "labels": {
+      "en_us": {
+        "name": "Uncommon Romantic"
+      },
+      "pt_br": {
+        "name": "Rom\u00e2ntico Incomum"
+      }
+    },
+    "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
+    "cadre_perso": "dc86c90166f5084d4531ebf921726223.png",
+    "cadre_autre": "fcbf8b20c419d18f7de1b15413cbdba7.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": []
+  },
+  {
+    "id": 15,
+    "ordre": 12,
+    "labels": {
+      "en_us": {
+        "name": "Rare Romantic"
+      },
+      "pt_br": {
+        "name": "Rom\u00e2ntico Raro"
+      }
+    },
+    "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
+    "cadre_perso": "dc86c90166f5084d4531ebf921726223.png",
+    "cadre_autre": "fcbf8b20c419d18f7de1b15413cbdba7.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": []
+  },
+  {
+    "id": 16,
+    "ordre": 13,
+    "labels": {
+      "en_us": {
+        "name": "Romantic"
+      },
+      "pt_br": {
+        "name": "Romantico"
+      }
+    },
+    "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
+    "cadre_perso": "dc86c90166f5084d4531ebf921726223.png",
+    "cadre_autre": "fcbf8b20c419d18f7de1b15413cbdba7.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": []
+  },
+  {
+    "id": 12,
+    "ordre": 14,
+    "labels": {
+      "en_us": {
+        "name": "Maneuver"
+      },
+      "pt_br": {
+        "name": "Manobra"
+      }
+    },
+    "picture": "dbb064518b6b359cd33a39bd4155931f.png",
+    "cadre_perso": null,
+    "cadre_autre": "580eb70b06007a5a5daf5aa6291bbf8c.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "",
+    "icones_par_serie": []
+  },
+  {
+    "id": 13,
+    "ordre": 15,
+    "labels": {
+      "en_us": {
+        "name": "Olympiads "
+      },
+      "pt_br": {
+        "name": "Olimp\u00edadas"
+      }
+    },
+    "picture": "dbb064518b6b359cd33a39bd4155931f.png",
+    "cadre_perso": "507c6e907d42f439b5f62ad30d3836de.png",
+    "cadre_autre": null,
+    "couleur_texte": "#ffffff",
+    "couleur_fond_perso": "#2b414f",
+    "icones_par_serie": []
+  },
+  {
+    "id": 5,
+    "ordre": 16,
+    "labels": {
+      "en_us": {
+        "name": "Mythical"
+      },
+      "pt_br": {
+        "name": "M\u00edstica"
+      }
+    },
+    "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
+    "cadre_perso": "f8327d80b5f09a8c4a4f55c3bc654487.png",
+    "cadre_autre": "0e8fc192a23a348c1ecf15ad75e803a0.png",
+    "couleur_texte": "#000000",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": [
+      {
+        "id_serie": 1,
+        "picture": "3d53f2d20dfb8391d3f6fd57b00c6798.png"
+      },
+      {
+        "id_serie": 22,
+        "picture": "d011003422d6457747283cf477c5c9de.png"
+      },
+      {
+        "id_serie": 23,
+        "picture": "eb787f32c6be13308bcce56c59f84723.png"
+      },
+      {
+        "id_serie": 24,
+        "picture": "eae4b3d84909cc32283345cf0a9a16fa.png"
+      },
+      {
+        "id_serie": 35,
+        "picture": "81110577ee3c20e680d7e8dea203f17e.png"
+      },
+      {
+        "id_serie": 39,
+        "picture": "ff1e6f4a7e59c82f2837bc16b2854306.png"
+      },
+      {
+        "id_serie": 41,
+        "picture": "0bcef6f9e9344a5ec615e88cef4b9b52.png"
+      },
+      {
+        "id_serie": 43,
+        "picture": "6c9fd328146246fa9a35560054256960.png"
+      },
+      {
+        "id_serie": 46,
+        "picture": "b90f8604cbe700d378746ef83bd4da4b.png"
+      },
+      {
+        "id_serie": 48,
+        "picture": "aa710c1f3a37baa364109df1cedd2e14.png"
+      },
+      {
+        "id_serie": 50,
+        "picture": "eaf0a10e924b4bf6913ba5c480ebec55.png"
+      },
+      {
+        "id_serie": 52,
+        "picture": "5b497c781f9a9ef16e56233bbd18f360.png"
+      },
+      {
+        "id_serie": 54,
+        "picture": "cbfc8de22f18e519da62351cdc429197.png"
+      },
+      {
+        "id_serie": 55,
+        "picture": "f776c70b6787564cf4ea7539a4e872a5.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "142e06e4a2f83b588588d4485fa3dc82.png"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "ordre": 17,
+    "labels": {
+      "en_us": {
+        "name": "Damned soul"
+      },
+      "pt_br": {
+        "name": "Alma Condenada"
+      }
+    },
+    "picture": "604f95b3e0ac7425ea5f9015976cb219.png",
+    "cadre_perso": "b7277d0b6ab892516ad872ac15b9c0a6.png",
+    "cadre_autre": "8c92824ecb50d303e065b5a017c30945.png",
+    "couleur_texte": "#ffffff",
+    "couleur_fond_perso": "#ffffff",
+    "icones_par_serie": [
+      {
+        "id_serie": 45,
+        "picture": "dbb064518b6b359cd33a39bd4155931f.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "604f95b3e0ac7425ea5f9015976cb219.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte14_rare_SD.png"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "ordre": 18,
+    "labels": {
+      "en_us": {
+        "name": "Sacred soul"
+      },
+      "pt_br": {
+        "name": "Alma Sagrada"
+      }
+    },
+    "picture": "604f95b3e0ac7425ea5f9015976cb219.png",
+    "cadre_perso": "80bb8e277fbad73169ab66516273b65c.png",
+    "cadre_autre": "e01eb27c011d4186158f62105147c3e5.png",
+    "couleur_texte": "",
+    "couleur_fond_perso": "",
+    "icones_par_serie": [
+      {
+        "id_serie": 45,
+        "picture": "dbb064518b6b359cd33a39bd4155931f.png"
+      },
+      {
+        "id_serie": 57,
+        "picture": "604f95b3e0ac7425ea5f9015976cb219.png"
+      },
+      {
+        "id_serie": 67,
+        "picture": "symboles_acte14_rare_SD.png"
+      }
+    ]
+  }
+]
