@@ -7,7 +7,7 @@
         {{ selectedCard.labels[translate.LANGUAGE_ABBREVIATION as keyof CardLabel].name }}
       </span>
       <button
-        class="block lg:hidden fill-current h-5 w-5 font-3xl font-bold"
+        class="fill-current h-5 w-5 font-3xl font-bold"
         @click="close"
       >
         <span class="sr-only">Close</span>
