@@ -101,12 +101,12 @@ computed(() => {
 })
 
 const searchCards = () => {
-  if (search.value.length === 0) {
+  if (search.value.length < 3) {
     cardsTable.value?.refreshCards([], true)
     return
   }
   delay(async function () {
-    if (search.value.length === 0) {
+    if (search.value.length < 3) {
       return
     }
 
