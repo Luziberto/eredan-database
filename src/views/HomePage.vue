@@ -1,10 +1,33 @@
 <template>
-  <div class="flex flex-col">
-    <Alert ref="alert" />
-    <LocaleButton :width="20" />
-    <div class="flex md:grid md:grid-cols-12">
-      <div class="flex flex-1 md:col-start-11 md:col-end-13 m-2">
-        <div class="text-left pb-2 w-full">
+  <Alert ref="alert" />
+
+  <div class="fixed w-full z-50 bg-gray-300">
+    <div
+      id="nav"
+      class="flex flex-col lg:flex-row items-center bg-white lg:py-5 justify-between h-28"
+    >
+      <div class="hidden lg:block w-1/3"></div>
+      <div class="flex lg:flex-col justify-between flex-items-center">
+
+        <div class="lg:hidden block w-1/3"></div>
+        <a
+          class="flex lg:flex-col justify-center"
+          href="https://matias.ma/nsfw"
+        >
+          <img
+            class="w-32"
+            src="@/assets/image/2_Preloader_logo.png"
+            alt=""
+          >
+        </a>
+        <LocaleButton
+          :width="20"
+          class="hidden lg:block"
+        />
+      </div>
+
+      <div class="flex lg:w-1/3 lg:justify-end items-center lg:m-2">
+        <div class="text-left pb-2">
           <label
             for="search"
             class="font-bold"
@@ -17,25 +40,33 @@
             @keyup="searchCards"
           />
         </div>
+        <LocaleButton
+          :width="20"
+          class="lg:hidden w-1/3 h-10 pt-1 mt-3"
+        />
       </div>
+
     </div>
 
+  </div>
+  <div class="flex flex-col bg-gray-300 pt-28">
     <CardsTable
       ref="cardsTable"
-      @open-modal="openModal"
+      @open-modal="toggleModal"
+      @close-modal="toggleModal"
     />
     <CardDetailsDialog
-      v-if="dialog"
+      v-if="dialog.active"
       :selected-card="selectedCard"
-      @close="dialog = false"
-      @error="error"
+      :orientation="dialog.orientation"
+      @close="dialog.active = false"
     />
   </div>
 </template>
 
 <script lang="ts" setup>
 
-import { ref, computed, onMounted } from "vue"
+import { ref, computed, onMounted, reactive } from "vue"
 import { Card } from "@/types/Card"
 import CardsTable from "@/components/CardsTable.vue"
 import CardDetailsDialog from "@/components/CardDetailsDialog.vue"
@@ -46,21 +77,21 @@ import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import CardDataService from "@/services/CardDataService"
 import { delay } from "@/utils/Global"
+import { Orientation } from "@/constants/OrientationConstants"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
 
-const selectedCard = ref<Card>({
-  // uuid: "",
-  // name: "",
-  // slug: "",
-  // symbol: "",
-  // price_brl: "0",
-  // price_usd: "0",
-  // image: ""
-} as Card)
+const selectedCard = ref<Card>({} as Card)
 
-const dialog = ref<boolean>(false)
+const dialog = reactive<{
+  active: boolean,
+  orientation: Orientation
+}>({
+  active: false,
+  orientation: Orientation.RIGHT
+})
+
 const search = ref<string>("")
 const cardsTable = ref<InstanceType<typeof CardsTable> | null>(null)
 const alert = ref<InstanceType<typeof Alert> | null>(null)
@@ -75,14 +106,17 @@ const searchCards = () => {
     return
   }
   delay(async function () {
-    await CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION).then(response => cardsTable.value?.refreshCards(response, false))
-  }, 500);
+    await CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION).then(response => {
+      cardsTable.value?.refreshCards(response, false)
+    })
+  }, 500)
 
 }
 
-const openModal = (card: Card) => {
+const toggleModal = (modalValue: boolean, card: Card, orientation: Orientation = Orientation.LEFT) => {
   selectedCard.value = card
-  dialog.value = true
+  dialog.active = modalValue
+  dialog.orientation = orientation
 }
 
 const error = (errors: unknown[]) => {

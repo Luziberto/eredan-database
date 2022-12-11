@@ -36,7 +36,6 @@ export interface Card {
   descendantCards: string,
   labels: CardLabel
 }
-
 export interface CardLabel {
   pt_br: {
     name: string,
