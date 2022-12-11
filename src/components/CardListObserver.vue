@@ -14,12 +14,14 @@ import CardDataService from "@/services/CardDataService"
 import ObserverComponent from "@/components/ObserverComponent.vue"
 import Alert from "@/components/global/AlertPopup.vue"
 import { Card } from "@/types/Card"
-import { CARD_CONFIG } from "@/constants/CardConstants"
+import { getTableScreenProps } from "@/utils/ScreenUtils"
 import CardJson from "@/assets/json/cards.json"
 
 interface Options { page: number, itemsPerPage: number }
 
-const options = reactive<Options>({ page: 1, itemsPerPage: CARD_CONFIG.ITEMS_PER_PAGE })
+const screen = getTableScreenProps()
+
+const options = reactive<Options>({ page: 1, itemsPerPage: screen.itemsPerPage })
 const alert = ref<InstanceType<typeof Alert> | null>(null)
 
 const getData = (): void => {
