@@ -11,8 +11,8 @@
       }
     },
     "picture": "aa7edaab44e41c14e39531dc2476916e.png",
-    "cadre_perso": null,
-    "cadre_autre": null,
+
+
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -102,8 +102,8 @@
       }
     },
     "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
-    "cadre_perso": null,
-    "cadre_autre": null,
+
+
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -193,8 +193,8 @@
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
-    "cadre_perso": null,
-    "cadre_autre": null,
+
+
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -284,8 +284,8 @@
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-    "cadre_perso": null,
-    "cadre_autre": null,
+
+
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -407,8 +407,8 @@
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
-    "cadre_perso": null,
-    "cadre_autre": null,
+
+
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -430,7 +430,7 @@
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-    "cadre_perso": null,
+
     "cadre_autre": "164850d71b535b80442d632d74a254b6.png",
     "couleur_texte": "",
     "couleur_fond_perso": "",
@@ -593,7 +593,7 @@
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
     "cadre_perso": "91bbe68aaab12c6750b78b9830ee2da6.png",
-    "cadre_autre": null,
+
     "couleur_texte": "#000000",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -636,7 +636,7 @@
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
     "cadre_perso": "da72c55563adb8844bb7b461d43ef386.png",
-    "cadre_autre": null,
+
     "couleur_texte": "#ffffff",
     "couleur_fond_perso": "#11441e",
     "icones_par_serie": []
@@ -725,7 +725,7 @@
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-    "cadre_perso": null,
+
     "cadre_autre": "580eb70b06007a5a5daf5aa6291bbf8c.png",
     "couleur_texte": "#000000",
     "couleur_fond_perso": "",
@@ -744,7 +744,7 @@
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
     "cadre_perso": "507c6e907d42f439b5f62ad30d3836de.png",
-    "cadre_autre": null,
+
     "couleur_texte": "#ffffff",
     "couleur_fond_perso": "#2b414f",
     "icones_par_serie": []

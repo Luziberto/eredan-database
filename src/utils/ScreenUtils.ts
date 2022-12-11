@@ -1,4 +1,4 @@
-import { TABLE_CONFIG } from "@/constants/CardConstants"
+import { TABLE_CONFIG } from "@/constants/TableConstants"
 import { SCREEN_SIZE } from "@/constants/ScreenConstants"
 
 interface TableScreenProps {

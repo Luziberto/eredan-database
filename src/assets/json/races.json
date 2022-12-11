@@ -5,7 +5,7 @@
     "picture": "483c073b7343e496eaa25fba082f71d6.png",
     "labels": {
       "en_us": {
-        "nom": "Dais"
+        "name": "Dais"
       },
       "pt_br": {
         "name": "Dais"
@@ -19,7 +19,7 @@
     "picture": "4b00fff59335948b8c6d8fdcad810801.png",
     "labels": {
       "en_us": {
-        "nom": "Elfine"
+        "name": "Elfine"
       },
       "pt_br": {
         "name": "Elfine"
@@ -33,7 +33,7 @@
     "picture": "152855ae321d645b01f9abbabb560032.png",
     "labels": {
       "en_us": {
-        "nom": "Hom'Chai"
+        "name": "Hom'Chai"
       },
       "pt_br": {
         "name": "Hom'chai"
@@ -47,7 +47,7 @@
     "picture": "b8fd7156eb2accbe248edb830e51a31a.png",
     "labels": {
       "en_us": {
-        "nom": "Human"
+        "name": "Human"
       },
       "pt_br": {
         "name": "Humano"
@@ -61,7 +61,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Guemelite"
+        "name": "Guemelite"
       },
       "pt_br": {
         "name": "Guemelite"
@@ -75,7 +75,7 @@
     "picture": "39440e8aafd7141e552e7e749b6f9434.png",
     "labels": {
       "en_us": {
-        "nom": "Unknown"
+        "name": "Unknown"
       },
       "pt_br": {
         "name": "Desconhecido"
@@ -89,7 +89,7 @@
     "picture": "823d4e6b6bcbe3faaded772e983aad99.png",
     "labels": {
       "en_us": {
-        "nom": "Solarian"
+        "name": "Solarian"
       },
       "pt_br": {
         "name": "Solariano"
@@ -103,7 +103,7 @@
     "picture": "e547a92251e2cae83e3a471fbbc17aad.png",
     "labels": {
       "en_us": {
-        "nom": "Golem"
+        "name": "Golem"
       },
       "pt_br": {
         "name": "Golem"
@@ -117,7 +117,7 @@
     "picture": "bc76cea60a2b788a609071bdd2e90108.png",
     "labels": {
       "en_us": {
-        "nom": "Beast"
+        "name": "Beast"
       },
       "pt_br": {
         "name": "Fera"
@@ -131,7 +131,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Air Guemelite "
+        "name": "Air Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Ar"
@@ -145,7 +145,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Water Guemelite "
+        "name": "Water Guemelite "
       },
       "pt_br": {
         "name": "Guemelite \u00c1gua"
@@ -159,7 +159,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Earth Guemelite "
+        "name": "Earth Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Terra"
@@ -173,7 +173,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Nature Guemelite "
+        "name": "Nature Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Natureza"
@@ -187,7 +187,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Fire Guemelite "
+        "name": "Fire Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Fogo"
@@ -201,7 +201,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Time Guemelite "
+        "name": "Time Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Tempo"
@@ -215,7 +215,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Shadow Guemelite "
+        "name": "Shadow Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Sombra"
@@ -229,7 +229,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Ghost Guemelite "
+        "name": "Ghost Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Fantasma"
@@ -243,7 +243,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Guem Guemelite"
+        "name": "Guem Guemelite"
       },
       "pt_br": {
         "name": "Guemelite Guem"
@@ -257,7 +257,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "War Guemelite "
+        "name": "War Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Guerra"
@@ -271,7 +271,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Dragon Guemelite "
+        "name": "Dragon Guemelite "
       },
       "pt_br": {
         "name": "Guemelite Drag\u00e3o"
@@ -285,7 +285,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Lightning Guemelite "
+        "name": "Lightning Guemelite "
       },
       "pt_br": {
         "name": "Guemelite do Trov\u00e3o"
@@ -299,7 +299,7 @@
     "picture": "0da168c6ff621b0692cd508c06ad0d95.png",
     "labels": {
       "en_us": {
-        "nom": "Undead"
+        "name": "Undead"
       },
       "pt_br": {
         "name": "Morto-Vivo"
@@ -313,7 +313,7 @@
     "picture": "9278d654a93371f8ce51d69d5d2403b5.png",
     "labels": {
       "en_us": {
-        "nom": "Ice Elf"
+        "name": "Ice Elf"
       },
       "pt_br": {
         "name": "Elfo do Gelo"
@@ -327,7 +327,7 @@
     "picture": "38756aa33295294c290508b39d0ff7f2.png",
     "labels": {
       "en_us": {
-        "nom": "Demon"
+        "name": "Demon"
       },
       "pt_br": {
         "name": "Dem\u00f4nio"
@@ -341,7 +341,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Nehant Guemelite"
+        "name": "Nehant Guemelite"
       },
       "pt_br": {
         "name": "Guemelite Ne\u00e2ntico"
@@ -355,7 +355,7 @@
     "picture": "913a4a78fc412e2f7109ca8a0cb2afc8.png",
     "labels": {
       "en_us": {
-        "nom": "Mental Guemelite"
+        "name": "Mental Guemelite"
       },
       "pt_br": {
         "name": "Guemelite Mental"
@@ -369,7 +369,7 @@
     "picture": "f29a6246fcb3b07b631c1f07737ffe9d.png",
     "labels": {
       "en_us": {
-        "nom": "Eltarite"
+        "name": "Eltarite"
       },
       "pt_br": {
         "name": "Eltarite"

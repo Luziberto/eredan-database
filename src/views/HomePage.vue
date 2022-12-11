@@ -55,7 +55,7 @@
       @open-modal="toggleModal"
       @close-modal="toggleModal"
     />
-    <CardDetailsDialog
+    <CardDialog
       v-if="dialog.active"
       :selected-card="selectedCard"
       :orientation="dialog.orientation"
@@ -69,7 +69,7 @@
 import { ref, computed, onMounted, reactive } from "vue"
 import { Card } from "@/types/Card"
 import CardsTable from "@/components/CardsTable.vue"
-import CardDetailsDialog from "@/components/CardDetailsDialog.vue"
+import CardDialog from "@/components/CardDialog.vue"
 import { ALERT_TYPES } from "@/constants/AlertConstants"
 import Alert from "@/components/global/AlertPopup.vue"
 import LocaleButton from "@/components/global/LocaleButton.vue"
@@ -106,6 +106,10 @@ const searchCards = () => {
     return
   }
   delay(async function () {
+    if (search.value.length === 0) {
+      return
+    }
+
     await CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION).then(response => {
       cardsTable.value?.refreshCards(response, false)
     })

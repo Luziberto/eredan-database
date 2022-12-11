@@ -58,7 +58,6 @@ import { reactive, ref } from "vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { Orientation } from "@/constants/OrientationConstants"
-import { TABLE_CONFIG } from "@/constants/CardConstants"
 
 const cards = reactive<Card[]>([])
 const activeInfiniteScroll = ref<boolean>(true)

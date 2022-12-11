@@ -4,7 +4,7 @@
     "script_slug": "noz",
     "labels": {
       "en_us": {
-        "nom": "Noz'Dingard Envoys",
+        "name": "Noz'Dingard Envoys",
         "description": "Powerful magicians devoted to Dragon. "
       },
       "pt_br": {
@@ -20,7 +20,7 @@
     "script_slug": "zil",
     "labels": {
       "en_us": {
-        "nom": "Zil Warriors",
+        "name": "Zil Warriors",
         "description": "The masters of shadow and other kinds of swindlers are part of the psychedelic circus"
       },
       "pt_br": {
@@ -36,7 +36,7 @@
     "script_slug": "kotoba",
     "labels": {
       "en_us": {
-        "nom": "Kotoba",
+        "name": "Kotoba",
         "description": "Proud warriors from the Empire of Xzia who pursue honor"
       },
       "pt_br": {
@@ -52,7 +52,7 @@
     "script_slug": "coeur_de_seve",
     "labels": {
       "en_us": {
-        "nom": "Sap Heart",
+        "name": "Sap Heart",
         "description": "Children of the World-Tree who keep the ancestral forest. "
       },
       "pt_br": {
@@ -68,7 +68,7 @@
     "script_slug": "pirates",
     "labels": {
       "en_us": {
-        "nom": "Pirates",
+        "name": "Pirates",
         "description": "Warriors of the air and expert in powder weapons.  "
       },
       "pt_br": {
@@ -84,7 +84,7 @@
     "script_slug": "nameades",
     "labels": {
       "en_us": {
-        "nom": "Desert Nomads",
+        "name": "Desert Nomads",
         "description": "Coming from the four corners of the world, they are the servants of the King of Mineptra. "
       },
       "pt_br": {
@@ -100,7 +100,7 @@
     "script_slug": "non_affilies",
     "labels": {
       "pt_br": {
-        "nom": "Mercenaries",
+        "name": "Mercenaries",
         "description": "Valorous adventurers who offer their services to the highest bidder or to just causes. "
       },
       "en_us": {
@@ -116,7 +116,7 @@
     "script_slug": "nehantistes",
     "labels": {
       "en_us": {
-        "nom": "Nehantists",
+        "name": "Nehantists",
         "description": "The masters of the demons and of will manipulation. "
       },
       "pt_br": {
@@ -132,7 +132,7 @@
     "script_slug": "legion_runique",
     "labels": {
       "en_us": {
-        "nom": "Runic Legion",
+        "name": "Runic Legion",
         "description": "The warriors and servants of the Pantheon of Tantad."
       },
       "pt_br": {
@@ -148,7 +148,7 @@
     "script_slug": "lieurs_de_pierres",
     "labels": {
       "en_us": {
-        "nom": "Stone linkers",
+        "name": "Stone linkers",
         "description": null
       },
       "pt_br": {
