@@ -1,6 +1,11 @@
+export enum ModalType {
+  HOVER = 'HOVER',
+  FIXED = 'FIXED'
+}
+
 export enum Orientation {
-  LEFT = 'left',
-  RIGHT = 'right',
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT'
 }
 
 export const LeftProperties = 'lg:left-1 lg:top-0 lg:bottom-0 lg:translate-y-0 translate-x-0'

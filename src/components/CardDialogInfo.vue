@@ -27,14 +27,19 @@
 
     <div
       v-if="Object.values(card.preReq).flat().length"
-      class="col-span-2 py-2 border-b border-white px-2"
+      class="flex flex-col border-b border-white py-2 text-start"
     >
       <p class="text-center"><b>{{ translate.REQUIREMENTS }}</b></p>
-      <p v-if="card.preReq.classes.length"><b>{{ translate.CLASSE }}:</b> {{ card.preReq.classes.join(', ') }}</p>
-      <p v-if="card.preReq.races.length"><b>{{ translate.RACE }}:</b> {{ card.preReq.races.join(', ') }}</p>
-      <p v-if="card.preReq.castes.length"><b>{{ translate.CASTE }}:</b> {{ card.preReq.castes.join(', ') }}</p>
-      <p v-if="card.preReq.guilds.length"><b>{{ translate.GUILD }}:</b> {{ card.preReq.guilds.join(', ') }}</p>
+      <div class="flex justify-between flex-wrap px-2">
+        <p v-if="card.preReq.classes.length"><b>{{ translate.CLASSE }}:</b> {{ card.preReq.classes.join(', ') }}</p>
+        <p v-if="card.preReq.races.length"><b>{{ translate.RACE }}:</b> {{ card.preReq.races.join(', ') }}</p>
+      </div>
+      <div class="flex justify-between flex-wrap px-2">
+        <p v-if="card.preReq.castes.length"><b>{{ translate.CASTE }}:</b> {{ card.preReq.castes.join(', ') }}</p>
+        <p v-if="card.preReq.guilds.length"><b>{{ translate.GUILD }}:</b> {{ card.preReq.guilds.join(', ') }}</p>
+      </div>
     </div>
+
     <div class="col-span-2 py-2">
       <p class="text-center"><b>{{ translate.DESCRIPTION }}</b></p>
       <!-- eslint-disable vue/no-v-html -->

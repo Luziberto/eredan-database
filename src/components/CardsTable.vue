@@ -12,8 +12,9 @@
               <div class="px-4 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
                 <div
                   class="hidden lg:flex flex-col items-center justify-center"
-                  @mouseenter="openModal(card, $event)"
-                  @mouseleave="closeModal()"
+                  @mouseenter="openModal(card, ModalType.HOVER, $event)"
+                  @mouseleave="closeModal(ModalType.HOVER, $event)"
+                  @click="openModal(card, ModalType.FIXED, $event)"
                 >
                   <img
                     :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${card.filename}.png`"
@@ -22,7 +23,7 @@
                 </div>
                 <div
                   class="flex lg:hidden flex-col items-center justify-center"
-                  @click="openModal(card, $event)"
+                  @click="openModal(card, ModalType.HOVER, $event)"
                 >
                   <img
                     :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${card.filename}.png`"
@@ -57,7 +58,7 @@ import Loading from "@/components/global/LoadingAnimation.vue"
 import { reactive, ref } from "vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
-import { Orientation } from "@/constants/OrientationConstants"
+import { Orientation, ModalType } from "@/constants/ModalConstants"
 
 const cards = reactive<Card[]>([])
 const activeInfiniteScroll = ref<boolean>(true)
@@ -66,21 +67,30 @@ const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
 
 const emit = defineEmits<{
-  (e: "openModal", modalValue: boolean, card: Card, orientation: Orientation): void
-  (e: "closeModal", modalValue: boolean, card: Card): void
+  (e: "openModal", modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation): void
+  (e: "closeModal", modalValue: boolean, card: Card, modalType: ModalType,): void
 }>()
 
-const openModal = (card: Card, e: MouseEvent) => {
+const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
+  console.log('abriu')
   const x = e.clientX
-  const orientation = (window.innerWidth / 2) > x ? Orientation.RIGHT : Orientation.LEFT
+  let orientation = Orientation.RIGHT
+
+  if ((window.innerWidth / 2) > x) {
+    orientation = modalType === ModalType.HOVER ? Orientation.RIGHT : Orientation.LEFT
+  } else {
+    orientation = modalType === ModalType.HOVER ? Orientation.LEFT : Orientation.RIGHT
+  }
 
   setTimeout(() => {
-    emit("openModal", true, card, orientation)
+    emit("openModal", true, card, modalType, orientation)
   }, 100)
 }
 
-const closeModal = () => {
-  emit("closeModal", false, {} as Card)
+const closeModal = (modalType: ModalType, e: MouseEvent) => {
+  if (!(e.relatedTarget as HTMLElement)?.classList?.contains('card-modal')) {
+    emit("closeModal", false, {} as Card, modalType)
+  }
 }
 
 const pushCards = (newCards: Card[]) => {

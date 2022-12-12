@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`dialog ${getOrientationDialogProps(orientation)} overflow-y-auto fixed z-50 bg-red-900 text-white rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:max-w-xl w-3/4 sm:p-6 lg:w-1/5 h-2/3 lg:h-auto`"
+    :class="`card-modal anime dialog ${getOrientationDialogProps(orientation)} overflow-y-auto fixed z-50 bg-red-900 text-white rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:max-w-xl w-3/4 sm:p-6 lg:w-1/5 h-2/3 lg:h-auto`"
   >
     <div class="flex items-center justify-between text-xl font-bold">
       <span class="px-2 flex-1">
@@ -40,7 +40,7 @@
 import { Card, CardLabel } from "@/types/Card"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
-import { Orientation, getOrientationDialogProps } from "@/constants/OrientationConstants"
+import { Orientation, getOrientationDialogProps } from "@/constants/ModalConstants"
 import CardDialogInfo from "@/components/CardDialogInfo.vue"
 
 const localeStore = useLocaleStore()
@@ -65,6 +65,29 @@ const close = () => emit("close")
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.card-modal.anime {
+  animation-name: slide;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  /* animation: slide .3s forwards; */
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(-50%, -50%);
+    opacity: 1;
   }
 }
 </style>
