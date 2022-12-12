@@ -3,11 +3,30 @@ export const GRADE_ADVENTURE = 2
 export const GRADE_CHAMPION = 3
 export const GRADE_GORVERNOR = 4
 
-export const GRADE_LABEL = {
-  [GRADE_NOVICE]: 'Governor',
-  [GRADE_ADVENTURE]: 'Champion',
-  [GRADE_GORVERNOR]: 'Adventure',
-  [GRADE_CHAMPION]: 'Novice',
+export const GRADE_LABEL: GradeLabel = {
+  pt_br: {
+    [GRADE_GORVERNOR]: 'Governador',
+    [GRADE_CHAMPION]: 'Campeão',
+    [GRADE_ADVENTURE]: 'Aventureiro',
+    [GRADE_NOVICE]: 'Iniciante'
+  },
+  en_us: {
+    [GRADE_GORVERNOR]: 'Governor',
+    [GRADE_CHAMPION]: 'Champion',
+    [GRADE_ADVENTURE]: 'Adventure',
+    [GRADE_NOVICE]: 'Novice'
+  }
+}
+
+export interface Grade {
+  [GRADE_GORVERNOR]: string,
+  [GRADE_CHAMPION]: string,
+  [GRADE_ADVENTURE]: string,
+  [GRADE_NOVICE]: string
+}
+export interface GradeLabel {
+  pt_br: Grade,
+  en_us: Grade
 }
 
 export enum GRADE_COLOR {
