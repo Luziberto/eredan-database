@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col bg-gray-300">
+  <div class="flex flex-col">
     <div class="grid grid-flow-row -my-2 overflow-x-auto auto-rows-max">
-      <div class="overflow-hidden border-b border-gray-200 shadow lg:rounded-lg">
-        <div class="min-w-full divide-y divide-gray-200">
-          <div :class="`bg-white divide-y divide-gray-200 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8`">
+      <div class="overflow-hidden lg:rounded-lg">
+        <div class="min-w-full">
+          <div :class="`grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8`">
             <div
               v-for="card in cards"
               :key="`card-${card.id}`"
-              class="flex justify-between cursor-pointer hover:bg-gray-100 col-span-1"
+              class="flex justify-between cursor-pointer hover:opacity-50 col-span-1"
             >
               <div class="px-4 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
                 <div
@@ -29,7 +29,7 @@
                     alt=""
                   >
                   <span
-                    className="w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-gray-900 whitespace-no-wrap truncate"
+                    className="w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
                   >
                     {{ card.labels[translate.LANGUAGE_ABBREVIATION as keyof CardLabel].name }}
                   </span>
@@ -96,3 +96,4 @@ const refreshCards = (newCards: Card[], infiniteScrollState: boolean) => {
 defineExpose({ refreshCards })
 
 </script>
+

@@ -1,16 +1,25 @@
 <template>
   <div class="text-md text-start">
-    <p class="text-center text-sm border-b py-1">{{ card.serie }}</p>
-    <div class="grid grid-cols-2 rounded-md py-2 border-b text-center">
-      <span><b>Raridade:</b> <i>{{ card.rarity }}</i></span>
-      <span v-if="card.classes.length"><b>Classes:</b> <i>{{ card.classes.join(',') }}</i></span>
-      <span v-if="card.races.length"><b>Raças:</b> <i>
-          {{ card.races.join(',')
+    <p class="text-center text-sm border-b border-white py-1">{{ card.serie }}</p>
+    <div class="flex flex-col border-b border-white py-2 text-start">
+      <p class="text-center"><b>{{ translate.TRAIT }}</b></p>
+      <div class="flex justify-between flex-wrap px-2">
+        <span><b>{{ translate.RARITY }}:</b> <i>{{ card.rarity }}</i></span>
+        <span v-if="card.classes.length"><b>{{ translate.CLASSE }}:</b> <i>{{ card.classes.join(', ') }}</i></span>
+      </div>
+      <div class="flex justify-between flex-wrap px-2">
+        <span v-if="card.races.length"><b>{{ translate.RACE }}:</b> <i> {{ card.races.join(', ') }}</i></span>
+        <span><b>{{ translate.TYPE }}:</b> <i>{{ card.type }}</i></span>
+      </div>
+
+      <div class="flex justify-between flex-wrap px-2">
+        <span v-if="card.guilds.length"><b>{{ translate.GUILD }}:</b> <i>{{ card.guilds.join(', ') }}</i></span>
+        <span v-if="(searchFromJson(selectedCard.type_id, TypeJson) as Type).script_slug === TYPE.CHARACTER"><b>{{
+            translate.EVOLUTION
+        }}:
+          </b>
+          <i>{{ GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][card.evolution as keyof Grade]
           }}</i></span>
-      <span><b>Tipo:</b> <i>{{ card.type
-      }}</i></span>
-      <div class="col-span-2">
-        <p v-if="card.guilds.length"><b>Guildas:</b> <i>{{ card.guilds.join(',') }}</i></p>
       </div>
     </div>
 
@@ -18,19 +27,22 @@
 
     <div
       v-if="Object.values(card.preReq).flat().length"
-      class="col-span-2 py-2 border-b"
+      class="col-span-2 py-2 border-b border-white px-2"
     >
-      <p class="text-center"><b>Requisitos</b></p>
-      <p v-if="card.preReq.classes.length">Classe: {{ card.preReq.classes.join(', ') }}</p>
-      <p v-if="card.preReq.races.length">Raça: {{ card.preReq.races.join(', ') }}</p>
-      <p v-if="card.preReq.castes.length">Casta: {{ card.preReq.castes.join(', ') }}</p>
-      <p v-if="card.preReq.guilds.length">Guilda: {{ card.preReq.guilds.join(', ') }}</p>
+      <p class="text-center"><b>{{ translate.REQUIREMENTS }}</b></p>
+      <p v-if="card.preReq.classes.length"><b>{{ translate.CLASSE }}:</b> {{ card.preReq.classes.join(', ') }}</p>
+      <p v-if="card.preReq.races.length"><b>{{ translate.RACE }}:</b> {{ card.preReq.races.join(', ') }}</p>
+      <p v-if="card.preReq.castes.length"><b>{{ translate.CASTE }}:</b> {{ card.preReq.castes.join(', ') }}</p>
+      <p v-if="card.preReq.guilds.length"><b>{{ translate.GUILD }}:</b> {{ card.preReq.guilds.join(', ') }}</p>
     </div>
-    <span class="col-span-2">
-      <p><b>Descrição</b></p>
+    <div class="col-span-2 py-2">
+      <p class="text-center"><b>{{ translate.DESCRIPTION }}</b></p>
       <!-- eslint-disable vue/no-v-html -->
-      <span v-html="card.description"></span>
-    </span>
+      <span
+        class="text-start"
+        v-html="card.description"
+      ></span>
+    </div>
 
   </div>
 </template>
@@ -54,6 +66,8 @@ import CasteJson from "@/assets/json/caste.json"
 import TypeJson from "@/assets/json/types.json"
 import SerieJson from "@/assets/json/series.json"
 import { PRE_REQUIS_TYPE, ASSOCIATIONS } from "@/constants/CardConstants"
+import { GRADE_LABEL, GradeLabel, Grade } from "@/constants/GradeConstants"
+import { TYPE } from "@/constants/TypeConstants"
 import { reactive, onMounted } from "vue"
 
 const localeStore = useLocaleStore()
@@ -68,6 +82,7 @@ interface CardRequeriments {
 
 const card = reactive<{
   rarity: string,
+  evolution: number,
   type: string,
   serie: string,
   description: string,
@@ -77,6 +92,7 @@ const card = reactive<{
   preReq: CardRequeriments
 }>({
   rarity: '',
+  evolution: 0,
   guilds: [],
   type: '',
   serie: '',
@@ -124,7 +140,6 @@ const getJsonByReqType = (type: PRE_REQUIS_TYPE | ASSOCIATIONS): Array<Rarity | 
 }
 
 const getNameFromJson = (id: number, json: Array<Rarity | Classe | Guild | Race | Type | Serie | Caste>): string => {
-  console.log(id)
   return searchFromJson(id, json)?.labels[translate.value.LANGUAGE_ABBREVIATION as keyof Label].name || ''
 }
 
@@ -174,6 +189,7 @@ const getPreReq = (requeriments: Array<CardPrerequis>): CardRequeriments => {
 
 onMounted(() => {
   card.rarity = getNameFromJson(props.selectedCard.rare_id, RarityJson)
+  card.evolution = props.selectedCard.evolution + 1
   card.type = getNameFromJson(props.selectedCard.type_id, TypeJson)
   card.serie = getNameFromJson(props.selectedCard.serie_id, SerieJson)
   card.description = props.selectedCard.labels[translate.value.LANGUAGE_ABBREVIATION as keyof CardLabel].description
