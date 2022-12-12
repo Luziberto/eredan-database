@@ -72,7 +72,6 @@ const emit = defineEmits<{
 }>()
 
 const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
-  console.log('abriu')
   const x = e.clientX
   let orientation = Orientation.RIGHT
 
