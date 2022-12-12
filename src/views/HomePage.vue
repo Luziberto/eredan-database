@@ -2,7 +2,7 @@
   <Alert ref="alert" />
 
   <div class="fixed w-full z-50">
-    <navbar
+    <nav
       id="nav"
       class="flex flex-col lg:flex-row items-center lg:py-5 justify-between h-32 bg-red-700"
     >
@@ -47,7 +47,7 @@
         />
       </div>
 
-    </navbar>
+    </nav>
 
   </div>
   <section class="flex flex-col pt-32">
@@ -63,10 +63,17 @@
     </div>
 
     <CardDialog
-      v-if="dialog.active"
-      :selected-card="selectedCard"
-      :orientation="dialog.orientation"
-      @close="dialog.active = false"
+      v-if="dialogHover.active"
+      :selected-card="selectedHoverCard"
+      :orientation="dialogHover.orientation"
+      @close="dialogHover.active = false"
+    />
+
+    <CardDialog
+      v-if="dialogFixed.active"
+      :selected-card="selectedFixedCard"
+      :orientation="dialogFixed.orientation"
+      @close="dialogFixed.active = false"
     />
   </section>
 </template>
@@ -83,19 +90,27 @@ import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import CardDataService from "@/services/CardDataService"
 import { delay } from "@/utils/Global"
-import { Orientation } from "@/constants/OrientationConstants"
+import { ModalType, Orientation } from "@/constants/ModalConstants"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
 
-const selectedCard = ref<Card>({} as Card)
+const selectedHoverCard = ref<Card>({} as Card)
+const selectedFixedCard = ref<Card>({} as Card)
 
-const dialog = reactive<{
+interface DialogOptions {
   active: boolean,
   orientation: Orientation
-}>({
+}
+
+const dialogHover = reactive<DialogOptions>({
   active: false,
   orientation: Orientation.RIGHT
+})
+
+const dialogFixed = reactive<DialogOptions>({
+  active: false,
+  orientation: Orientation.LEFT
 })
 
 const search = ref<string>("")
@@ -123,10 +138,28 @@ const searchCards = () => {
 
 }
 
-const toggleModal = (modalValue: boolean, card: Card, orientation: Orientation = Orientation.LEFT) => {
-  selectedCard.value = card
-  dialog.active = modalValue
-  dialog.orientation = orientation
+const toggleModal = (modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation = Orientation.LEFT) => {
+
+  if (modalType === ModalType.HOVER) {
+    selectedHoverCard.value = card
+    dialogHover.orientation = orientation
+    if (dialogFixed.active) {
+      if (dialogFixed.orientation === Orientation.LEFT) {
+        dialogHover.orientation = Orientation.RIGHT
+      } else {
+        dialogHover.orientation = Orientation.LEFT
+      }
+    }
+    dialogHover.active = modalValue
+
+
+  } else {
+    selectedFixedCard.value = card
+    dialogFixed.active = modalValue
+    dialogFixed.orientation = orientation
+  }
+
+
 }
 
 onMounted(() => {
