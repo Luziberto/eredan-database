@@ -1,16 +1,9 @@
+import { TranslateContent } from "./Translate"
+
 export interface Guild {
   id: number,
   script_slug: string,
-  labels: {
-    en_us: {
-      name: string,
-      description: string
-    },
-    pt_br: {
-      name: string ,
-      description: string
-    }
-  },
+  labels: TranslateContent,
   picture: string,
   color: string
 }

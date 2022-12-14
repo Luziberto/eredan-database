@@ -1,4 +1,5 @@
 import { PRE_REQUIS_TYPE, ASSOCIATIONS } from "@/constants/CardConstants"
+import { TranslateContent } from "../Translate"
 
 export interface Card {
   id: string,
@@ -36,17 +37,7 @@ export interface Card {
   hasNextEvo: boolean,
   ancestorCards: string,
   descendantCards: string,
-  labels: CardLabel
-}
-export interface CardLabel {
-  pt_br: {
-    name: string,
-    description: string
-  },
-  en_us: {
-    name: string,
-    description: string
-  }
+  labels: TranslateContent
 }
 
 export interface CardPrerequis {
@@ -59,4 +50,15 @@ export interface CardPrerequis {
 export interface CardAssociations {
   type_association: ASSOCIATIONS,
   associe_id: number
+}
+
+export interface CardFilters {
+  rarity: number | string,
+  evolution: number | string,
+  type: number | string,
+  serie: number | string,
+  guild: number | string,
+  race: number | string,
+  classe: number | string,
+  caste: number | string
 }

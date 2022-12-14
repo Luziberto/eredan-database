@@ -1,3 +1,5 @@
+import { TranslateContent } from "./Translate"
+
 export interface Rarity {
     id: number,
     ordre: number,
@@ -6,15 +8,8 @@ export interface Rarity {
     cadre_autre?: string,
     couleur_texte: string,
     couleur_fond_perso: string,
-    icones_par_serie: iconsPerSerie[],
-    labels: {
-      en_us: {
-      name: string
-    },
-    pt_br: {
-      name: string
-    }
-  }
+    icones_par_serie: iconsPerSerie[]
+    labels: TranslateContent,
 }
 
 export interface iconsPerSerie {

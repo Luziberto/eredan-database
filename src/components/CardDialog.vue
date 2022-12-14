@@ -4,7 +4,7 @@
   >
     <div class="flex items-center justify-between text-xl font-bold">
       <span class="px-2 flex-1">
-        {{ selectedCard.labels[translate.LANGUAGE_ABBREVIATION as keyof CardLabel].name }}
+        {{ selectedCard.labels[translate.LANGUAGE_ABBREVIATION as keyof TranslateContent].name }}
       </span>
       <button
         class="fill-current h-5 w-5 font-3xl font-bold"
@@ -37,11 +37,12 @@
 </template>
 
 <script lang="ts" setup>
-import { Card, CardLabel } from "@/types/Card"
+import { Card } from "@/types/Card"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { Orientation, getOrientationDialogProps } from "@/constants/ModalConstants"
 import CardDialogInfo from "@/components/CardDialogInfo.vue"
+import { TranslateContent } from "@/types/Translate"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)

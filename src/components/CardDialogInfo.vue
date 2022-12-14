@@ -22,9 +22,6 @@
           }}</i></span>
       </div>
     </div>
-
-
-
     <div
       v-if="Object.values(card.preReq).flat().length"
       class="flex flex-col border-b border-white py-2 text-start"
@@ -53,7 +50,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Card, CardAssociations, CardLabel, CardPrerequis } from "@/types/Card"
+import { Card, CardAssociations, CardPrerequis } from "@/types/Card"
 import { Rarity } from "@/types/Rarity"
 import { Classe } from "@/types/Classe"
 import { Guild } from "@/types/Guild"
@@ -74,6 +71,7 @@ import { PRE_REQUIS_TYPE, ASSOCIATIONS } from "@/constants/CardConstants"
 import { GRADE_LABEL, GradeLabel, Grade } from "@/constants/GradeConstants"
 import { TYPE } from "@/constants/TypeConstants"
 import { reactive, onMounted } from "vue"
+import { TranslateContent } from "@/types/Translate"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -116,14 +114,6 @@ const props = defineProps<{
   selectedCard: Card
 }>()
 
-interface Label {
-  pt_br: {
-    name: string
-  },
-  en_us: {
-    name: string
-  }
-}
 
 const searchFromJson = (id: number, jsonFile: Array<Rarity | Classe | Guild | Race | Type | Serie | Caste>): Rarity | Classe | Guild | Race | Type | Serie | Caste | undefined => {
   const item = jsonFile.find((item: Rarity | Classe | Guild | Race | Type | Serie | Caste) => {
@@ -145,7 +135,7 @@ const getJsonByReqType = (type: PRE_REQUIS_TYPE | ASSOCIATIONS): Array<Rarity | 
 }
 
 const getNameFromJson = (id: number, json: Array<Rarity | Classe | Guild | Race | Type | Serie | Caste>): string => {
-  return searchFromJson(id, json)?.labels[translate.value.LANGUAGE_ABBREVIATION as keyof Label].name || ''
+  return searchFromJson(id, json)?.labels[translate.value.LANGUAGE_ABBREVIATION as keyof TranslateContent].name || ''
 }
 
 const getAssociationsByType = (associations: Array<CardAssociations>, type: ASSOCIATIONS, json: Array<Guild | Race | Classe | Caste>): Array<string> => {
@@ -197,7 +187,7 @@ onMounted(() => {
   card.evolution = props.selectedCard.evolution + 1
   card.type = getNameFromJson(props.selectedCard.type_id, TypeJson)
   card.serie = getNameFromJson(props.selectedCard.serie_id, SerieJson)
-  card.description = props.selectedCard.labels[translate.value.LANGUAGE_ABBREVIATION as keyof CardLabel].description
+  card.description = props.selectedCard.labels[translate.value.LANGUAGE_ABBREVIATION as keyof TranslateContent].description || ''
   card.guilds = getAssociationsByType(props.selectedCard.associations, ASSOCIATIONS.GUILD, GuildJson)
   card.races = getAssociationsByType(props.selectedCard.associations, ASSOCIATIONS.RACE, RaceJson)
   card.classes = getAssociationsByType(props.selectedCard.associations, ASSOCIATIONS.CLASSE, ClasseJson)

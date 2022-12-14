@@ -12,9 +12,9 @@
               <div class="px-4 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
                 <div
                   class="hidden lg:flex flex-col items-center justify-center"
-                  @mouseenter="openModal(card, ModalType.HOVER, $event)"
+                  @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                   @mouseleave="closeModal(ModalType.HOVER, $event)"
-                  @click="openModal(card, ModalType.FIXED, $event)"
+                  @click="openModal(card, ModalType.FIXED, $event); clickSound.play()"
                 >
                   <img
                     :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${card.filename}.png`"
@@ -32,7 +32,7 @@
                   <span
                     className="w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
                   >
-                    {{ card.labels[translate.LANGUAGE_ABBREVIATION as keyof CardLabel].name }}
+                    {{ card.labels[translate.LANGUAGE_ABBREVIATION as keyof TranslateContent].name }}
                   </span>
                 </div>
               </div>
@@ -52,13 +52,14 @@
 
 <script lang="ts" setup>
 
-import { Card, CardLabel } from "@/types/Card"
+import { Card } from "@/types/Card"
 import CardListObserver from "@/components/CardListObserver.vue"
 import Loading from "@/components/global/LoadingAnimation.vue"
 import { reactive, ref } from "vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { Orientation, ModalType } from "@/constants/ModalConstants"
+import { TranslateContent } from "@/types/Translate"
 
 const cards = reactive<Card[]>([])
 const activeInfiniteScroll = ref<boolean>(true)
@@ -69,6 +70,7 @@ const { translate } = storeToRefs(localeStore)
 const emit = defineEmits<{
   (e: "openModal", modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation): void
   (e: "closeModal", modalValue: boolean, card: Card, modalType: ModalType,): void
+  (e: "refreshCardCount", cardCount: number): void
 }>()
 
 const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
@@ -94,6 +96,7 @@ const closeModal = (modalType: ModalType, e: MouseEvent) => {
 
 const pushCards = (newCards: Card[]) => {
   cards.push(...newCards)
+  emit("refreshCardCount", cards.length)
 }
 
 const refreshCards = (newCards: Card[], infiniteScrollState: boolean) => {
@@ -101,6 +104,8 @@ const refreshCards = (newCards: Card[], infiniteScrollState: boolean) => {
   activeInfiniteScroll.value = infiniteScrollState
   pushCards(newCards)
 }
+const hoverSound = new Audio("http://static.eredan.com/sounds/general/survol_carte.mp3")
+const clickSound = new Audio("http://static.eredan.com/sounds/dock_menu/dock_clic.mp3")
 
 defineExpose({ refreshCards })
 

@@ -15,6 +15,8 @@ export interface Translate {
   CASTE: string,
   TRAIT: string,
   REQUIREMENTS: string,
+  ALL: string,
+  RESULTS: string,
 }
 
 export enum PT_BR_TRANSLATE {
@@ -31,7 +33,9 @@ export enum PT_BR_TRANSLATE {
   CLASSE = "Classe",
   CASTE = "Caste",
   TRAIT = "Características",
-  REQUIREMENTS = "Requerimentos"
+  REQUIREMENTS = "Requerimentos",
+  ALL = "Todos",
+  RESULTS = "Resultados"
 }
 
 export enum EN_US_TRANSLATE {
@@ -48,7 +52,9 @@ export enum EN_US_TRANSLATE {
   CLASSE = "Classe",
   CASTE = "Casta",
   TRAIT = "Trait",
-  REQUIREMENTS = "Requirements"
+  REQUIREMENTS = "Requirements",
+  ALL = "All",
+  RESULTS = "Results"
 }
 
 export function getTranslate(locale: string) : Translate {
