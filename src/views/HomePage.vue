@@ -6,7 +6,7 @@
     class="fixed w-full h-48 z-10"
   >
     <div class="flex flex-col lg:py-5 bg-red-700 relative">
-      <div class="absolute right-0 bottom-0 p-2">
+      <div class="absolute right-0 top-0 p-2">
         <span class="text-right text-white text-md font-bold">{{ translate.RESULTS }}: {{ qttCards }} </span>
       </div>
       <div class="flex flex-col lg:flex-row justify-between">
