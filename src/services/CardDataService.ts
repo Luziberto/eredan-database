@@ -17,9 +17,8 @@ class CardDataService {
           this.filterCards(card, filters)
       })
       const totalItems = cards.length
-      console.log(`${(page - 1) * itemsPerPage}, ${(page * itemsPerPage - 1)}`)
       resolve({
-        cards: cards.slice((page - 1) * itemsPerPage, page * itemsPerPage - 1),
+        cards: cards.slice((page - 1) * itemsPerPage, page * itemsPerPage),
         totalItems,
         totalPages: Math.ceil(totalItems / itemsPerPage)
       })

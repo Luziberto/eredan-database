@@ -7,14 +7,17 @@
   >
     <div class="flex flex-col lg:py-5 bg-red-700 relative">
       <div class="absolute left-0 top-0 p-2">
-        <div class="text-left">
-          <span class="text-right text-white text-sm font-bold">{{ translate.RESULTS }}: {{ paginateOptions.totalItems
+        <div class="text-left leading-3">
+          <span class="text-right text-white text-xs lg:text-sm font-bold">{{ translate.RESULTS }}: {{
+              paginateOptions.totalItems
           }} </span><br />
-          <span class="text-right text-white text-sm font-bold">{{ translate.TOTAL_PAGES }}: {{
+          <span class="text-right text-white text-xs lg:text-sm font-bold">{{ translate.TOTAL_PAGES }}: {{
               paginateOptions.totalPages
           }}
           </span><br />
-          <span class="text-right text-white text-sm font-bold">{{ translate.CURRENT_PAGE }}: {{ paginateOptions.page }}
+          <span class="text-right text-white text-xs lg:text-sm font-bold">{{ translate.CURRENT_PAGE }}: {{
+              paginateOptions.page
+          }}
           </span><br />
         </div>
 
@@ -244,7 +247,6 @@ const updateFilters = (filters: CardFilters) => {
   Object.entries(filters).forEach(([index, value]) => {
     activeFilters[index as keyof CardFilters] = value
   })
-  console.log(filters)
 }
 
 onMounted(() => {

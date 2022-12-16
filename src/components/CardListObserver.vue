@@ -1,7 +1,10 @@
 <template>
   <div>
     <Alert ref="alert" />
-    <ObserverComponent @intersect="getData" />
+    <ObserverComponent
+      class="h-1"
+      @intersect="getData"
+    />
   </div>
 </template>
 

@@ -7,23 +7,23 @@ interface TableScreenProps {
 }
 
 export const getTableScreenProps = (): TableScreenProps => {
-  if (window.matchMedia(`(max-width: ${SCREEN_SIZE.SM}px)`).matches) {
+  if (window.matchMedia(`(max-width: ${SCREEN_SIZE.SM})`).matches) {
     return {
       itemsPerPage: TABLE_CONFIG.ITEMS_PER_PAGE_SM,
       itemPerLine: TABLE_CONFIG.ITEMS_PER_LINE_SM
     }
   }
-  else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.MD}px)`).matches) {
+  else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.MD})`).matches) {
     return {
       itemsPerPage: TABLE_CONFIG.ITEMS_PER_PAGE_MD,
       itemPerLine: TABLE_CONFIG.ITEMS_PER_LINE_MD
     }
-  } else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.LG}px)`).matches) {
+  } else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.LG})`).matches) {
     return {
       itemsPerPage: TABLE_CONFIG.ITEMS_PER_PAGE_LG,
       itemPerLine: TABLE_CONFIG.ITEMS_PER_LINE_LG
     }
-  } else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.XL}px)`).matches) {
+  } else if (window.matchMedia(`(max-width: ${SCREEN_SIZE.XL})`).matches) {
     return {
       itemsPerPage: TABLE_CONFIG.ITEMS_PER_PAGE_XL,
       itemPerLine: TABLE_CONFIG.ITEMS_PER_LINE_XL

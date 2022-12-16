@@ -3,7 +3,7 @@
     <div class="grid grid-flow-row -my-2 overflow-x-auto auto-rows-max">
       <div class="overflow-hidden lg:rounded-lg">
         <div class="min-w-full">
-          <div :class="`grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8`">
+          <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12">
             <div
               v-for="card in cards"
               :key="`card-${card.id}`"
@@ -37,12 +37,12 @@
                 </div>
               </div>
             </div>
+            <CardListObserver
+              ref="cardListObserver"
+              :filters="filters"
+              @more-data="refreshCards"
+            />
           </div>
-          <CardListObserver
-            :filters="filters"
-            @more-data="refreshCards"
-            ref="cardListObserver"
-          />
         </div>
       </div>
     </div>

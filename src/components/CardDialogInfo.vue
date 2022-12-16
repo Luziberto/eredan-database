@@ -4,16 +4,22 @@
     <div class="flex flex-col border-b border-white py-2 text-start">
       <p class="text-center"><b>{{ translate.TRAIT }}</b></p>
       <div class="flex justify-between flex-wrap px-2">
-        <span><b>{{ translate.RARITY }}:</b> <i>{{ card.rarity }}</i></span>
+        <span class="pr-1"><b>{{ translate.RARITY }}:</b> <i>{{ card.rarity }}</i></span>
         <span v-if="card.classes.length"><b>{{ translate.CLASSE }}:</b> <i>{{ card.classes.join(', ') }}</i></span>
       </div>
       <div class="flex justify-between flex-wrap px-2">
-        <span v-if="card.races.length"><b>{{ translate.RACE }}:</b> <i> {{ card.races.join(', ') }}</i></span>
+        <span
+          v-if="card.races.length"
+          class="pr-1"
+        ><b>{{ translate.RACE }}:</b> <i> {{ card.races.join(', ') }}</i></span>
         <span><b>{{ translate.TYPE }}:</b> <i>{{ card.type }}</i></span>
       </div>
 
       <div class="flex justify-between flex-wrap px-2">
-        <span v-if="card.guilds.length"><b>{{ translate.GUILD }}:</b> <i>{{ card.guilds.join(', ') }}</i></span>
+        <span
+          v-if="card.guilds.length"
+          class="pr-1"
+        ><b>{{ translate.GUILD }}:</b> <i>{{ card.guilds.join(', ') }}</i></span>
         <span v-if="(searchFromJson(selectedCard.type_id, TypeJson) as Type).script_slug === TYPE.CHARACTER"><b>{{
             translate.EVOLUTION
         }}:
@@ -70,7 +76,7 @@ import SerieJson from "@/assets/json/series.json"
 import { PRE_REQUIS_TYPE, ASSOCIATIONS } from "@/constants/CardConstants"
 import { GRADE_LABEL, GradeLabel, Grade } from "@/constants/GradeConstants"
 import { TYPE } from "@/constants/TypeConstants"
-import { reactive, onMounted } from "vue"
+import { reactive, watchEffect } from "vue"
 import { TranslateContent } from "@/types/Translate"
 
 const localeStore = useLocaleStore()
@@ -181,8 +187,7 @@ const getPreReq = (requeriments: Array<CardPrerequis>): CardRequeriments => {
   return requerimentResults
 }
 
-
-onMounted(() => {
+watchEffect(() => {
   card.rarity = getNameFromJson(props.selectedCard.rare_id, RarityJson)
   card.evolution = props.selectedCard.evolution + 1
   card.type = getNameFromJson(props.selectedCard.type_id, TypeJson)
