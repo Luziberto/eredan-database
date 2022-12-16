@@ -2,6 +2,16 @@
   <router-view />
 </template>
 
+<script lang="ts" setup>
+import { onMounted } from "vue";
+import { event } from "vue-gtag"
+
+onMounted(() => {
+  event("visit", { method: "Google" })
+})
+
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -11,3 +21,4 @@
   color: #2c3e50;
 }
 </style>
+
