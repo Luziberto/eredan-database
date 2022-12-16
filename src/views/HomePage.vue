@@ -57,7 +57,7 @@
           />
         </div>
 
-        <div class="flex overflow-clip lg:w-1/3 justify-center lg:justify-end items-center pb-3 lg:m-2">
+        <div class="flex overflow-clip lg:w-1/3 justify-center lg:justify-end items-center pb-3 m-2">
           <div class="pb-2">
             <label
               for="search"
@@ -78,13 +78,14 @@
           </div>
         </div>
       </div>
-
       <div
+        id="dropdown"
         ref="dropdown"
-        class="flex justify-around dropdown flex-wrap lg:flex-nowrap"
+        class="dropdown"
       >
         <TableFilters @update-filters="updateFilters" />
       </div>
+
 
       <div
         class="absolute z-20"
@@ -259,6 +260,12 @@ onMounted(() => {
     }).catch((e) => e)
   }, 1000)
 
+  const dropdown = document?.getElementById("dropdown")
+  if (dropdown) {
+    dropdown.style.setProperty("--calc-height", `${(dropdown.clientHeight + 5).toString()}px`)
+    dropdown.style.setProperty("--initial-height", "0px")
+  }
+
 })
 
 </script>
@@ -272,19 +279,12 @@ onMounted(() => {
 
 
 .dropdown.dropdown-animate-visible {
-  height: 3.5rem;
+  height: var(--calc-height);
   transition: height 0.5s;
 }
 
-@media screen and (max-width: 640px) {
-  .dropdown.dropdown-animate-visible {
-    height: calc(65vh);
-    transition: height 0.5s;
-  }
-}
-
 .dropdown {
-  height: 0px;
+  height: var(--initial-height);
   overflow: hidden;
   transition: height 0.5s;
 }

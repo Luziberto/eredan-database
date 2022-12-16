@@ -1,69 +1,72 @@
 <template>
-  <SelectInput
-    v-model="filterValues.classe"
-    class="w-full px-2"
-    :title="translate.CLASSE"
-    :list="formatItems(ClasseJson)"
-  />
-  <SelectInput
-    v-model="filterValues.guild"
-    class="w-full px-2"
-    :title="translate.GUILD"
-    :list="formatItems(GuildJson)"
-  />
-  <SelectInput
-    v-model="filterValues.race"
-    class="w-full px-2"
-    :title="translate.RACE"
-    :list="formatItems(RaceJson)"
-  />
-  <SelectInput
-    v-model="filterValues.type"
-    class="w-full px-2"
-    :title="translate.TYPE"
-    :list="formatItems(TypeJson)"
-  />
-  <SelectInput
-    v-model="filterValues.rarity"
-    class="w-full px-2"
-    :title="translate.RARITY"
-    :list="formatItems(RarityJson)"
-  />
-  <SelectInput
-    v-model="filterValues.caste"
-    class="w-full px-2"
-    :title="translate.CASTE"
-    :list="formatItems(CasteJson)"
-  />
-  <SelectInput
-    v-model="filterValues.serie"
-    class="w-full px-2"
-    :title="translate.SERIE"
-    :list="formatItems(SerieJson)"
-  />
-  <SelectInput
-    v-model="filterValues.evolution"
-    class="w-full px-2"
-    :title="translate.EVOLUTION"
-    :list="[
-      {
-        id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_NOVICE as keyof Grade],
-        name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_NOVICE as keyof Grade]
-      },
-      {
-        id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_ADVENTURE as keyof Grade],
-        name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_ADVENTURE as keyof Grade]
-      },
-      {
-        id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_CHAMPION as keyof Grade],
-        name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_CHAMPION as keyof Grade]
-      },
-      {
-        id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_GORVERNOR as keyof Grade],
-        name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_GORVERNOR as keyof Grade]
-      }
-    ]"
-  />
+  <div class="flex flex-wrap pb-2 lg:pb-0">
+    <SelectInput
+      v-model="filterValues.classe"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.CLASSE"
+      :list="formatItems(ClasseJson)"
+    />
+    <SelectInput
+      v-model="filterValues.guild"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.GUILD"
+      :list="formatItems(GuildJson)"
+    />
+    <SelectInput
+      v-model="filterValues.race"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.RACE"
+      :list="formatItems(RaceJson)"
+    />
+    <SelectInput
+      v-model="filterValues.type"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.TYPE"
+      :list="formatItems(TypeJson)"
+    />
+    <SelectInput
+      v-model="filterValues.rarity"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.RARITY"
+      :list="formatItems(RarityJson)"
+    />
+    <SelectInput
+      v-model="filterValues.caste"
+      class="flex-1 px-2 pb-2 lg:pb-0"
+      :title="translate.CASTE"
+      :list="formatItems(CasteJson)"
+    />
+    <SelectInput
+      v-model="filterValues.serie"
+      class="flex-1 shrink-0 px-2 pb-2 lg:pb-0"
+      :title="translate.SERIE"
+      :list="formatItems(SerieJson)"
+    />
+    <SelectInput
+      v-model="filterValues.evolution"
+      class="flex-1 px-2 pb-2 lg:pb-0 "
+      :title="translate.EVOLUTION"
+      :list="[
+        {
+          id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_NOVICE as keyof Grade],
+          name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_NOVICE as keyof Grade]
+        },
+        {
+          id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_ADVENTURE as keyof Grade],
+          name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_ADVENTURE as keyof Grade]
+        },
+        {
+          id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_CHAMPION as keyof Grade],
+          name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_CHAMPION as keyof Grade]
+        },
+        {
+          id: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_GORVERNOR as keyof Grade],
+          name: GRADE_LABEL[translate.LANGUAGE_ABBREVIATION as keyof GradeLabel][GRADE_GORVERNOR as keyof Grade]
+        }
+      ]"
+    />
+  </div>
+
 
 
 </template>
