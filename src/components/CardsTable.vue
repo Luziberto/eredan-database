@@ -17,7 +17,7 @@
                   @click="openModal(card, ModalType.FIXED, $event); clickSound.play()"
                 >
                   <img
-                    :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${card.filename}.png`"
+                    :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     alt=""
                   >
                 </div>
@@ -26,7 +26,7 @@
                   @click="openModal(card, ModalType.HOVER, $event)"
                 >
                   <img
-                    :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${card.filename}.png`"
+                    :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     alt=""
                   >
                   <span
@@ -39,11 +39,10 @@
             </div>
           </div>
           <CardListObserver
-            v-if="activeInfiniteScroll"
-            @more-data="pushCards"
-            @finish-data="activeInfiniteScroll = false"
+            :filters="filters"
+            @more-data="refreshCards"
+            ref="cardListObserver"
           />
-          <Loading v-show="activeInfiniteScroll" />
         </div>
       </div>
     </div>
@@ -52,26 +51,31 @@
 
 <script lang="ts" setup>
 
-import { Card } from "@/types/Card"
+import { Card, CardFilters } from "@/types/Card"
+import PaginationOptions from "@/types/PaginationOptions"
 import CardListObserver from "@/components/CardListObserver.vue"
-import Loading from "@/components/global/LoadingAnimation.vue"
-import { reactive, ref } from "vue"
+import { reactive, ref, watch } from "vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { Orientation, ModalType } from "@/constants/ModalConstants"
 import { TranslateContent } from "@/types/Translate"
 
-const cards = reactive<Card[]>([])
-const activeInfiniteScroll = ref<boolean>(true)
-
-const localeStore = useLocaleStore()
-const { translate } = storeToRefs(localeStore)
+const props = defineProps<{
+  filters: CardFilters
+}>()
 
 const emit = defineEmits<{
   (e: "openModal", modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation): void
   (e: "closeModal", modalValue: boolean, card: Card, modalType: ModalType,): void
-  (e: "refreshCardCount", cardCount: number): void
+  (e: "refreshOptions", options: PaginationOptions): void
 }>()
+
+const cards = reactive<Card[]>([])
+const cardListObserver = ref<InstanceType<typeof CardListObserver> | null>(null)
+
+const localeStore = useLocaleStore()
+const { translate } = storeToRefs(localeStore)
+
 
 const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
   const x = e.clientX
@@ -96,14 +100,21 @@ const closeModal = (modalType: ModalType, e: MouseEvent) => {
 
 const pushCards = (newCards: Card[]) => {
   cards.push(...newCards)
-  emit("refreshCardCount", cards.length)
 }
 
-const refreshCards = (newCards: Card[], infiniteScrollState: boolean) => {
-  cards.splice(0, cards.length)
-  activeInfiniteScroll.value = infiniteScrollState
+const refreshCards = (newCards: Card[], options: PaginationOptions) => {
+  // cards.splice(0, cards.length)
+  // activeInfiniteScroll.value = infiniteScrollState
   pushCards(newCards)
+  emit("refreshOptions", options)
 }
+
+watch(() => props.filters, () => {
+  cards.splice(0, cards.length)
+
+}, { deep: true })
+
+
 const hoverSound = new Audio("http://static.eredan.com/sounds/general/survol_carte.mp3")
 const clickSound = new Audio("http://static.eredan.com/sounds/dock_menu/dock_clic.mp3")
 

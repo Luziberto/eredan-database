@@ -88,7 +88,7 @@ import { Guild } from "@/types/Guild"
 import { Grade, GradeLabel, GRADE_NOVICE, GRADE_LABEL, GRADE_ADVENTURE, GRADE_CHAMPION, GRADE_GORVERNOR } from "@/constants/GradeConstants"
 import CasteJson from "@/assets/json/caste.json"
 import SerieJson from "@/assets/json/series.json"
-import { reactive, watchEffect } from "vue"
+import { reactive, watchEffect, onMounted } from "vue"
 import { CardFilters } from "@/types/Card"
 
 const localeStore = useLocaleStore()
@@ -100,7 +100,7 @@ interface SelectParams {
 }
 
 const emit = defineEmits<{
-  (e: "filters", filters: CardFilters): void
+  (e: "updateFilters", filters: CardFilters): void
 }>()
 
 const filterValues = reactive<CardFilters>({
@@ -114,12 +114,6 @@ const filterValues = reactive<CardFilters>({
   caste: ""
 })
 
-watchEffect(() => {
-  if (Object.values(filterValues).some((filter) => filter)) {
-    emit("filters", filterValues)
-  }
-})
-
 const formatItems = (items: Array<Classe | Guild | Rarity | Race | Type | Serie | Caste>): Array<SelectParams> => {
   return items.map((item) => {
     return {
@@ -129,5 +123,10 @@ const formatItems = (items: Array<Classe | Guild | Rarity | Race | Type | Serie 
   })
 
 }
+onMounted(() => {
+  watchEffect(() => {
+    emit("updateFilters", filterValues)
+  })
+})
 </script>
 

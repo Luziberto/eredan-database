@@ -7,7 +7,31 @@
   >
     <div class="flex flex-col lg:py-5 bg-red-700 relative">
       <div class="absolute left-0 top-0 p-2">
-        <span class="text-right text-white text-md font-bold">{{ translate.RESULTS }}: {{ qttCards }} </span>
+        <div class="text-left">
+          <span class="text-right text-white text-sm font-bold">{{ translate.RESULTS }}: {{ paginateOptions.totalItems
+          }} </span><br />
+          <span class="text-right text-white text-sm font-bold">{{ translate.TOTAL_PAGES }}: {{
+              paginateOptions.totalPages
+          }}
+          </span><br />
+          <span class="text-right text-white text-sm font-bold">{{ translate.CURRENT_PAGE }}: {{ paginateOptions.page }}
+          </span><br />
+        </div>
+
+      </div>
+      <div class="absolute right-0 top-0 p-2">
+        <img
+          v-show="soundEnable"
+          width="24"
+          src="/icons/audio.png"
+          @click="soundEnable = false; backgroundMusic.muted = !soundEnable"
+        />
+        <img
+          v-show="!soundEnable"
+          width="24"
+          src="/icons/mute.png"
+          @click="soundEnable = true; backgroundMusic.muted = !soundEnable"
+        />
       </div>
       <div class="flex flex-col lg:flex-row justify-between">
         <div class="hidden lg:block w-1/3"></div>
@@ -42,7 +66,7 @@
               type="text"
               autocomplete="off"
               class="block w-full py-1 pl-2 pr-10 mt-1 text-sm bg-white font-bold placeholder-gray-400 transition duration-150 ease-in-ou border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-black focus:border-b border-whitelack ring-2"
-              @keyup="searchCards()"
+              @keyup="(e) => activeFilters.term = (e.target as HTMLInputElement)?.value"
             />
 
           </div>
@@ -56,7 +80,7 @@
         ref="dropdown"
         class="flex justify-around dropdown flex-wrap lg:flex-nowrap"
       >
-        <TableFilters @filters="searchCards" />
+        <TableFilters @update-filters="updateFilters" />
       </div>
 
       <div
@@ -72,7 +96,7 @@
             width="12"
             style="left: calc((100% - 1rem)/2); bottom: calc((100% - 2.25rem)/2)"
             class="-rotate-90 absolute z-40 hover:cursor-pointer arrow rotate-up"
-            src="/images/right-arrow.png"
+            src="/icons/right-arrow.png"
           />
           <img
             style="left: calc((100% - 3rem)/2); top: calc((100% - 3rem)/2)"
@@ -93,9 +117,10 @@
     >
       <CardsTable
         ref="cardsTable"
+        :filters="activeFilters"
         @open-modal="toggleModal"
         @close-modal="toggleModal"
-        @refresh-card-count="refreshCardsCount"
+        @refresh-options="refreshOptions"
       />
     </div>
 
@@ -118,7 +143,7 @@
 
 <script lang="ts" setup>
 
-import { ref, computed, reactive, onMounted } from "vue"
+import { ref, reactive, onMounted } from "vue"
 import { Card, CardFilters } from "@/types/Card"
 import CardsTable from "@/components/CardsTable.vue"
 import CardDialog from "@/components/CardDialog.vue"
@@ -127,9 +152,8 @@ import Alert from "@/components/global/AlertPopup.vue"
 import LocaleButton from "@/components/global/LocaleButton.vue"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
-import CardDataService from "@/services/CardDataService"
-import { delay } from "@/utils/Global"
 import { ModalType, Orientation } from "@/constants/ModalConstants"
+import PaginationOptions from "@/types/PaginationOptions"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -144,7 +168,26 @@ interface DialogOptions {
   orientation: Orientation
 }
 
-const qttCards = ref<number>(0)
+const activeFilters = reactive<CardFilters>({
+  term: "",
+  rarity: "",
+  evolution: "",
+  type: "",
+  serie: "",
+  guild: "",
+  race: "",
+  classe: "",
+  caste: ""
+})
+
+const soundEnable = ref<boolean>(true)
+
+const paginateOptions = reactive<PaginationOptions>({
+  page: 1,
+  itemsPerPage: 0,
+  totalItems: 0,
+  totalPages: 0
+})
 
 const dialogHover = reactive<DialogOptions>({
   active: false,
@@ -156,45 +199,9 @@ const dialogFixed = reactive<DialogOptions>({
   orientation: Orientation.LEFT
 })
 
-const defaultFilters: CardFilters = {
-  rarity: "",
-  evolution: "",
-  type: "",
-  serie: "",
-  guild: "",
-  race: "",
-  classe: "",
-  caste: ""
-}
-
 const search = ref<string>("")
 const cardsTable = ref<InstanceType<typeof CardsTable> | null>(null)
 const alert = ref<InstanceType<typeof Alert> | null>(null)
-
-computed(() => {
-  return search.value
-})
-
-const searchCards = (filters: CardFilters = defaultFilters) => {
-  const canSearch = search.value.length >= 3 || Object.values(filters).some((filter) => filter)
-  console.log(canSearch ? 'pode procurar' : 'não pode procurar')
-  console.log(filters)
-  if (!canSearch) {
-    cardsTable.value?.refreshCards([], true)
-    return
-  }
-  delay(async function () {
-    if (!canSearch) {
-      return
-    }
-
-    await CardDataService.searchCards(search.value, translate.value.LANGUAGE_ABBREVIATION, filters).then(response => {
-      cardsTable.value?.refreshCards(response.cards, false)
-      qttCards.value = response.results
-    })
-  }, 500)
-
-}
 
 const toggleModal = (modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation = Orientation.LEFT): void => {
 
@@ -224,18 +231,31 @@ const toggleDropdown = (): void => {
   arrow.value?.classList.toggle("rotate-up")
 }
 
-const backgroundSound = new Audio("http://static.eredan.com/sounds/music_menu.mp3")
+const backgroundMusic = new Audio("http://static.eredan.com/sounds/music_menu.mp3")
 
-const refreshCardsCount = (cardsCount: number) => {
-  qttCards.value = cardsCount
+const refreshOptions = (options: PaginationOptions) => {
+  paginateOptions.page = options.page
+  paginateOptions.itemsPerPage = options.itemsPerPage
+  paginateOptions.totalItems = options.totalItems
+  paginateOptions.totalPages = options.totalPages
+}
+
+const updateFilters = (filters: CardFilters) => {
+  Object.entries(filters).forEach(([index, value]) => {
+    activeFilters[index as keyof CardFilters] = value
+  })
+  console.log(filters)
 }
 
 onMounted(() => {
 
-  delay(async function () {
-    backgroundSound.loop = true
-    backgroundSound.play()
-  }, 5000)
+  backgroundMusic.loop = true
+  backgroundMusic.volume = 0.5
+  const tryActiveMusic = setInterval(async function () {
+    backgroundMusic.play().then(() => {
+      clearInterval(tryActiveMusic)
+    }).catch((e) => e)
+  }, 1000)
 
 })
 

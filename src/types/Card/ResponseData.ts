@@ -1,6 +1,7 @@
 import { Card } from ".";
 
 export interface SearchCardResponseData {
-  results: number,
+  totalItems: number,
+  totalPages: number,
   cards: Array<Card>
 }

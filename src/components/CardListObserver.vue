@@ -1,49 +1,67 @@
 <template>
   <div>
     <Alert ref="alert" />
-    <ObserverComponent
-      :options="options"
-      @intersect="getData"
-    />
+    <ObserverComponent @intersect="getData" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive } from "vue"
+import { ref, watch } from "vue"
 import CardDataService from "@/services/CardDataService"
 import ObserverComponent from "@/components/ObserverComponent.vue"
 import Alert from "@/components/global/AlertPopup.vue"
-import { Card } from "@/types/Card"
+import { CardFilters } from "@/types/Card"
 import { getTableScreenProps } from "@/utils/ScreenUtils"
-import CardJson from "@/assets/json/cards.json"
+import { useLocaleStore } from "@/store/locale"
+import { storeToRefs } from "pinia"
+import { Card } from "@/types/Card"
+import PaginationOptions from "@/types/PaginationOptions"
 
-interface Options { page: number, itemsPerPage: number }
+const props = defineProps<{
+  filters: CardFilters
+}>()
+
+const emit = defineEmits<{
+  (e: "moreData", cards: Array<Card>, pageOptions: PaginationOptions): void,
+  (e: "finishData"): void
+}>()
+
+const localeStore = useLocaleStore()
+const { translate } = storeToRefs(localeStore)
 
 const screen = getTableScreenProps()
 
-const options = reactive<Options>({ page: 1, itemsPerPage: screen.itemsPerPage })
+const paginateOptions: PaginationOptions = ({ page: 1, itemsPerPage: screen.itemsPerPage, totalItems: 0, totalPages: 0 })
+
 const alert = ref<InstanceType<typeof Alert> | null>(null)
 
 const getData = (): void => {
-  const start = (options.page - 1) * options.itemsPerPage
-  const end = options.page * options.itemsPerPage
-  const items = CardJson.slice(start, end)
 
-  if (!items.length) {
-    emit("finishData")
+
+  if (paginateOptions.page !== 1 && paginateOptions.page > paginateOptions.totalPages) {
     return
   }
 
-  const responseData = CardDataService.getAllCards(options.page, options.itemsPerPage)
-  emit("moreData", responseData)
-  options.page++
-  options.itemsPerPage++
+  CardDataService.searchCards(
+    props.filters,
+    translate.value.LANGUAGE_ABBREVIATION,
+    { page: paginateOptions.page, itemsPerPage: paginateOptions.itemsPerPage }
+  ).then((response) => {
+    paginateOptions.totalItems = response.totalItems
+    paginateOptions.totalPages = response.totalPages
+    emit("moreData", response.cards, paginateOptions)
+    paginateOptions.page++
+  })
 
 }
 
-const emit = defineEmits<{
-  (e: "moreData", assets: Card[]): void
-  (e: "finishData"): void
-}>()
+watch(() => props.filters, () => {
+  paginateOptions.page = 1
+  paginateOptions.totalItems = 0
+  paginateOptions.totalPages = 0
+  getData()
+}, { deep: true })
+
+defineExpose({ getData })
 
 </script>

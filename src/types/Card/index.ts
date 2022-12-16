@@ -53,6 +53,7 @@ export interface CardAssociations {
 }
 
 export interface CardFilters {
+  term?: string,
   rarity: number | string,
   evolution: number | string,
   type: number | string,

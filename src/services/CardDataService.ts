@@ -9,15 +9,19 @@ class CardDataService {
     return cards.slice((page - 1) * (itemsPerPage - 1), page * itemsPerPage)
   }
 
-  searchCards(term: string, language: string, filters: CardFilters): Promise<SearchCardResponseData> {
+  searchCards(filters: CardFilters, language: string, { page, itemsPerPage }: {page: number, itemsPerPage: number}): Promise<SearchCardResponseData> {
     return new Promise(resolve => {
         const cards = (CardJson as Array<Card>).filter((card: Card) => {
-          return (!term || card.labels[language as keyof TranslateContent].name.toLowerCase().includes(term.toLowerCase())) &&
+          return (!filters.term || card.labels[language as keyof TranslateContent].name.toLowerCase().
+                  includes(filters.term.toLowerCase())) &&
           this.filterCards(card, filters)
       })
+      const totalItems = cards.length
+      console.log(`${(page - 1) * itemsPerPage}, ${(page * itemsPerPage - 1)}`)
       resolve({
-        cards,
-        results: cards.length
+        cards: cards.slice((page - 1) * itemsPerPage, page * itemsPerPage - 1),
+        totalItems,
+        totalPages: Math.ceil(totalItems / itemsPerPage)
       })
     })
   }
