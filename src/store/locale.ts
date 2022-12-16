@@ -1,5 +1,5 @@
 import { defineStore } from "pinia"
-import { Translate, getTranslate, PT_BR, PT_BR_TRANSLATE } from "@/constants/LocaleConstants"
+import { Translate, getTranslate, EN_US, EN_US_TRANSLATE } from "@/constants/LocaleConstants"
 
 interface State {
   locale: string,
@@ -8,8 +8,8 @@ interface State {
 
 export const useLocaleStore = defineStore("locale", {
   state: (): State => ({
-    locale: PT_BR,
-    translate: PT_BR_TRANSLATE
+    locale: EN_US,
+    translate: EN_US_TRANSLATE
   }),
   actions: {
     changeLocale(locale: string) {
