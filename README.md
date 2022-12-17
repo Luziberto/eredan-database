@@ -7,7 +7,7 @@ This is the project for the `Eredan database` website.
 Make sure you have all this installed:
 
 - `node`
-- `yarn`
+- `yarn` or `npm`
 
 ## Stack
 
