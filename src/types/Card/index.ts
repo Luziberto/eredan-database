@@ -2,7 +2,7 @@ import { PRE_REQUIS_TYPE, ASSOCIATIONS } from "@/constants/CardConstants"
 import { TranslateContent } from "../Translate"
 
 export interface Card {
-  id: string,
+  id: number,
   level: number,
   serie_id: number,
   type_id: number,

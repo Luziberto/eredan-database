@@ -11,30 +11,24 @@
             >
               <div class="px-4 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
                 <div
-                  class="hidden lg:flex flex-col items-center justify-center"
-                  @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
+                  class="lg:flex flex-col items-center justify-center"
                   @mouseleave="closeModal(ModalType.HOVER, $event)"
                   @click="openModal(card, ModalType.FIXED, $event); clickSound.play()"
                 >
                   <img
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
+                    draggable="true"
+                    @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     alt=""
-                  >
-                </div>
-                <div
-                  class="flex lg:hidden flex-col items-center justify-center"
-                  @click="openModal(card, ModalType.HOVER, $event)"
-                >
-                  <img
-                    :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
-                    alt=""
+                    @dragstart="startDrag($event, card)"
                   >
                   <span
-                    className="w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
+                    className="lg:hidden w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
                   >
                     {{ card.labels[translate.LANGUAGE_ABBREVIATION as keyof TranslateContent].name }}
                   </span>
                 </div>
+
               </div>
             </div>
             <CardListObserver
@@ -76,6 +70,8 @@ const cardListObserver = ref<InstanceType<typeof CardListObserver> | null>(null)
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
 
+const hoverSound = new Audio("http://static.eredan.com/sounds/general/survol_carte.mp3")
+const clickSound = new Audio("http://static.eredan.com/sounds/dock_menu/dock_clic.mp3")
 
 const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
   const x = e.clientX
@@ -114,9 +110,15 @@ watch(() => props.filters, () => {
 
 }, { deep: true })
 
+const startDrag = (event: DragEvent, card: Card) => {
+  if (event.dataTransfer) {
+    event.dataTransfer.dropEffect = "move"
+    event.dataTransfer.effectAllowed = "move"
+    event.dataTransfer.setData("itemId", card.id.toString())
+  }
+}
 
-const hoverSound = new Audio("http://static.eredan.com/sounds/general/survol_carte.mp3")
-const clickSound = new Audio("http://static.eredan.com/sounds/dock_menu/dock_clic.mp3")
+
 
 defineExpose({ refreshCards })
 
