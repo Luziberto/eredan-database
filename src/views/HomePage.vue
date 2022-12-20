@@ -143,13 +143,6 @@
       @close="dialogFixed.active = false"
     />
   </section>
-  <footer class="fixed w-full z-10 bottom-0">
-    <DeckZone
-      @open-modal="toggleModal"
-      @close-modal="toggleModal"
-    />
-
-  </footer>
 </template>
 
 <script lang="ts" setup>
@@ -165,7 +158,6 @@ import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { ModalType, Orientation } from "@/constants/ModalConstants"
 import PaginationOptions from "@/types/PaginationOptions"
-import DeckZone from "@/components/DeckZone.vue"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
