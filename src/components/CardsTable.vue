@@ -24,11 +24,11 @@
                   <img
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     draggable="true"
+                    class="hidden"
                     alt=""
                     @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     @dragstart="startDrag($event, card)"
                     @load="cardLoaded($event)"
-                    class="hidden"
                   >
                   <span
                     className="lg:hidden w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
