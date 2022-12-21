@@ -34,7 +34,6 @@
         <img
           :src="`/images/${getTypeString(selectedCard.type_id, TypeJson) === TYPE.CHARACTER ? 'PersoBigNew' : 'CardBigNew'}.png`"
           draggable="true"
-          class="lg:w-auto hidden"
         >
         <img
           class="lg:w-auto hidden"
