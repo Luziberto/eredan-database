@@ -18,8 +18,8 @@
                   <img
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     draggable="true"
-                    @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     alt=""
+                    @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     @dragstart="startDrag($event, card)"
                   >
                   <span
@@ -114,7 +114,7 @@ const startDrag = (event: DragEvent, card: Card) => {
   if (event.dataTransfer) {
     event.dataTransfer.dropEffect = "move"
     event.dataTransfer.effectAllowed = "move"
-    event.dataTransfer.setData("itemId", card.id.toString())
+    event.dataTransfer.setData("newCard", JSON.stringify(card))
   }
 }
 

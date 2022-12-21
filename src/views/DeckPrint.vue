@@ -9,7 +9,7 @@
         <td
           v-for="index in (
             (line * 3) > deck.length ?
-              line * 3 - deck.length :
+              deck.length - (line - 1) * 3 :
               3
           )"
           :key="`card-${getCardIndex(index, line)}`"
@@ -30,10 +30,10 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue'
-import CardJson from '@/assets/json/cards.json'
 import { Card } from '@/types/Card'
 
-const cardIds: Array<string> = (localStorage.getItem('cardListId') || '').split(',')
+interface CardDeck { card: Card, count: number }
+
 const imgFolder: string = (localStorage.getItem('imgFolder') || 'us')
 
 const deck = ref<Array<Card>>([])
@@ -43,17 +43,17 @@ const getCardIndex = (index: number, line: number): number => {
 }
 
 const loadCards = () => {
-  const cards: Array<Card> = []
-  CardJson.forEach((card: Card) => {
-    if (cardIds.includes(card.id.toString())) {
-      cardIds.forEach((item) => {
-        if (item === card.id.toString()) {
-          cards.push(card)
-        }
-      })
+  const deckListId: Array<CardDeck> = JSON.parse(localStorage.getItem('cardListId') || '[]')
+  const deckCards = deckListId.flatMap((item: CardDeck) => {
+    const repeatedCards = []
+    for (let index = 0; index < item.count; index++) {
+      repeatedCards.push(item.card)
     }
+    return repeatedCards
   })
-  deck.value.push(...cards)
+
+
+  deck.value.push(...deckCards)
 }
 
 onMounted(() => {
@@ -68,8 +68,8 @@ onMounted(() => {
   @page {
     margin-left: 0.5in;
     margin-right: 0.5in;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.1in;
+    margin-bottom: 0.1in;
   }
 }
 </style>

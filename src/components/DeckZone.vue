@@ -11,7 +11,7 @@
         @click="clearDeckList"
       >
         <span class="text-white font-bold">
-          Clear
+          {{ translate.CLEAR }}
         </span>
       </button>
 
@@ -24,7 +24,7 @@
           @click="saveDeckList(); saveLocale()"
         >
           <span class="text-white font-bold">
-            Save & Print
+            {{ translate.PRINT }}
           </span>
         </button>
       </a>
@@ -42,7 +42,7 @@
             v-show="
             !deck.length"
             class="text-white font-bold text-2xl"
-          >Deck Zone</p>
+          >{{ translate.DECK_ZONE }}</p>
           <li
             v-for="[key, item] in deckFormatted"
             :key="`deck-card-${key}`"
@@ -56,9 +56,29 @@
                 @click="openModal(item.card, ModalType.FIXED, $event); clickSound.play()"
                 @mouseenter="openModal(item.card, ModalType.HOVER, $event); hoverSound.play()"
               />
-              <b class="absolute top-0 right-0 text-white">
+              <b class="absolute top-0 left-0 text-white bg-blue-600 px-1 rounded-md text-sm">
                 {{ item.count }}x
               </b>
+              <button
+                class="absolute top-0 right-0 text-white fill-current h-5 w-5 font-3xl cursor-pointer font-bold bg-red-600 rounded-full"
+                @click="removeCard(item.card)"
+              >
+                <span class="sr-only">Close</span>
+                <svg
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1
+                     0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
 
 
@@ -102,8 +122,9 @@ import { Card } from "@/types/Card"
 import { ref, computed, onMounted } from "vue"
 import { storeToRefs } from "pinia"
 import { useLocaleStore } from "@/store/locale"
-import CardJson from "@/assets/json/cards.json"
 import { ModalType, Orientation } from "@/constants/ModalConstants"
+
+interface CardDeck { card: Card, count: number }
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -135,12 +156,14 @@ const startDrag = (event: DragEvent, card: Card) => {
 }
 
 const onDrop = (event: DragEvent) => {
+
   if (event.dataTransfer) {
-    const itemId = event.dataTransfer.getData("itemId")
-    const card = CardJson.find((card: Card) => card.id === Number(itemId))
-    deck.value.push(card)
+    const newCard = event.dataTransfer.getData("newCard")
+    if (newCard) {
+      deck.value.push(JSON.parse(newCard))
+      saveDeckList()
+    }
   }
-  saveDeckList()
 }
 
 const openModal = (card: Card, modalType: ModalType, e: MouseEvent) => {
@@ -164,7 +187,7 @@ const closeModal = (modalType: ModalType, e: MouseEvent) => {
   }
 }
 
-const deckFormatted = computed<Map<number, { card: Card, count: number }>>(() => {
+const deckFormatted = computed<Map<number, CardDeck>>(() => {
   const uniqueCards = new Map()
 
   deck.value.forEach((card: Card) => {
@@ -182,26 +205,37 @@ const clearDeckList = () => {
 }
 
 const saveDeckList = () => {
-  localStorage.setItem('cardListId', deck.value.map(item => item.id).join(','))
+  const cards: Array<CardDeck> = []
+  deckFormatted.value.forEach((item) => {
+    cards.push({ card: item.card, count: item.count })
+  })
+
+  localStorage.setItem('cardListId', JSON.stringify(cards))
+
 }
 
 const loadDeckList = () => {
-  const deckListId = (localStorage.getItem('cardListId') || '').split(',')
-  const cards: Array<Card> = []
-  CardJson.forEach((card: Card) => {
-    if (deckListId.includes(card.id.toString())) {
-      deckListId.forEach((item) => {
-        if (item === card.id.toString()) {
-          cards.push(card)
-        }
-      })
+  console.log(localStorage.getItem('cardListId'))
+  const deckListId: Array<CardDeck> = JSON.parse(localStorage.getItem('cardListId') || '[]')
+  const deckCards = deckListId.flatMap((item: CardDeck) => {
+    const repeatedCards = []
+    for (let index = 0; index < item.count; index++) {
+      repeatedCards.push(item.card)
     }
+    return repeatedCards
   })
-  deck.value.push(...cards)
+
+  deck.value.push(...deckCards)
 }
 
 const saveLocale = () => {
   localStorage.setItem('imgFolder', translate.value.IMG_FOLDER)
+}
+
+const removeCard = (card: Card) => {
+  const index = deck.value.findIndex((deckCard: Card) => deckCard.id === card.id)
+  deck.value.splice(index, 1)
+  saveDeckList()
 }
 
 onMounted(() => {

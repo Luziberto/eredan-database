@@ -19,6 +19,9 @@ export interface Translate {
   RESULTS: string,
   TOTAL_PAGES: string,
   CURRENT_PAGE: string,
+  DECK_ZONE: string,
+  CLEAR : string,
+  PRINT : string
 }
 
 export enum PT_BR_TRANSLATE {
@@ -39,7 +42,10 @@ export enum PT_BR_TRANSLATE {
   ALL = "Todos",
   RESULTS = "Resultados",
   TOTAL_PAGES = "Páginas",
-  CURRENT_PAGE = "Página Atual"
+  CURRENT_PAGE = "Página Atual",
+  DECK_ZONE = "Zona de baralho",
+  CLEAR = "Limpar",
+  PRINT = "Imprimir"
 }
 
 export enum EN_US_TRANSLATE {
@@ -60,7 +66,10 @@ export enum EN_US_TRANSLATE {
   ALL = "All",
   RESULTS = "Results",
   TOTAL_PAGES = "Total Pages",
-  CURRENT_PAGE = "Current Page"
+  CURRENT_PAGE = "Current Page",
+  DECK_ZONE = "Deck Zone",
+  CLEAR = "Clear",
+  PRINT = "Print"
 }
 
 export function getTranslate(locale: string) : Translate {

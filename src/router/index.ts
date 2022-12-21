@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "@/views/HomePage.vue"
-import Print from "@/views/DeckPrint.vue"
+import DeckPrint from "@/views/DeckPrint.vue"
 
 const routes = [
     {
@@ -11,7 +11,7 @@ const routes = [
     {
       path: "/print",
       name: "print",
-      component: Print,
+      component: DeckPrint,
     }
 ]
 
