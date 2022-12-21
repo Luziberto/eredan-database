@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`card-modal anime dialog ${getOrientationDialogProps(orientation)} fixed z-50 bg-red-900 text-white rounded-lg px-4 overflow-hidden shadow-xl transform transition-all sm:max-w-xl w-3/4 lg:w-1/5 h-2/3 lg:h-auto`"
+    :class="`card-modal anime dialog ${getOrientationDialogProps(orientation)} fixed z-50 bg-red-900 text-white rounded-lg px-4 overflow-y-auto shadow-xl transform transition-all sm:max-w-xl w-3/4 lg:w-1/5 h-2/3 lg:h-auto`"
   >
     <div class="flex items-center justify-between text-xl font-bold pt-3 pb-2">
       <div class="flex flex-between w-full">
@@ -29,7 +29,7 @@
       </div>
 
     </div>
-    <div class="overflow-y-auto h-full">
+    <div class="h-full">
       <div class="flex items-center justify-center py-2 text-xl border-b border-white font-bold item-center">
         <img
           class="lg:w-auto"
