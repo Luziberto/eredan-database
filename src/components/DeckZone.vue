@@ -50,18 +50,24 @@
           >
             <div class="relative">
               <img
+                :src="`/images/${getTypeString(item.card.type_id, TypeJson) === TYPE.CHARACTER ? 'PersoSmallNew' : 'CardSmallNew'}.png`"
+                draggable="true"
+                alt=""
+              >
+              <img
                 :src="`http://static.eredan.com/cards/web_small/${translate.IMG_FOLDER}/${item.card.filename}.png`"
-                class="cursor-pointer"
+                class="hidden cursor-pointer"
                 @mouseleave="closeModal(ModalType.HOVER, $event)"
                 @click="openModal(item.card, ModalType.FIXED, $event); clickSound.play()"
                 @mouseenter="openModal(item.card, ModalType.HOVER, $event); hoverSound.play()"
+                @load="cardLoaded($event)"
               />
               <b class="absolute top-0 left-0 text-white bg-blue-600 px-1 rounded-md text-sm">
                 {{ item.count }}x
               </b>
               <button
                 class="absolute top-0 right-0 text-white fill-current h-5 w-5 font-3xl cursor-pointer font-bold bg-red-600 rounded-full"
-                @click="removeCard(item.card)"
+                @click="removeCard(item.card); removeCardSound.play()"
               >
                 <span class="sr-only">Close</span>
                 <svg
@@ -96,7 +102,7 @@
     >
       <div
         class="relative z-20 w-24 h-12"
-        @click="toggleDropdown()"
+        @click="toggleDropdown(); dropdownSound.play()"
       >
         <img
           ref="arrow"
@@ -123,6 +129,9 @@ import { ref, computed, onMounted } from "vue"
 import { storeToRefs } from "pinia"
 import { useLocaleStore } from "@/store/locale"
 import { ModalType, Orientation } from "@/constants/ModalConstants"
+import TypeJson from "@/assets/json/types.json"
+import { TYPE } from "@/constants/TypeConstants"
+import { Type } from "@/types/Type"
 
 interface CardDeck { card: Card, count: number }
 
@@ -135,6 +144,8 @@ const arrow = ref<HTMLElement | null>()
 const deck = ref<Array<Card>>([])
 const hoverSound = new Audio("http://static.eredan.com/sounds/general/survol_carte.mp3")
 const clickSound = new Audio("http://static.eredan.com/sounds/dock_menu/dock_clic.mp3")
+const dropdownSound = new Audio("http://static.eredan.com/sounds/dock_menu/dockmulti_clic.mp3")
+const removeCardSound = new Audio("http://static.eredan.com/sounds/general/side_right_left.mp3")
 
 const emit = defineEmits<{
   (e: "openModal", modalValue: boolean, card: Card, modalType: ModalType, orientation: Orientation): void
@@ -156,7 +167,7 @@ const startDrag = (event: DragEvent, card: Card) => {
 }
 
 const onDrop = (event: DragEvent) => {
-
+  clickSound.play()
   if (event.dataTransfer) {
     const newCard = event.dataTransfer.getData("newCard")
     if (newCard) {
@@ -215,7 +226,6 @@ const saveDeckList = () => {
 }
 
 const loadDeckList = () => {
-  console.log(localStorage.getItem('cardListId'))
   const deckListId: Array<CardDeck> = JSON.parse(localStorage.getItem('cardListId') || '[]')
   const deckCards = deckListId.flatMap((item: CardDeck) => {
     const repeatedCards = []
@@ -236,6 +246,23 @@ const removeCard = (card: Card) => {
   const index = deck.value.findIndex((deckCard: Card) => deckCard.id === card.id)
   deck.value.splice(index, 1)
   saveDeckList()
+}
+
+const cardLoaded = (event: Event) => {
+  const element = event.target as HTMLElement
+
+  if (element.previousSibling) {
+    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+  }
+
+  element.classList.toggle('hidden')
+}
+
+const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined => {
+  const item = jsonFile.find((item: Type) => {
+    return item.id === id
+  })
+  return item?.script_slug
 }
 
 onMounted(() => {
