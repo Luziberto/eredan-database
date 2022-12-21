@@ -16,11 +16,19 @@
                   @click="openModal(card, ModalType.FIXED, $event); clickSound.play()"
                 >
                   <img
+                    :src="`/images/${getTypeString(card.type_id, TypeJson) === TYPE.CHARACTER ? 'PersoMiddleNew' : 'CardMiddleNew'}.png`"
+                    draggable="true"
+                    alt=""
+                  >
+
+                  <img
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     draggable="true"
                     alt=""
                     @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     @dragstart="startDrag($event, card)"
+                    @load="cardLoaded($event)"
+                    class="hidden"
                   >
                   <span
                     className="lg:hidden w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
@@ -53,6 +61,9 @@ import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 import { Orientation, ModalType } from "@/constants/ModalConstants"
 import { TranslateContent } from "@/types/Translate"
+import TypeJson from "@/assets/json/types.json"
+import { TYPE } from "@/constants/TypeConstants"
+import { Type } from "@/types/Type"
 
 const props = defineProps<{
   filters: CardFilters
@@ -118,7 +129,22 @@ const startDrag = (event: DragEvent, card: Card) => {
   }
 }
 
+const cardLoaded = (event: Event) => {
+  const element = event.target as HTMLElement
 
+  if (element.previousSibling) {
+    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+  }
+
+  element.classList.toggle('hidden')
+}
+
+const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined => {
+  const item = jsonFile.find((item: Type) => {
+    return item.id === id
+  })
+  return item?.script_slug
+}
 
 defineExpose({ refreshCards })
 

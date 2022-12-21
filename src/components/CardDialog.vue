@@ -32,8 +32,14 @@
     <div class="h-full">
       <div class="flex items-center justify-center py-2 text-xl border-b border-white font-bold item-center">
         <img
-          class="lg:w-auto"
+          :src="`/images/${getTypeString(selectedCard.type_id, TypeJson) === TYPE.CHARACTER ? 'PersoBigNew' : 'CardBigNew'}.png`"
+          draggable="true"
+          class="lg:w-auto hidden"
+        >
+        <img
+          class="lg:w-auto hidden"
           :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${selectedCard.filename}.png`"
+          @load="cardLoaded($event)"
         />
       </div>
       <CardDialogInfo :selected-card="selectedCard" />
@@ -49,6 +55,9 @@ import { storeToRefs } from "pinia"
 import { Orientation, getOrientationDialogProps } from "@/constants/ModalConstants"
 import CardDialogInfo from "@/components/CardDialogInfo.vue"
 import { TranslateContent } from "@/types/Translate"
+import TypeJson from "@/assets/json/types.json"
+import { TYPE } from "@/constants/TypeConstants"
+import { Type } from "@/types/Type"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -63,6 +72,23 @@ defineProps<{
 }>()
 
 const close = () => emit("close")
+
+const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined => {
+  const item = jsonFile.find((item: Type) => {
+    return item.id === id
+  })
+  return item?.script_slug
+}
+
+const cardLoaded = (event: Event) => {
+  const element = event.target as HTMLElement
+
+  if (element.previousSibling) {
+    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+  }
+
+  element.classList.toggle('hidden')
+}
 
 </script>
 

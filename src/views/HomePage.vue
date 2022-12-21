@@ -93,7 +93,7 @@
       >
         <div
           class="relative z-20 w-24 h-12"
-          @click="toggleDropdown()"
+          @click="toggleDropdown(); dropdownSound.play()"
         >
           <img
             ref="arrow"
@@ -244,6 +244,7 @@ const toggleDropdown = (): void => {
 }
 
 const backgroundMusic = new Audio("http://static.eredan.com/sounds/music_menu.mp3")
+const dropdownSound = new Audio("http://static.eredan.com/sounds/dock_menu/dockmulti_clic.mp3")
 
 const refreshOptions = (options: PaginationOptions) => {
   paginateOptions.page = options.page
