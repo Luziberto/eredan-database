@@ -145,6 +145,7 @@
   </section>
   <footer class="fixed w-full z-10 bottom-0">
     <DeckZone
+      class="hidden lg:block"
       @open-modal="toggleModal"
       @close-modal="toggleModal"
     />
