@@ -2,6 +2,15 @@
   <router-view />
 </template>
 
+<script lang="ts" setup>
+import { onMounted } from "vue"
+
+onMounted(() => {
+  window.scroll(0, -50)
+})
+
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
