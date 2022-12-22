@@ -19,6 +19,7 @@ export interface Translate {
   RESULTS: string,
   TOTAL_PAGES: string,
   CURRENT_PAGE: string,
+  DRAG_DROP: string,
   DECK_ZONE: string,
   CLEAR : string,
   PRINT : string
@@ -43,6 +44,7 @@ export enum PT_BR_TRANSLATE {
   RESULTS = "Resultados",
   TOTAL_PAGES = "Páginas",
   CURRENT_PAGE = "Página Atual",
+  DRAG_DROP = "Arrastar e Soltar",
   DECK_ZONE = "Zona de baralho",
   CLEAR = "Limpar",
   PRINT = "Imprimir"
@@ -67,6 +69,7 @@ export enum EN_US_TRANSLATE {
   RESULTS = "Results",
   TOTAL_PAGES = "Total Pages",
   CURRENT_PAGE = "Current Page",
+  DRAG_DROP = "Drag and Drop",
   DECK_ZONE = "Deck Zone",
   CLEAR = "Clear",
   PRINT = "Print"
