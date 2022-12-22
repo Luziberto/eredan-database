@@ -36,9 +36,9 @@
           draggable="true"
         >
         <img
-          class="lg:w-auto hidden"
+          class="lg:w-auto card-picture hidden"
           :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${selectedCard.filename}.png`"
-          @load="cardLoaded($event)"
+          @load="toggleCardPicture($event.target as HTMLImageElement)"
         />
       </div>
       <CardDialogInfo :selected-card="selectedCard" />
@@ -57,6 +57,7 @@ import { TranslateContent } from "@/types/Translate"
 import TypeJson from "@/assets/json/types.json"
 import { TYPE } from "@/constants/TypeConstants"
 import { Type } from "@/types/Type"
+import { watch } from "vue"
 
 const localeStore = useLocaleStore()
 const { translate } = storeToRefs(localeStore)
@@ -79,15 +80,18 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
   return item?.script_slug
 }
 
-const cardLoaded = (event: Event) => {
-  const element = event.target as HTMLElement
-
+const toggleCardPicture = (element: HTMLImageElement) => {
   if (element.previousSibling) {
-    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+    (element.previousSibling as Element).classList.toggle('hidden')
   }
-
   element.classList.toggle('hidden')
 }
+
+watch(() => translate, () => {
+  Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
+    toggleCardPicture(element as HTMLImageElement)
+  })
+}, { deep: true })
 
 </script>
 
