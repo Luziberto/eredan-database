@@ -24,11 +24,11 @@
                   <img
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     draggable="true"
-                    class="hidden"
-                    alt=""
+                    class="card-picture hidden"
+                    :alt="`card-picture-${card.id}`"
                     @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     @dragstart="startDrag($event, card)"
-                    @load="cardLoaded($event)"
+                    @load="toggleCardPicture($event.target as HTMLImageElement)"
                   >
                   <span
                     className="lg:hidden w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
@@ -129,13 +129,10 @@ const startDrag = (event: DragEvent, card: Card) => {
   }
 }
 
-const cardLoaded = (event: Event) => {
-  const element = event.target as HTMLElement
-
+const toggleCardPicture = (element: HTMLImageElement) => {
   if (element.previousSibling) {
-    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+    (element.previousSibling as Element).classList.toggle('hidden')
   }
-
   element.classList.toggle('hidden')
 }
 
@@ -145,6 +142,13 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
   })
   return item?.script_slug
 }
+
+watch(() => translate, () => {
+  Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
+    toggleCardPicture(element as HTMLImageElement)
+  })
+}, { deep: true })
+
 
 defineExpose({ refreshCards })
 
