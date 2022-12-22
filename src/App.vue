@@ -3,11 +3,12 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from "vue";
+import { onMounted } from "vue"
 import { event } from "vue-gtag"
 
 onMounted(() => {
   event("visit", { method: "Google" })
+  window.scroll(0, -50)
 })
 
 </script>
