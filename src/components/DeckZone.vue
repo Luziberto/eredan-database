@@ -42,7 +42,11 @@
             v-show="
             !deck.length"
             class="text-white font-bold text-2xl"
-          >{{ translate.DECK_ZONE }}</p>
+          >
+            {{ translate.DECK_ZONE }}
+            <br />
+            <span class="text-sm">({{ translate.DRAG_DROP }})</span>
+          </p>
           <li
             v-for="[key, item] in deckFormatted"
             :key="`deck-card-${key}`"
@@ -56,11 +60,11 @@
               >
               <img
                 :src="`http://static.eredan.com/cards/web_small/${translate.IMG_FOLDER}/${item.card.filename}.png`"
-                class="hidden cursor-pointer"
+                class="card-picture hidden cursor-pointer"
                 @mouseleave="closeModal(ModalType.HOVER, $event)"
                 @click="openModal(item.card, ModalType.FIXED, $event); clickSound.play()"
                 @mouseenter="openModal(item.card, ModalType.HOVER, $event); hoverSound.play()"
-                @load="cardLoaded($event)"
+                @load="toggleCardPicture($event.target as HTMLImageElement)"
               />
               <b class="absolute top-0 left-0 text-white bg-blue-600 px-1 rounded-md text-sm">
                 {{ item.count }}x
@@ -125,7 +129,7 @@
 
 <script lang="ts" setup>
 import { Card } from "@/types/Card"
-import { ref, computed, onMounted } from "vue"
+import { ref, computed, onMounted, watch } from "vue"
 import { storeToRefs } from "pinia"
 import { useLocaleStore } from "@/store/locale"
 import { ModalType, Orientation } from "@/constants/ModalConstants"
@@ -248,13 +252,10 @@ const removeCard = (card: Card) => {
   saveDeckList()
 }
 
-const cardLoaded = (event: Event) => {
-  const element = event.target as HTMLElement
-
+const toggleCardPicture = (element: HTMLImageElement) => {
   if (element.previousSibling) {
-    (element.previousSibling as HTMLElement).classList.toggle('hidden')
+    (element.previousSibling as HTMLImageElement).classList.toggle('hidden')
   }
-
   element.classList.toggle('hidden')
 }
 
@@ -264,6 +265,12 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
   })
   return item?.script_slug
 }
+
+watch(() => translate, () => {
+  Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
+    toggleCardPicture(element as HTMLImageElement)
+  })
+}, { deep: true })
 
 onMounted(() => {
   const dropdown = document?.getElementById("deckDropDown")
