@@ -143,6 +143,12 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
   return item?.script_slug
 }
 
+watch(() => translate, () => {
+  Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
+    toggleCardPicture(element as HTMLImageElement)
+  })
+}, { deep: true })
+
 
 defineExpose({ refreshCards })
 
