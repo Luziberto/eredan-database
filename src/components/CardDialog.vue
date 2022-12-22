@@ -36,9 +36,9 @@
           draggable="true"
         >
         <img
-          class="lg:w-auto card-picture hidden"
+          class="lg:w-auto hidden"
           :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${selectedCard.filename}.png`"
-          @load="toggleCardPicture($event.target as HTMLImageElement)"
+          @load="toggleDefaultPicture($event.target as HTMLImageElement, false)"
         />
       </div>
       <CardDialogInfo :selected-card="selectedCard" />
@@ -80,16 +80,17 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
   return item?.script_slug
 }
 
-const toggleCardPicture = (element: HTMLImageElement) => {
-  if (element.previousSibling) {
-    (element.previousSibling as Element).classList.toggle('hidden')
+const toggleDefaultPicture = (element: HTMLImageElement, defaultVisible: boolean) => {
+  const previousElement = element.previousSibling as HTMLImageElement
+  if (previousElement) {
+    defaultVisible ? previousElement.classList.remove('hidden') : previousElement.classList.add('hidden')
   }
-  element.classList.toggle('hidden')
+  defaultVisible ? element.classList.add('hidden') : element.classList.remove('hidden')
 }
 
 watch(() => translate, () => {
   Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
-    toggleCardPicture(element as HTMLImageElement)
+    toggleDefaultPicture(element as HTMLImageElement, true)
   })
 }, { deep: true })
 

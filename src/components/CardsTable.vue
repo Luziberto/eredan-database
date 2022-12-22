@@ -25,10 +25,9 @@
                     :src="`http://static.eredan.com/cards/web_mid/${translate.IMG_FOLDER}/${card.filename}.png`"
                     draggable="true"
                     class="card-picture hidden"
-                    :alt="`card-picture-${card.id}`"
                     @mouseenter="openModal(card, ModalType.HOVER, $event); hoverSound.play()"
                     @dragstart="startDrag($event, card)"
-                    @load="toggleCardPicture($event.target as HTMLImageElement)"
+                    @load="toggleDefaultPicture($event.target as HTMLImageElement, false)"
                   >
                   <span
                     className="lg:hidden w-40 pt-2 whitespace-nowrap font-bold text-sm lg:text-lg leading-5 text-white whitespace-no-wrap truncate"
@@ -129,11 +128,12 @@ const startDrag = (event: DragEvent, card: Card) => {
   }
 }
 
-const toggleCardPicture = (element: HTMLImageElement) => {
-  if (element.previousSibling) {
-    (element.previousSibling as Element).classList.toggle('hidden')
+const toggleDefaultPicture = (element: HTMLImageElement, defaultVisible: boolean) => {
+  const previousElement = element.previousSibling as HTMLImageElement
+  if (previousElement) {
+    defaultVisible ? previousElement.classList.remove('hidden') : previousElement.classList.add('hidden')
   }
-  element.classList.toggle('hidden')
+  defaultVisible ? element.classList.add('hidden') : element.classList.remove('hidden')
 }
 
 const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined => {
@@ -145,10 +145,9 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
 
 watch(() => translate, () => {
   Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
-    toggleCardPicture(element as HTMLImageElement)
+    toggleDefaultPicture(element as HTMLImageElement, true)
   })
 }, { deep: true })
-
 
 defineExpose({ refreshCards })
 

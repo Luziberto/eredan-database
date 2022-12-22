@@ -60,11 +60,11 @@
               >
               <img
                 :src="`http://static.eredan.com/cards/web_small/${translate.IMG_FOLDER}/${item.card.filename}.png`"
-                class="card-picture hidden cursor-pointer"
+                class="hidden cursor-pointer"
                 @mouseleave="closeModal(ModalType.HOVER, $event)"
                 @click="openModal(item.card, ModalType.FIXED, $event); clickSound.play()"
                 @mouseenter="openModal(item.card, ModalType.HOVER, $event); hoverSound.play()"
-                @load="toggleCardPicture($event.target as HTMLImageElement)"
+                @load="toggleDefaultPicture($event.target as HTMLImageElement, false)"
               />
               <b class="absolute top-0 left-0 text-white bg-blue-600 px-1 rounded-md text-sm">
                 {{ item.count }}x
@@ -252,11 +252,12 @@ const removeCard = (card: Card) => {
   saveDeckList()
 }
 
-const toggleCardPicture = (element: HTMLImageElement) => {
-  if (element.previousSibling) {
-    (element.previousSibling as HTMLImageElement).classList.toggle('hidden')
+const toggleDefaultPicture = (element: HTMLImageElement, defaultVisible: boolean) => {
+  const previousElement = element.previousSibling as HTMLImageElement
+  if (previousElement) {
+    defaultVisible ? previousElement.classList.remove('hidden') : previousElement.classList.add('hidden')
   }
-  element.classList.toggle('hidden')
+  defaultVisible ? element.classList.add('hidden') : element.classList.remove('hidden')
 }
 
 const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined => {
@@ -268,7 +269,7 @@ const getTypeString = (id: number, jsonFile: Array<Type>): string | undefined =>
 
 watch(() => translate, () => {
   Array.from(document.querySelectorAll('.card-picture')).forEach((element: Element) => {
-    toggleCardPicture(element as HTMLImageElement)
+    toggleDefaultPicture(element as HTMLImageElement, true)
   })
 }, { deep: true })
 
