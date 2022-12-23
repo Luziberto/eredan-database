@@ -8,6 +8,9 @@
       },
       "pt_br": {
         "name": "Comum"
+      },
+      "es_es": {
+        "name": "Com\u00fan"
       }
     },
     "picture": "aa7edaab44e41c14e39531dc2476916e.png",
@@ -99,6 +102,9 @@
       },
       "pt_br": {
         "name": "Incomum"
+      },
+      "es_es": {
+        "name": "Poco Com\u00fan"
       }
     },
     "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
@@ -190,6 +196,9 @@
       },
       "pt_br": {
         "name": "Rara"
+      },
+      "es_es": {
+        "name": "Raro"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
@@ -281,6 +290,9 @@
       },
       "pt_br": {
         "name": "Colecionador"
+      },
+      "es_es": {
+        "name": "Coleccionista"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
@@ -404,6 +416,9 @@
       },
       "pt_br": {
         "name": "Lucro"
+      },
+      "es_es": {
+        "name": "Haza\u00f1a"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -427,6 +442,9 @@
       },
       "pt_br": {
         "name": "Arte-alternativa"
+      },
+      "es_es": {
+        "name": "Artwork"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
@@ -502,6 +520,9 @@
       },
       "pt_br": {
         "name": "Legend\u00e1ria"
+      },
+      "es_es": {
+        "name": "Legendario"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
@@ -589,6 +610,9 @@
       },
       "pt_br": {
         "name": "Gelado"
+      },
+      "es_es": {
+        "name": "Congelado"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -632,6 +656,9 @@
       },
       "pt_br": {
         "name": "Pokeredan"
+      },
+      "es_es": {
+        "name": "Pokeredan"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -650,6 +677,9 @@
       },
       "pt_br": {
         "name": "Rom\u00e2ntico comum"
+      },
+      "es_es": {
+        "name": "Rom\u00e1ntica Com\u00fan"
       }
     },
     "picture": "aa7edaab44e41c14e39531dc2476916e.png",
@@ -668,6 +698,9 @@
       },
       "pt_br": {
         "name": "Rom\u00e2ntico Incomum"
+      },
+      "es_es": {
+        "name": "Rom\u00e1ntica Poco Com\u00fan"
       }
     },
     "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
@@ -686,6 +719,9 @@
       },
       "pt_br": {
         "name": "Rom\u00e2ntico Raro"
+      },
+      "es_es": {
+        "name": "Rom\u00e1ntica Rara"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
@@ -704,6 +740,9 @@
       },
       "pt_br": {
         "name": "Romantico"
+      },
+      "es_es": {
+        "name": "Rom\u00e1ntica"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -722,6 +761,9 @@
       },
       "pt_br": {
         "name": "Manobra"
+      },
+      "es_es": {
+        "name": "Maniobra"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
@@ -739,6 +781,9 @@
         "name": "Olympiads "
       },
       "pt_br": {
+        "name": "Olimp\u00edadas"
+      },
+      "es_es": {
         "name": "Olimp\u00edadas"
       }
     },
@@ -758,6 +803,9 @@
       },
       "pt_br": {
         "name": "M\u00edstica"
+      },
+      "es_es": {
+        "name": "M\u00edtico"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -837,6 +885,9 @@
       },
       "pt_br": {
         "name": "Alma Condenada"
+      },
+      "es_es": {
+        "name": "alma condenada"
       }
     },
     "picture": "604f95b3e0ac7425ea5f9015976cb219.png",
@@ -868,6 +919,9 @@
       },
       "pt_br": {
         "name": "Alma Sagrada"
+      },
+      "es_es": {
+        "name": "alma sagrada"
       }
     },
     "picture": "604f95b3e0ac7425ea5f9015976cb219.png",

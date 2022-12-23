@@ -66,7 +66,7 @@ const emit = defineEmits<{
   (e: "close"): void
 }>()
 
-defineProps<{
+const props = defineProps<{
   selectedCard: Card,
   orientation: Orientation
 }>()

@@ -15,6 +15,12 @@ export const GRADE_LABEL: GradeLabel = {
     [GRADE_CHAMPION]: 'Champion',
     [GRADE_ADVENTURE]: 'Adventure',
     [GRADE_NOVICE]: 'Novice'
+  },
+  es_es: {
+    [GRADE_GORVERNOR]: 'Gobernador',
+    [GRADE_CHAMPION]: 'Campeón',
+    [GRADE_ADVENTURE]: 'Aventura',
+    [GRADE_NOVICE]: 'Principiante'
   }
 }
 
@@ -26,7 +32,8 @@ export interface Grade {
 }
 export interface GradeLabel {
   pt_br: Grade,
-  en_us: Grade
+  en_us: Grade,
+  es_es: Grade
 }
 
 export enum GRADE_COLOR {

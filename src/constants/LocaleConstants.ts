@@ -1,5 +1,7 @@
 export const PT_BR = "PT_BR"
 export const EN_US = "EN_US"
+export const ES_ES = "ES_ES"
+
 export interface Translate {
   IMG_FOLDER: string,
   LANGUAGE_ABBREVIATION: string,
@@ -75,9 +77,36 @@ export enum EN_US_TRANSLATE {
   PRINT = "Print"
 }
 
+export enum ES_ES_TRANSLATE {
+  IMG_FOLDER = "es",
+  LANGUAGE_ABBREVIATION = "es_es",
+  SEARCH = "Búsqueda",
+  RARITY = "Rareza",
+  EVOLUTION = "Evolución",
+  TYPE = "Escribe",
+  SERIE = "Serie",
+  DESCRIPTION = "Descripción",
+  GUILD = "Gremio",
+  RACE = "La raza",
+  CLASSE = "clase",
+  CASTE = "casta",
+  TRAIT = "Rasgos",
+  REQUIREMENTS = "Requisitos",
+  ALL = "Todos",
+  RESULTS = "Resultados",
+  TOTAL_PAGES = "Paginas Totales",
+  CURRENT_PAGE = "Página Actual",
+  DRAG_DROP = "Arrastrar y Soltar",
+  DECK_ZONE = "Zona de tarjetas",
+  CLEAR = "Limpio",
+  PRINT = "Imprimir"
+}
+
 export function getTranslate(locale: string) : Translate {
   if (locale === EN_US) {
     return EN_US_TRANSLATE
+  } if (locale === ES_ES) {
+    return ES_ES_TRANSLATE
   } else {
     return PT_BR_TRANSLATE
   }
