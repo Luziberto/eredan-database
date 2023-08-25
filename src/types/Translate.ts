@@ -10,5 +10,9 @@ export interface TranslateContent {
   es_es: {
     name: string,
     description?: string | null
+  },
+  fr_fr: {
+    name: string,
+    description?: string | null
   }
 }

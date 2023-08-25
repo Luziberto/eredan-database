@@ -18,7 +18,7 @@
 
     <button
       type="button"
-      :class="`${locale === ES_ES ? 'bg-red-900' : 'bg-red-100'} py-1 px-2 text-sm font-medium text-gray-900 rounded-l border border-gray-200 hover:bg-red-900 hover:text-blue-700`"
+      :class="`${locale === ES_ES ? 'bg-red-900' : 'bg-red-100'} py-1 px-2 text-sm font-medium text-gray-900 rounded-l rounded-r border border-gray-200 hover:bg-red-900 hover:text-blue-700`"
       @click="changeLocale(ES_ES)"
     >
       <img
@@ -31,7 +31,7 @@
 
     <button
       type="button"
-      :class="`${locale === PT_BR ? 'bg-red-900' : 'bg-red-100'} py-1 px-2 text-sm font-medium text-gray-900 rounded-l border border-gray-200 hover:bg-red-900 hover:text-blue-700`"
+      :class="`${locale === PT_BR ? 'bg-red-900' : 'bg-red-100'} py-1 px-2 text-sm font-medium text-gray-900 rounded-l rounded-r border border-gray-200 hover:bg-red-900 hover:text-blue-700`"
       @click="changeLocale(PT_BR)"
     >
       <img
@@ -41,11 +41,24 @@
         class="rounded-sm"
       />
     </button>
+
+    <button
+      type="button"
+      :class="`${locale === FR_FR ? 'bg-red-900' : 'bg-red-100'} py-1 px-2 text-sm font-medium text-gray-900 rounded-l border border-gray-200 hover:bg-red-900 hover:text-blue-700`"
+      @click="changeLocale(FR_FR)"
+    >
+      <img
+        src="/fr_fr.svg"
+        alt="Français"
+        :width="width"
+        class="rounded-sm"
+      />
+    </button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { PT_BR, EN_US, ES_ES } from "@/constants/LocaleConstants"
+import { PT_BR, EN_US, ES_ES, FR_FR } from "@/constants/LocaleConstants"
 import { useLocaleStore } from "@/store/locale"
 import { storeToRefs } from "pinia"
 

@@ -12,6 +12,9 @@
       },
       "es_es": {
         "name": "Da\u00efs "
+      },
+      "fr_fr": {
+        "name": "Da\u00efs"
       }
     },
     "id_parent": 0
@@ -29,6 +32,9 @@
       },
       "es_es": {
         "name": "Elf\u00edn"
+      },
+      "fr_fr": {
+        "name": "Elfine"
       }
     },
     "id_parent": 0
@@ -46,6 +52,9 @@
       },
       "es_es": {
         "name": "Homcha\u00ef"
+      },
+      "fr_fr": {
+        "name": "Hom'cha\u00ef"
       }
     },
     "id_parent": 0
@@ -63,6 +72,9 @@
       },
       "es_es": {
         "name": "Humano"
+      },
+      "fr_fr": {
+        "name": "Humain"
       }
     },
     "id_parent": 0
@@ -80,6 +92,9 @@
       },
       "es_es": {
         "name": "Guemeliano"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite"
       }
     },
     "id_parent": 0
@@ -97,6 +112,9 @@
       },
       "es_es": {
         "name": "Desconocido"
+      },
+      "fr_fr": {
+        "name": "Inconnue"
       }
     },
     "id_parent": 0
@@ -113,6 +131,9 @@
         "name": "Solariano"
       },
       "es_es": {
+        "name": "Solarian"
+      },
+      "fr_fr": {
         "name": "Solarian"
       }
     },
@@ -131,6 +152,9 @@
       },
       "es_es": {
         "name": "Golem "
+      },
+      "fr_fr": {
+        "name": "Golem"
       }
     },
     "id_parent": 0
@@ -148,6 +172,9 @@
       },
       "es_es": {
         "name": "Bestia"
+      },
+      "fr_fr": {
+        "name": "B\u00eate"
       }
     },
     "id_parent": 0
@@ -165,6 +192,9 @@
       },
       "es_es": {
         "name": "Guemeliano del Aire"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de l'Air"
       }
     },
     "id_parent": 6
@@ -182,6 +212,9 @@
       },
       "es_es": {
         "name": "Guemeliano del Agua"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de l'Eau"
       }
     },
     "id_parent": 6
@@ -199,6 +232,9 @@
       },
       "es_es": {
         "name": "Guemeliano de la Tierra"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de la Terre"
       }
     },
     "id_parent": 6
@@ -216,6 +252,9 @@
       },
       "es_es": {
         "name": "Guemeliano de la Naturaleza"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de la Nature"
       }
     },
     "id_parent": 6
@@ -233,6 +272,9 @@
       },
       "es_es": {
         "name": "Guemeliano del Fuego"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite du Feu"
       }
     },
     "id_parent": 6
@@ -250,6 +292,9 @@
       },
       "es_es": {
         "name": "Guemeliano del Tiempo"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite du Temps"
       }
     },
     "id_parent": 6
@@ -267,6 +312,9 @@
       },
       "es_es": {
         "name": "Guemeliano de la Sombra"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de l'Ombre"
       }
     },
     "id_parent": 6
@@ -284,6 +332,9 @@
       },
       "es_es": {
         "name": "Guemelite Fantasmal"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite Fantomatique"
       }
     },
     "id_parent": 6
@@ -301,6 +352,9 @@
       },
       "es_es": {
         "name": "Guemeliano de Guem"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de Guem"
       }
     },
     "id_parent": 6
@@ -318,6 +372,9 @@
       },
       "es_es": {
         "name": "Guemeliano de la Guerra"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de la Guerre"
       }
     },
     "id_parent": 6
@@ -335,6 +392,9 @@
       },
       "es_es": {
         "name": "Guemeliano Drag\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite Dragon"
       }
     },
     "id_parent": 6
@@ -352,6 +412,9 @@
       },
       "es_es": {
         "name": "Guemeliano del Rayo"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de la Foudre"
       }
     },
     "id_parent": 6
@@ -369,6 +432,9 @@
       },
       "es_es": {
         "name": "No-Muerto"
+      },
+      "fr_fr": {
+        "name": "Non-Mort"
       }
     },
     "id_parent": 0
@@ -386,6 +452,9 @@
       },
       "es_es": {
         "name": "Elfo de Hielo"
+      },
+      "fr_fr": {
+        "name": "Elfe de glace"
       }
     },
     "id_parent": 0
@@ -403,6 +472,9 @@
       },
       "es_es": {
         "name": "Demonio"
+      },
+      "fr_fr": {
+        "name": "D\u00e9mon"
       }
     },
     "id_parent": 0
@@ -420,6 +492,9 @@
       },
       "es_es": {
         "name": "Guemeliano de N\u00e9hant"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite de N\u00e9hant"
       }
     },
     "id_parent": 6
@@ -437,6 +512,9 @@
       },
       "es_es": {
         "name": "Guemeliano Mental"
+      },
+      "fr_fr": {
+        "name": "Gu\u00e9m\u00e9lite Mental"
       }
     },
     "id_parent": 6
@@ -454,6 +532,9 @@
       },
       "es_es": {
         "name": "Eltariano"
+      },
+      "fr_fr": {
+        "name": "Eltarite"
       }
     },
     "id_parent": 0
