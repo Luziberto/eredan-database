@@ -11,11 +11,12 @@
       },
       "es_es": {
         "name": "Com\u00fan"
+      },
+      "fr_fr": {
+        "name": "Commune"
       }
     },
     "picture": "aa7edaab44e41c14e39531dc2476916e.png",
-
-
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -105,11 +106,12 @@
       },
       "es_es": {
         "name": "Poco Com\u00fan"
+      },
+      "fr_fr": {
+        "name": "Peu Commune"
       }
     },
     "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
-
-
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -199,11 +201,12 @@
       },
       "es_es": {
         "name": "Raro"
+      },
+      "fr_fr": {
+        "name": "Rare"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
-
-
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -293,11 +296,12 @@
       },
       "es_es": {
         "name": "Coleccionista"
+      },
+      "fr_fr": {
+        "name": "Collector"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-
-
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -419,11 +423,12 @@
       },
       "es_es": {
         "name": "Haza\u00f1a"
+      },
+      "fr_fr": {
+        "name": "Exploit"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
-
-
     "couleur_texte": "",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -445,10 +450,12 @@
       },
       "es_es": {
         "name": "Artwork"
+      },
+      "fr_fr": {
+        "name": "Artwork"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-
     "cadre_autre": "164850d71b535b80442d632d74a254b6.png",
     "couleur_texte": "",
     "couleur_fond_perso": "",
@@ -523,6 +530,9 @@
       },
       "es_es": {
         "name": "Legendario"
+      },
+      "fr_fr": {
+        "name": "L\u00e9gendaire"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
@@ -613,11 +623,13 @@
       },
       "es_es": {
         "name": "Congelado"
+      },
+      "fr_fr": {
+        "name": "Glac\u00e9e"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
     "cadre_perso": "91bbe68aaab12c6750b78b9830ee2da6.png",
-
     "couleur_texte": "#000000",
     "couleur_fond_perso": "",
     "icones_par_serie": [
@@ -659,11 +671,13 @@
       },
       "es_es": {
         "name": "Pokeredan"
+      },
+      "fr_fr": {
+        "name": "Pokeredan"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
     "cadre_perso": "da72c55563adb8844bb7b461d43ef386.png",
-
     "couleur_texte": "#ffffff",
     "couleur_fond_perso": "#11441e",
     "icones_par_serie": []
@@ -680,6 +694,9 @@
       },
       "es_es": {
         "name": "Rom\u00e1ntica Com\u00fan"
+      },
+      "fr_fr": {
+        "name": "Romantique Commune"
       }
     },
     "picture": "aa7edaab44e41c14e39531dc2476916e.png",
@@ -701,6 +718,9 @@
       },
       "es_es": {
         "name": "Rom\u00e1ntica Poco Com\u00fan"
+      },
+      "fr_fr": {
+        "name": "Romantique Peu Commune"
       }
     },
     "picture": "965c3f2c0ee6d7e4260d830c1ae5959f.png",
@@ -722,6 +742,9 @@
       },
       "es_es": {
         "name": "Rom\u00e1ntica Rara"
+      },
+      "fr_fr": {
+        "name": "Romantique Rare"
       }
     },
     "picture": "c28d95ee42b8b2831f6fc0e48ff54ee9.png",
@@ -743,6 +766,9 @@
       },
       "es_es": {
         "name": "Rom\u00e1ntica"
+      },
+      "fr_fr": {
+        "name": "Romantique"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -764,10 +790,12 @@
       },
       "es_es": {
         "name": "Maniobra"
+      },
+      "fr_fr": {
+        "name": "Manoeuvre"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
-
     "cadre_autre": "580eb70b06007a5a5daf5aa6291bbf8c.png",
     "couleur_texte": "#000000",
     "couleur_fond_perso": "",
@@ -785,11 +813,13 @@
       },
       "es_es": {
         "name": "Olimp\u00edadas"
+      },
+      "fr_fr": {
+        "name": "Olympiades"
       }
     },
     "picture": "dbb064518b6b359cd33a39bd4155931f.png",
     "cadre_perso": "507c6e907d42f439b5f62ad30d3836de.png",
-
     "couleur_texte": "#ffffff",
     "couleur_fond_perso": "#2b414f",
     "icones_par_serie": []
@@ -806,6 +836,9 @@
       },
       "es_es": {
         "name": "M\u00edtico"
+      },
+      "fr_fr": {
+        "name": "Mythique"
       }
     },
     "picture": "d14551466d86165d31f3d718bc6b8c7b.png",
@@ -888,6 +921,9 @@
       },
       "es_es": {
         "name": "alma condenada"
+      },
+      "fr_fr": {
+        "name": "Ame damn\u00e9e"
       }
     },
     "picture": "604f95b3e0ac7425ea5f9015976cb219.png",
@@ -922,6 +958,9 @@
       },
       "es_es": {
         "name": "alma sagrada"
+      },
+      "fr_fr": {
+        "name": "Ame sacr\u00e9e"
       }
     },
     "picture": "604f95b3e0ac7425ea5f9015976cb219.png",

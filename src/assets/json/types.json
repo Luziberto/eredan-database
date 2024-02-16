@@ -13,6 +13,9 @@
       },
       "es_es": {
         "name": "Objeto"
+      },
+      "fr_fr": {
+        "name": "Objet"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -36,6 +39,9 @@
       },
       "es_es": {
         "name": "Personaje"
+      },
+      "fr_fr": {
+        "name": "Personnage"
       }
     },
     "cadre_type": "bdc65c66b657180397a630811d2913de.png",
@@ -59,6 +65,9 @@
       },
       "es_es": {
         "name": "Acci\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Action"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -82,6 +91,9 @@
       },
       "es_es": {
         "name": "Arma"
+      },
+      "fr_fr": {
+        "name": "Arme"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -105,6 +117,9 @@
       },
       "es_es": {
         "name": "Sortilegio"
+      },
+      "fr_fr": {
+        "name": "Sort"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -128,6 +143,9 @@
       },
       "es_es": {
         "name": "Poci\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Potion"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -151,6 +169,9 @@
       },
       "es_es": {
         "name": "Pergamino"
+      },
+      "fr_fr": {
+        "name": "Parchemin"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -174,6 +195,9 @@
       },
       "es_es": {
         "name": "Joya"
+      },
+      "fr_fr": {
+        "name": "Bijou"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -197,6 +221,9 @@
       },
       "es_es": {
         "name": "Te\u00fargia"
+      },
+      "fr_fr": {
+        "name": "Th\u00e9urgie"
       }
     },
     "cadre_type": "9ed21e517736c1f0efd02353f9c5a141.png",
@@ -220,6 +247,9 @@
       },
       "es_es": {
         "name": "F\u00e9"
+      },
+      "fr_fr": {
+        "name": "Foi"
       }
     },
     "cadre_type": "9ed21e517736c1f0efd02353f9c5a141.png",
@@ -243,6 +273,9 @@
       },
       "es_es": {
         "name": "C\u00f3lera Divina"
+      },
+      "fr_fr": {
+        "name": "Col\u00e8re divine"
       }
     },
     "cadre_type": "9ed21e517736c1f0efd02353f9c5a141.png",
@@ -266,6 +299,9 @@
       },
       "es_es": {
         "name": "Destino"
+      },
+      "fr_fr": {
+        "name": "Destin"
       }
     },
     "cadre_type": "9ed21e517736c1f0efd02353f9c5a141.png",
@@ -289,6 +325,9 @@
       },
       "es_es": {
         "name": "Fuego"
+      },
+      "fr_fr": {
+        "name": "Feu"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -312,6 +351,9 @@
       },
       "es_es": {
         "name": "Aire"
+      },
+      "fr_fr": {
+        "name": "Air"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -335,6 +377,9 @@
       },
       "es_es": {
         "name": "Agua"
+      },
+      "fr_fr": {
+        "name": "Eau"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -358,6 +403,9 @@
       },
       "es_es": {
         "name": "Tierra"
+      },
+      "fr_fr": {
+        "name": "Terre"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -381,6 +429,9 @@
       },
       "es_es": {
         "name": "Luz"
+      },
+      "fr_fr": {
+        "name": "Lumi\u00e8re"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -404,6 +455,9 @@
       },
       "es_es": {
         "name": "Sombra"
+      },
+      "fr_fr": {
+        "name": "Ombre"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -426,6 +480,9 @@
         "name": "Mental"
       },
       "es_es": {
+        "name": "Mental"
+      },
+      "fr_fr": {
         "name": "Mental"
       }
     },
@@ -450,6 +507,9 @@
       },
       "es_es": {
         "name": "Armadura"
+      },
+      "fr_fr": {
+        "name": "Armure"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -473,6 +533,9 @@
       },
       "es_es": {
         "name": "Rayo"
+      },
+      "fr_fr": {
+        "name": "Foudre"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -496,6 +559,9 @@
       },
       "es_es": {
         "name": "Drac\u00f3nico"
+      },
+      "fr_fr": {
+        "name": "Draconique"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -519,6 +585,9 @@
       },
       "es_es": {
         "name": "Amuleto"
+      },
+      "fr_fr": {
+        "name": "Amulette"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -542,6 +611,9 @@
       },
       "es_es": {
         "name": "Tiempo"
+      },
+      "fr_fr": {
+        "name": "Temps"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -565,6 +637,9 @@
       },
       "es_es": {
         "name": "Naturaleza"
+      },
+      "fr_fr": {
+        "name": "Nature"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -588,6 +663,9 @@
       },
       "es_es": {
         "name": "Otro"
+      },
+      "fr_fr": {
+        "name": "Autre"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -611,6 +689,9 @@
       },
       "es_es": {
         "name": "Daga"
+      },
+      "fr_fr": {
+        "name": "Dague"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -634,6 +715,9 @@
       },
       "es_es": {
         "name": "Escudo"
+      },
+      "fr_fr": {
+        "name": "Bouclier"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -657,6 +741,9 @@
       },
       "es_es": {
         "name": "Lanza "
+      },
+      "fr_fr": {
+        "name": "Lance"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -680,6 +767,9 @@
       },
       "es_es": {
         "name": "de dos manos"
+      },
+      "fr_fr": {
+        "name": "\u00e0 deux mains"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -703,6 +793,9 @@
       },
       "es_es": {
         "name": "Maza"
+      },
+      "fr_fr": {
+        "name": "Fleau"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -726,6 +819,9 @@
       },
       "es_es": {
         "name": "Hacha"
+      },
+      "fr_fr": {
+        "name": "Hache"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -749,6 +845,9 @@
       },
       "es_es": {
         "name": "Espada"
+      },
+      "fr_fr": {
+        "name": "Ep\u00e9e"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -772,6 +871,9 @@
       },
       "es_es": {
         "name": "Hacha"
+      },
+      "fr_fr": {
+        "name": "Hache"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -795,6 +897,9 @@
       },
       "es_es": {
         "name": "Bast\u00f3n"
+      },
+      "fr_fr": {
+        "name": "B\u00e2ton"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -818,6 +923,9 @@
       },
       "es_es": {
         "name": "de una mano"
+      },
+      "fr_fr": {
+        "name": "\u00e0 une main"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -841,6 +949,9 @@
       },
       "es_es": {
         "name": "No jugable"
+      },
+      "fr_fr": {
+        "name": "Non jouable"
       }
     },
     "cadre_type": null,
@@ -864,6 +975,9 @@
       },
       "es_es": {
         "name": "Experiencia"
+      },
+      "fr_fr": {
+        "name": "Exp\u00e9rience"
       }
     },
     "cadre_type": "899e3b8f22828a2a09ba50386b94b720.png",
@@ -887,6 +1001,9 @@
       },
       "es_es": {
         "name": "de la Guerra"
+      },
+      "fr_fr": {
+        "name": "de la Guerre"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -910,6 +1027,9 @@
       },
       "es_es": {
         "name": "Libro de Magia"
+      },
+      "fr_fr": {
+        "name": "Grimoire"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -933,6 +1053,9 @@
       },
       "es_es": {
         "name": "Arco"
+      },
+      "fr_fr": {
+        "name": "Arc"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -956,6 +1079,9 @@
       },
       "es_es": {
         "name": "Espada"
+      },
+      "fr_fr": {
+        "name": "Ep\u00e9e"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -979,6 +1105,9 @@
       },
       "es_es": {
         "name": "Loteria"
+      },
+      "fr_fr": {
+        "name": "Loterie"
       }
     },
     "cadre_type": "899e3b8f22828a2a09ba50386b94b720.png",
@@ -1002,6 +1131,9 @@
       },
       "es_es": {
         "name": "Garras"
+      },
+      "fr_fr": {
+        "name": "Griffes"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1025,6 +1157,9 @@
       },
       "es_es": {
         "name": "Alimento"
+      },
+      "fr_fr": {
+        "name": "Nourriture"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1048,6 +1183,9 @@
       },
       "es_es": {
         "name": "Vestimenta"
+      },
+      "fr_fr": {
+        "name": "V\u00eatement"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1071,6 +1209,9 @@
       },
       "es_es": {
         "name": "Herramienta"
+      },
+      "fr_fr": {
+        "name": "Outil"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1094,6 +1235,9 @@
       },
       "es_es": {
         "name": "Decoraci\u00f3n"
+      },
+      "fr_fr": {
+        "name": "D\u00e9coration"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1117,6 +1261,9 @@
       },
       "es_es": {
         "name": "Mascota"
+      },
+      "fr_fr": {
+        "name": "Familier"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1139,6 +1286,9 @@
         "name": "Hologr\u00e1fica"
       },
       "es_es": {
+        "name": "Foil"
+      },
+      "fr_fr": {
         "name": "Foil"
       }
     },
@@ -1163,6 +1313,9 @@
       },
       "es_es": {
         "name": "P\u00f3lvora"
+      },
+      "fr_fr": {
+        "name": "\u00e0 poudre"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1186,6 +1339,9 @@
       },
       "es_es": {
         "name": "Tesoro"
+      },
+      "fr_fr": {
+        "name": "Tr\u00e9sor"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1209,6 +1365,9 @@
       },
       "es_es": {
         "name": "de Polvora"
+      },
+      "fr_fr": {
+        "name": "\u00e0 poudre"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1232,6 +1391,9 @@
       },
       "es_es": {
         "name": "de Nehant"
+      },
+      "fr_fr": {
+        "name": "de N\u00e9hant"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -1255,6 +1417,9 @@
       },
       "es_es": {
         "name": "Corrupci\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Corruption"
       }
     },
     "cadre_type": "7b3c7b2bcf7fa50225c1a4d501fb0c14.png",
@@ -1277,6 +1442,9 @@
         "name": "Volk"
       },
       "es_es": {
+        "name": "Volk"
+      },
+      "fr_fr": {
         "name": "Volk"
       }
     },
@@ -1301,6 +1469,9 @@
       },
       "es_es": {
         "name": "Varilla de Proelior Magus"
+      },
+      "fr_fr": {
+        "name": "Baguette du Proelior Magus"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1324,6 +1495,9 @@
       },
       "es_es": {
         "name": "Elemento"
+      },
+      "fr_fr": {
+        "name": "El\u00e9ment"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -1347,6 +1521,9 @@
       },
       "es_es": {
         "name": "Cartas de Pokeredan"
+      },
+      "fr_fr": {
+        "name": "Cartes de Pokeredan"
       }
     },
     "cadre_type": null,
@@ -1370,6 +1547,9 @@
       },
       "es_es": {
         "name": "Sirviente Demon\u00edaco"
+      },
+      "fr_fr": {
+        "name": "Larbin d\u00e9moniaque"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1393,6 +1573,9 @@
       },
       "es_es": {
         "name": "Misi\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Qu\u00eate"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -1416,6 +1599,9 @@
       },
       "es_es": {
         "name": "Estandarte"
+      },
+      "fr_fr": {
+        "name": "Banni\u00e8re"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1439,6 +1625,9 @@
       },
       "es_es": {
         "name": "Evento"
+      },
+      "fr_fr": {
+        "name": "Ev\u00e9nement"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1461,6 +1650,9 @@
         "name": "Guem"
       },
       "es_es": {
+        "name": "de Guem"
+      },
+      "fr_fr": {
         "name": "de Guem"
       }
     },
@@ -1485,6 +1677,9 @@
       },
       "es_es": {
         "name": "Superpoder de Eredan"
+      },
+      "fr_fr": {
+        "name": "Faveur d'Eredan"
       }
     },
     "cadre_type": "bc29ca3274dc0c22b3d5060c3c72ee1c.png",
@@ -1508,6 +1703,9 @@
       },
       "es_es": {
         "name": "M\u00e1gica"
+      },
+      "fr_fr": {
+        "name": "Magique"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -1531,6 +1729,9 @@
       },
       "es_es": {
         "name": "Protectora"
+      },
+      "fr_fr": {
+        "name": "Protecteur"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -1554,6 +1755,9 @@
       },
       "es_es": {
         "name": "Ofensiva"
+      },
+      "fr_fr": {
+        "name": "Offensif"
       }
     },
     "cadre_type": "255caf9c8d669262473d170d1da4cd24.png",
@@ -1577,6 +1781,9 @@
       },
       "es_es": {
         "name": "Alm\u00e1dena"
+      },
+      "fr_fr": {
+        "name": "Masse"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1600,6 +1807,9 @@
       },
       "es_es": {
         "name": "R\u00fanico"
+      },
+      "fr_fr": {
+        "name": "Runique"
       }
     },
     "cadre_type": "9ed21e517736c1f0efd02353f9c5a141.png",
@@ -1623,6 +1833,9 @@
       },
       "es_es": {
         "name": "Runa"
+      },
+      "fr_fr": {
+        "name": "Rune"
       }
     },
     "cadre_type": "899e3b8f22828a2a09ba50386b94b720.png",
@@ -1646,6 +1859,9 @@
       },
       "es_es": {
         "name": "Necrosis"
+      },
+      "fr_fr": {
+        "name": "N\u00e9crose"
       }
     },
     "cadre_type": "cb929cb20b43403cf01a99420ce1acf4.png",
@@ -1669,6 +1885,9 @@
       },
       "es_es": {
         "name": "Martillo"
+      },
+      "fr_fr": {
+        "name": "Marteau"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1692,6 +1911,9 @@
       },
       "es_es": {
         "name": "Piedra-Coraz\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Pierre-coeur"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1715,6 +1937,9 @@
       },
       "es_es": {
         "name": "Flecha"
+      },
+      "fr_fr": {
+        "name": "Fl\u00e8che"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1738,6 +1963,9 @@
       },
       "es_es": {
         "name": "Necrosis"
+      },
+      "fr_fr": {
+        "name": "Necrose"
       }
     },
     "cadre_type": "cb929cb20b43403cf01a99420ce1acf4.png",
@@ -1761,6 +1989,9 @@
       },
       "es_es": {
         "name": "Necrosis"
+      },
+      "fr_fr": {
+        "name": "Necrose"
       }
     },
     "cadre_type": "cb929cb20b43403cf01a99420ce1acf4.png",
@@ -1784,6 +2015,9 @@
       },
       "es_es": {
         "name": "Nota"
+      },
+      "fr_fr": {
+        "name": "Note"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1807,6 +2041,9 @@
       },
       "es_es": {
         "name": "Casco"
+      },
+      "fr_fr": {
+        "name": "Casque"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1830,6 +2067,9 @@
       },
       "es_es": {
         "name": "Melodia"
+      },
+      "fr_fr": {
+        "name": "M\u00e9lodie"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",
@@ -1852,6 +2092,9 @@
         "name": "Orbe"
       },
       "es_es": {
+        "name": "Orbe"
+      },
+      "fr_fr": {
         "name": "Orbe"
       }
     },
@@ -1876,6 +2119,9 @@
       },
       "es_es": {
         "name": "T\u00edtere"
+      },
+      "fr_fr": {
+        "name": "Pantin"
       }
     },
     "cadre_type": "85a61107e0295cf531ba8d3bc05da18a.png",

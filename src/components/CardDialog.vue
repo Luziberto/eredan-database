@@ -39,6 +39,7 @@
           class="lg:w-auto hidden"
           :src="`http://static.eredan.com/cards/web_big/${translate.IMG_FOLDER}/${selectedCard.filename}.png`"
           @load="toggleDefaultPicture($event.target as HTMLImageElement, false)"
+          @click="openInNewTab(`http://static.eredan.com/images/web_big/${selectedCard.illustration}`)"
         />
       </div>
       <CardDialogInfo :selected-card="selectedCard" />
@@ -93,6 +94,11 @@ watch(() => translate, () => {
     toggleDefaultPicture(element as HTMLImageElement, true)
   })
 }, { deep: true })
+
+const openInNewTab = (url: string) => {
+  const win = window.open(url, '_blank')
+  win?.focus()
+}
 
 </script>
 

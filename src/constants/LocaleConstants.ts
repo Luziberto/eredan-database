@@ -1,6 +1,7 @@
 export const PT_BR = "PT_BR"
 export const EN_US = "EN_US"
 export const ES_ES = "ES_ES"
+export const FR_FR = "FR_FR"
 
 export interface Translate {
   IMG_FOLDER: string,
@@ -23,8 +24,8 @@ export interface Translate {
   CURRENT_PAGE: string,
   DRAG_DROP: string,
   DECK_ZONE: string,
-  CLEAR : string,
-  PRINT : string
+  CLEAR: string,
+  PRINT: string
 }
 
 export enum PT_BR_TRANSLATE {
@@ -102,12 +103,39 @@ export enum ES_ES_TRANSLATE {
   PRINT = "Imprimir"
 }
 
+export enum FR_FR_TRANSLATE {
+  IMG_FOLDER = "fr",
+  LANGUAGE_ABBREVIATION = "fr_fr",
+  SEARCH = "Rechercher",
+  RARITY = "Rareté",
+  EVOLUTION = "Évolution",
+  TYPE = "Type",
+  SERIE = "Série",
+  DESCRIPTION = "Description",
+  GUILD = "Guilde",
+  RACE = "Race",
+  CLASSE = "Classe",
+  CASTE = "Caste",
+  TRAIT = "Caractéristiques",
+  REQUIREMENTS = "Requirements",
+  ALL = "Tout",
+  RESULTS = "Résultats",
+  TOTAL_PAGES = "Pages totales",
+  CURRENT_PAGE = "Page actuelle",
+  DRAG_DROP = "Glisser déposer",
+  DECK_ZONE = "Zone de deck",
+  CLEAR = "Vider",
+  PRINT = "Imprimer",
+}
+
 export function getTranslate(locale: string) : Translate {
   if (locale === EN_US) {
     return EN_US_TRANSLATE
   } if (locale === ES_ES) {
     return ES_ES_TRANSLATE
-  } else {
+  } if (locale == PT_BR) {
     return PT_BR_TRANSLATE
+  } else {
+    return FR_FR_TRANSLATE
   }
 }

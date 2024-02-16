@@ -11,6 +11,9 @@
       },
       "es_es": {
         "name": "Acto 1 - Ca\u00edda del Cielo"
+      },
+      "fr_fr": {
+        "name": "Acte 1 - Tomb\u00e9e du Ciel"
       }
     },
     "visible": true,
@@ -28,6 +31,9 @@
       },
       "es_es": {
         "name": "Especial"
+      },
+      "fr_fr": {
+        "name": "Sp\u00e9ciale"
       }
     },
     "visible": true,
@@ -45,6 +51,9 @@
       },
       "es_es": {
         "name": "Cartas Epicas"
+      },
+      "fr_fr": {
+        "name": "Cartes Epiques"
       }
     },
     "visible": true,
@@ -62,6 +71,9 @@
       },
       "es_es": {
         "name": "Acto 1 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 1 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -79,6 +91,9 @@
       },
       "es_es": {
         "name": "Cartas de Destino"
+      },
+      "fr_fr": {
+        "name": "Cartes de Destin\u00e9e"
       }
     },
     "visible": true,
@@ -96,6 +111,9 @@
       },
       "es_es": {
         "name": "Acto 2 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 2 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -113,6 +131,9 @@
       },
       "es_es": {
         "name": "Acto 3 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 3 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -130,6 +151,9 @@
       },
       "es_es": {
         "name": "Cartas Invisibles"
+      },
+      "fr_fr": {
+        "name": "Cartes Invisibles"
       }
     },
     "visible": false,
@@ -147,6 +171,9 @@
       },
       "es_es": {
         "name": "Tutorial"
+      },
+      "fr_fr": {
+        "name": "Tutoriel"
       }
     },
     "visible": true,
@@ -164,6 +191,9 @@
       },
       "es_es": {
         "name": "Acto 2 - El Canto del Cristal"
+      },
+      "fr_fr": {
+        "name": "Acte 2 - Le Chant du Cristal"
       }
     },
     "visible": true,
@@ -181,6 +211,9 @@
       },
       "es_es": {
         "name": "Acto 3 - Iluminaci\u00f3n Deslumbrante"
+      },
+      "fr_fr": {
+        "name": "Acte 3 - Embrasement"
       }
     },
     "visible": true,
@@ -198,6 +231,9 @@
       },
       "es_es": {
         "name": "Acto 4 - De Fuego y de Sangre"
+      },
+      "fr_fr": {
+        "name": "Acte 4 - A Feu et \u00e0 Sang"
       }
     },
     "visible": true,
@@ -215,6 +251,9 @@
       },
       "es_es": {
         "name": "Acto 4 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 4 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -232,6 +271,9 @@
       },
       "es_es": {
         "name": "Cartas de Pokeredan"
+      },
+      "fr_fr": {
+        "name": "Cartes de Pokeredan"
       }
     },
     "visible": true,
@@ -249,6 +291,9 @@
       },
       "es_es": {
         "name": "Acto 5 - La Guerra de Sol'ra"
+      },
+      "fr_fr": {
+        "name": "Acte 5 - La Guerre de Sol'ra"
       }
     },
     "visible": true,
@@ -266,6 +311,9 @@
       },
       "es_es": {
         "name": "Acto 5 - Cartas Evento"
+      },
+      "fr_fr": {
+        "name": "Acte 5 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -283,6 +331,9 @@
       },
       "es_es": {
         "name": "Evento El regreso de Scragh"
+      },
+      "fr_fr": {
+        "name": "Evenement Le retour de Scragh"
       }
     },
     "visible": false,
@@ -300,6 +351,9 @@
       },
       "es_es": {
         "name": "Aventura"
+      },
+      "fr_fr": {
+        "name": "Aventure"
       }
     },
     "visible": true,
@@ -317,6 +371,9 @@
       },
       "es_es": {
         "name": "Acto 6 - Un Mundo Destrozado"
+      },
+      "fr_fr": {
+        "name": "Acte 6 - Un Monde Bris\u00e9"
       }
     },
     "visible": true,
@@ -334,6 +391,9 @@
       },
       "es_es": {
         "name": "Acto 6 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 6 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -351,6 +411,9 @@
       },
       "es_es": {
         "name": "Acto 7 - Las Puertas del Infinito"
+      },
+      "fr_fr": {
+        "name": "Acte 7 - Les Portes de l'Infini"
       }
     },
     "visible": true,
@@ -368,6 +431,9 @@
       },
       "es_es": {
         "name": "Acto 7 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 7 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -385,6 +451,9 @@
       },
       "es_es": {
         "name": "Set de Base : Origen"
+      },
+      "fr_fr": {
+        "name": "Set de Base : Origine"
       }
     },
     "visible": true,
@@ -402,6 +471,9 @@
       },
       "es_es": {
         "name": "Acto 8 - Equinoccio"
+      },
+      "fr_fr": {
+        "name": "Acte 8 - Equinoxe"
       }
     },
     "visible": true,
@@ -419,6 +491,9 @@
       },
       "es_es": {
         "name": "Acto 8 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 8 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -436,6 +511,9 @@
       },
       "es_es": {
         "name": "Acto 9 - El Legado de Eredan"
+      },
+      "fr_fr": {
+        "name": "Acte 9 - L'H\u00e9ritage d'Eredan"
       }
     },
     "visible": true,
@@ -453,6 +531,9 @@
       },
       "es_es": {
         "name": "Acto 9 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 9 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -470,6 +551,9 @@
       },
       "es_es": {
         "name": "Acto 10 - Naufragio"
+      },
+      "fr_fr": {
+        "name": "Acte 10 - Naufrage"
       }
     },
     "visible": true,
@@ -487,6 +571,9 @@
       },
       "es_es": {
         "name": "Acto 10 - Cartas Eventos"
+      },
+      "fr_fr": {
+        "name": "Acte 10 - Cartes Ev\u00e9nements"
       }
     },
     "visible": true,
@@ -504,6 +591,9 @@
       },
       "es_es": {
         "name": "Acto 11 - Distorsi\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Acte 11 - Distorsion"
       }
     },
     "visible": true,
@@ -521,6 +611,9 @@
       },
       "es_es": {
         "name": "Acto 12 - Emergencia"
+      },
+      "fr_fr": {
+        "name": "Acte 12 - \u00c9mergence"
       }
     },
     "visible": true,
@@ -538,6 +631,9 @@
       },
       "es_es": {
         "name": "Acte 13 - Requiem colosal"
+      },
+      "fr_fr": {
+        "name": "Acte 13 - Requiem colossal"
       }
     },
     "visible": true,
@@ -555,6 +651,9 @@
       },
       "es_es": {
         "name": "Acto 14 - Renovaci\u00f3n de Guem"
+      },
+      "fr_fr": {
+        "name": "Acte 14 - Guem Renouvell\u00e9e"
       }
     },
     "visible": true,

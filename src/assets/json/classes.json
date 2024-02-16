@@ -11,9 +11,11 @@
       },
       "es_es": {
         "name": "Combatiente"
+      },
+      "fr_fr": {
+        "name": "Combattant"
       }
     },
-
     "picture": "d29065540f9987c359e6447c7027ead0.png"
   },
   {
@@ -28,6 +30,9 @@
       },
       "es_es": {
         "name": "Mago"
+      },
+      "fr_fr": {
+        "name": "Mage"
       }
     },
     "picture": "3dcf24998808c09c06cffe4b0e8d4598.png"
@@ -44,6 +49,9 @@
       },
       "es_es": {
         "name": "Merodeador"
+      },
+      "fr_fr": {
+        "name": "Maraudeur"
       }
     },
     "picture": "af0fe07aff1f68bedbccfa1747e27521.png"
@@ -60,6 +68,9 @@
       },
       "es_es": {
         "name": "Sacerdote"
+      },
+      "fr_fr": {
+        "name": "Pr\u00eatre"
       }
     },
     "picture": "effa47fc496aa429e1659d86cf013a32.png"
@@ -76,6 +87,9 @@
       },
       "es_es": {
         "name": "Artesano"
+      },
+      "fr_fr": {
+        "name": "Artisan"
       }
     },
     "picture": "2725070774ffdc6ecce88bf718a201f4.png"
@@ -92,6 +106,9 @@
       },
       "es_es": {
         "name": "Desconocido"
+      },
+      "fr_fr": {
+        "name": "Inconnue"
       }
     },
     "picture": "492c246bbfb23cbffb210c943b57b636.png"
@@ -108,6 +125,9 @@
       },
       "es_es": {
         "name": "Berserker"
+      },
+      "fr_fr": {
+        "name": "Berserker"
       }
     },
     "picture": "2dd0835cc885e1fcba61234813339d0d.png"
@@ -123,6 +143,9 @@
         "name": "Bardo"
       },
       "es_es": {
+        "name": "Barde"
+      },
+      "fr_fr": {
         "name": "Barde"
       }
     },
