@@ -10,6 +10,14 @@
       "pt_br": {
         "name": "Enviados de Noz'Dingard ",
         "description": "Poderosos magos devotos ao Drag\u00e3o."
+      },
+      "es_es": {
+        "name": "Los Enviados de Noz'Dingard",
+        "description": "Poderosos magos devotos al Drag\u00f3n. "
+      },
+      "fr_fr": {
+        "name": "Les Envoy\u00e9s de Noz'Dingard",
+        "description": "De puissants magiciens d\u00e9vou\u00e9s envers Dragon."
       }
     },
     "picture": "6d67edf96a5395213ce3734526c04f0f.png",
@@ -26,6 +34,14 @@
       "pt_br": {
         "name": "Guerreiros Zil",
         "description": "Os mestres das sombras e outros tipos de trapaceiros fazem parte do Circo psicod\u00e9lico."
+      },
+      "es_es": {
+        "name": "Los Combatientes de Zil",
+        "description": "Los maestros de la sombra y otros tipos de embaucadores forman parte del circo psicod\u00e9lico."
+      },
+      "fr_fr": {
+        "name": "Les Combattants de Zil",
+        "description": "Le psychedelic circus abrite les ma\u00eetres de l'ombre et autres entourloupeurs."
       }
     },
     "picture": "ab53ea879665aa998ffff246d8a25ba5.png",
@@ -42,6 +58,14 @@
       "pt_br": {
         "name": "Kotoba",
         "description": "Orgulhosos guerreiros do Imp\u00e9rio de Xzia, seguindo o caminho da honra."
+      },
+      "es_es": {
+        "name": "Kotoba ",
+        "description": "Orgullosos guerreros del Imperio de Xzia que siguen el camino del honor."
+      },
+      "fr_fr": {
+        "name": "Kotoba",
+        "description": "De fiers guerriers de l'Empire de Xzia qui suivent la voie de l'honneur."
       }
     },
     "picture": "462fe73b74a8f01f54fdd33eaba323b7.png",
@@ -58,6 +82,14 @@
       "pt_br": {
         "name": "Cora\u00e7\u00e3o de Seiva",
         "description": "Filhos da \u00c1rvore-Mundo; aqueles que protegem a Floresta Ancestral. "
+      },
+      "es_es": {
+        "name": "Coraz\u00f3n de Savia",
+        "description": "Los ni\u00f1os del \u00c1rbol-Mundo que cuidan los bosques ancestrales. "
+      },
+      "fr_fr": {
+        "name": "C\u0153ur de S\u00e8ve",
+        "description": "Les enfants de l'Arbre-Monde qui gardent leur for\u00eat ancestrale."
       }
     },
     "picture": "c110c36a81557aa66fc777345f149969.png",
@@ -74,6 +106,14 @@
       "pt_br": {
         "name": "Piratas",
         "description": "Guerreiros do ar e mestres no manuseio de Armas de P\u00f3lvora."
+      },
+      "es_es": {
+        "name": "Piratas",
+        "description": "Guerreros del aire y expertos en armas de p\u00f3lvora.  "
+      },
+      "fr_fr": {
+        "name": "Pirates",
+        "description": "Guerriers des airs et grands amateurs d'armes \u00e0 poudre."
       }
     },
     "picture": "18b157d54ea51490d87fa5289dd43c38.png",
@@ -84,12 +124,20 @@
     "script_slug": "nameades",
     "labels": {
       "en_us": {
-        "name": "Desert Nomads",
+        "name": "Desert nameads",
         "description": "Coming from the four corners of the world, they are the servants of the King of Mineptra. "
       },
       "pt_br": {
         "name": "N\u00f4mades do Deserto",
         "description": "Vindos dos quatro cantos do mundo, eles s\u00e3o os servos do Rei de Mineptra."
+      },
+      "es_es": {
+        "name": "N\u00f3mades del Desierto",
+        "description": "Provenientes de las 4 esquinas del mundo, ellos son los sirvientes del Rey de Mineptra. "
+      },
+      "fr_fr": {
+        "name": "Nomades du d\u00e9sert",
+        "description": "Venus des quatre coins du d\u00e9sert ils sont les serviteurs du roi de Mineptra."
       }
     },
     "picture": "25fd5740bc64712b8353b56cd6a65bda.png",
@@ -103,9 +151,17 @@
         "name": "Mercenaries",
         "description": "Valorous adventurers who offer their services to the highest bidder or to just causes. "
       },
+      "es_es": {
+        "name": "Mercenarios",
+        "description": "Dos valientes aventureros quienes ofrecen sus servicios al mejor postor o las causas justas. "
+      },
       "en_us": {
         "name": "Mercen\u00e1rios",
         "description": "Dois bravos aventureiros que oferecem seus servi\u00e7os \u00e0quele que pagar mais ou para causas justas."
+      },
+      "fr_fr": {
+        "name": "Mercenaires",
+        "description": "De valeureux aventuriers offrants leur service au plus offrant ou aux causes justes."
       }
     },
     "picture": "db0b06c586298efe1c579a8e7ab5febc.png",
@@ -122,6 +178,14 @@
       "pt_br": {
         "name": "Neantistas",
         "description": "Os mestres dos dem\u00f4nios e da manipula\u00e7\u00e3o dos desejos."
+      },
+      "es_es": {
+        "name": "Nehantistas",
+        "description": "Los maestros de los demonios y de la manipulaci\u00f3n de voluntades. "
+      },
+      "fr_fr": {
+        "name": "N\u00e9hantistes",
+        "description": "Les ma\u00eetres des d\u00e9mons et de la manipulation de la volont\u00e9."
       }
     },
     "picture": "fe7aa75fa9f3031c09aa1849b915deb4.png",
@@ -138,6 +202,14 @@
       "pt_br": {
         "name": "Legi\u00e3o R\u00fanica",
         "description": "Os guerreiros e servos do Pante\u00e3o de Tantad."
+      },
+      "es_es": {
+        "name": "Legi\u00f3n R\u00fanica",
+        "description": "Los Guerreros y los Sirvientes del Pante\u00f3n de Tantad."
+      },
+      "fr_fr": {
+        "name": "L\u00e9gion Runique",
+        "description": "Les guerriers et les serviteurs du Panth\u00e9on de Tantad."
       }
     },
     "picture": "57a941ada9c0991d04945d7d221f75c1.png",
@@ -153,6 +225,14 @@
       },
       "pt_br": {
         "name": "Liga L\u00edtica",
+        "description": null
+      },
+      "es_es": {
+        "name": "Enlazadores de Piedras",
+        "description": null
+      },
+      "fr_fr": {
+        "name": "Lieurs de pierres",
         "description": null
       }
     },

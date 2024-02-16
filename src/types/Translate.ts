@@ -6,5 +6,13 @@ export interface TranslateContent {
   pt_br: {
     name: string,
     description?: string | null
+  },
+  es_es: {
+    name: string,
+    description?: string | null
+  },
+  fr_fr: {
+    name: string,
+    description?: string | null
   }
 }

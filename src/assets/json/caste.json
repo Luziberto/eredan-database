@@ -8,6 +8,12 @@
       },
       "pt_br": {
         "name": "L\u00e2mina M\u00edstica"
+      },
+      "es_es": {
+        "name": "Guerrera-M\u00e1gica"
+      },
+      "fr_fr": {
+        "name": "Sorcelame"
       }
     },
     "id_parent": 0
@@ -21,6 +27,12 @@
       },
       "pt_br": {
         "name": "Cavaleiro Drag\u00e3o"
+      },
+      "es_es": {
+        "name": "Caballero Drag\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Chevalier Dragon"
       }
     },
     "id_parent": 0
@@ -34,6 +46,12 @@
       },
       "pt_br": {
         "name": "Rastreador"
+      },
+      "es_es": {
+        "name": "Abatidor"
+      },
+      "fr_fr": {
+        "name": "Traqueur"
       }
     },
     "id_parent": 0
@@ -47,6 +65,12 @@
       },
       "pt_br": {
         "name": "Tsoutai"
+      },
+      "es_es": {
+        "name": "Tsoutai"
+      },
+      "fr_fr": {
+        "name": "Tsouta\u00ef"
       }
     },
     "id_parent": 0
@@ -59,6 +83,12 @@
         "name": "Eclipse"
       },
       "pt_br": {
+        "name": "Eclipse"
+      },
+      "es_es": {
+        "name": "Eclipse"
+      },
+      "fr_fr": {
         "name": "Eclipse"
       }
     },
@@ -73,6 +103,12 @@
       },
       "pt_br": {
         "name": "Corvo"
+      },
+      "es_es": {
+        "name": "Cuervo"
+      },
+      "fr_fr": {
+        "name": "Corbeau"
       }
     },
     "id_parent": 0
@@ -86,6 +122,12 @@
       },
       "pt_br": {
         "name": "Circo"
+      },
+      "es_es": {
+        "name": "Circus"
+      },
+      "fr_fr": {
+        "name": "Circus"
       }
     },
     "id_parent": 0
@@ -99,6 +141,12 @@
       },
       "pt_br": {
         "name": "A Trupe"
+      },
+      "es_es": {
+        "name": "La Jaur\u00eda"
+      },
+      "fr_fr": {
+        "name": "La Meute"
       }
     },
     "id_parent": 0
@@ -112,6 +160,12 @@
       },
       "pt_br": {
         "name": "Cortes\u00e3o"
+      },
+      "es_es": {
+        "name": "Cortesano"
+      },
+      "fr_fr": {
+        "name": "Courtisan"
       }
     },
     "id_parent": 0
@@ -124,6 +178,12 @@
         "name": "Compendium"
       },
       "pt_br": {
+        "name": "Compendium"
+      },
+      "es_es": {
+        "name": "Compendium"
+      },
+      "fr_fr": {
         "name": "Compendium"
       }
     },
@@ -138,6 +198,12 @@
       },
       "pt_br": {
         "name": "Guardi\u00e3o do Templo"
+      },
+      "es_es": {
+        "name": "Guardian del Templo"
+      },
+      "fr_fr": {
+        "name": "Gardien du Temple"
       }
     },
     "id_parent": 0
@@ -150,6 +216,12 @@
         "name": "Tempus"
       },
       "pt_br": {
+        "name": "Tempus"
+      },
+      "es_es": {
+        "name": "Tempus"
+      },
+      "fr_fr": {
         "name": "Tempus"
       }
     },
@@ -164,6 +236,12 @@
       },
       "pt_br": {
         "name": "\u00c1rvore-Mundo"
+      },
+      "es_es": {
+        "name": "Arbol-Mundo"
+      },
+      "fr_fr": {
+        "name": "Arbre-Monde"
       }
     },
     "id_parent": 0
@@ -177,6 +255,12 @@
       },
       "pt_br": {
         "name": "Mec\u00e2nico"
+      },
+      "es_es": {
+        "name": "Mecanicista"
+      },
+      "fr_fr": {
+        "name": "M\u00e9caniste"
       }
     },
     "id_parent": 0
@@ -190,6 +274,12 @@
       },
       "pt_br": {
         "name": "Imortal"
+      },
+      "es_es": {
+        "name": "Inmortal"
+      },
+      "fr_fr": {
+        "name": "Immortel"
       }
     },
     "id_parent": 0
@@ -203,6 +293,12 @@
       },
       "pt_br": {
         "name": "Ca\u00e7ador de Dem\u00f4nios"
+      },
+      "es_es": {
+        "name": "Cazador de Demonios"
+      },
+      "fr_fr": {
+        "name": "Chasseur de D\u00e9mons"
       }
     },
     "id_parent": 0
@@ -216,6 +312,12 @@
       },
       "pt_br": {
         "name": "Aval\u00f4nio"
+      },
+      "es_es": {
+        "name": "Avaloniense"
+      },
+      "fr_fr": {
+        "name": "Avalonien"
       }
     },
     "id_parent": 0
@@ -229,6 +331,12 @@
       },
       "pt_br": {
         "name": "Arconte"
+      },
+      "es_es": {
+        "name": "Arconte"
+      },
+      "fr_fr": {
+        "name": "Archonte"
       }
     },
     "id_parent": 0
@@ -242,6 +350,12 @@
       },
       "pt_br": {
         "name": "Necromante"
+      },
+      "es_es": {
+        "name": "Necr\u00f3mano"
+      },
+      "fr_fr": {
+        "name": "N\u00e9cromancien"
       }
     },
     "id_parent": 0
@@ -255,6 +369,12 @@
       },
       "pt_br": {
         "name": "Campe\u00e3o"
+      },
+      "es_es": {
+        "name": "Campe\u00f3n"
+      },
+      "fr_fr": {
+        "name": "Champion"
       }
     },
     "id_parent": 0
@@ -268,6 +388,12 @@
       },
       "pt_br": {
         "name": "Ca\u00e7ador de M\u00edsticos"
+      },
+      "es_es": {
+        "name": "Caza-Magos"
+      },
+      "fr_fr": {
+        "name": "Traquemage"
       }
     },
     "id_parent": 0
@@ -280,6 +406,12 @@
         "name": "Abara"
       },
       "pt_br": {
+        "name": "Abara"
+      },
+      "es_es": {
+        "name": "Abara"
+      },
+      "fr_fr": {
         "name": "Abara"
       }
     },
@@ -294,6 +426,12 @@
       },
       "pt_br": {
         "name": "Colossal"
+      },
+      "es_es": {
+        "name": "Coloso"
+      },
+      "fr_fr": {
+        "name": "Colosse"
       }
     },
     "id_parent": 0
@@ -307,6 +445,12 @@
       },
       "pt_br": {
         "name": "Sombramante"
+      },
+      "es_es": {
+        "name": "Tenebromanciano"
+      },
+      "fr_fr": {
+        "name": "T\u00e9n\u00e9bromancien"
       }
     },
     "id_parent": 0
@@ -320,6 +464,12 @@
       },
       "pt_br": {
         "name": "Domador"
+      },
+      "es_es": {
+        "name": "Domador"
+      },
+      "fr_fr": {
+        "name": "Dompteur"
       }
     },
     "id_parent": 0
@@ -333,6 +483,12 @@
       },
       "pt_br": {
         "name": "Terror Noturno"
+      },
+      "es_es": {
+        "name": "Terror nocturno"
+      },
+      "fr_fr": {
+        "name": "Terreur nocturne"
       }
     },
     "id_parent": 0
@@ -346,6 +502,12 @@
       },
       "pt_br": {
         "name": "Suporte"
+      },
+      "es_es": {
+        "name": "Soportar"
+      },
+      "fr_fr": {
+        "name": "Supporter"
       }
     },
     "id_parent": 0
@@ -359,6 +521,12 @@
       },
       "pt_br": {
         "name": "Capit\u00e3o"
+      },
+      "es_es": {
+        "name": "Capitan"
+      },
+      "fr_fr": {
+        "name": "Capitaine"
       }
     },
     "id_parent": 21
@@ -372,6 +540,12 @@
       },
       "pt_br": {
         "name": "Areia Corrosiva"
+      },
+      "es_es": {
+        "name": "Arena Corrosiva"
+      },
+      "fr_fr": {
+        "name": "Sable Corrosif"
       }
     },
     "id_parent": 0
@@ -385,6 +559,12 @@
       },
       "pt_br": {
         "name": "Gladiador"
+      },
+      "es_es": {
+        "name": "Gladiador"
+      },
+      "fr_fr": {
+        "name": "Gladiateur"
       }
     },
     "id_parent": 0
@@ -398,6 +578,12 @@
       },
       "pt_br": {
         "name": "Cavaleiro Amaldi\u00e7oado"
+      },
+      "es_es": {
+        "name": "Caballero Maldito"
+      },
+      "fr_fr": {
+        "name": "Chevalier Maudit"
       }
     },
     "id_parent": 0

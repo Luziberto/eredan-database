@@ -4,7 +4,7 @@
       <tr
         v-for="line in Math.ceil(deck.length / 3)"
         :key="`line-${line}`"
-        :class="`grid grid-cols-3 gap-x-8 m-auto`"
+        :class="`grid grid-cols-3`"
       >
         <td
           v-for="index in (
@@ -68,8 +68,8 @@ onMounted(() => {
   @page {
     margin-left: 0.5in;
     margin-right: 0.5in;
-    margin-top: 0.1in;
-    margin-bottom: 0.1in;
+    margin-top: 0.2in;
+    margin-bottom: 0.2in;
   }
 }
 </style>

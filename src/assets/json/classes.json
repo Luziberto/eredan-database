@@ -8,9 +8,14 @@
       },
       "pt_br": {
         "name": "Guerreiro"
+      },
+      "es_es": {
+        "name": "Combatiente"
+      },
+      "fr_fr": {
+        "name": "Combattant"
       }
     },
-
     "picture": "d29065540f9987c359e6447c7027ead0.png"
   },
   {
@@ -22,6 +27,12 @@
       },
       "pt_br": {
         "name": "Mago"
+      },
+      "es_es": {
+        "name": "Mago"
+      },
+      "fr_fr": {
+        "name": "Mage"
       }
     },
     "picture": "3dcf24998808c09c06cffe4b0e8d4598.png"
@@ -35,6 +46,12 @@
       },
       "pt_br": {
         "name": "Saqueador"
+      },
+      "es_es": {
+        "name": "Merodeador"
+      },
+      "fr_fr": {
+        "name": "Maraudeur"
       }
     },
     "picture": "af0fe07aff1f68bedbccfa1747e27521.png"
@@ -48,6 +65,12 @@
       },
       "pt_br": {
         "name": "Cl\u00e9rigo"
+      },
+      "es_es": {
+        "name": "Sacerdote"
+      },
+      "fr_fr": {
+        "name": "Pr\u00eatre"
       }
     },
     "picture": "effa47fc496aa429e1659d86cf013a32.png"
@@ -61,6 +84,12 @@
       },
       "pt_br": {
         "name": "Artes\u00e3o"
+      },
+      "es_es": {
+        "name": "Artesano"
+      },
+      "fr_fr": {
+        "name": "Artisan"
       }
     },
     "picture": "2725070774ffdc6ecce88bf718a201f4.png"
@@ -74,6 +103,12 @@
       },
       "pt_br": {
         "name": "Desconhecido"
+      },
+      "es_es": {
+        "name": "Desconocido"
+      },
+      "fr_fr": {
+        "name": "Inconnue"
       }
     },
     "picture": "492c246bbfb23cbffb210c943b57b636.png"
@@ -86,6 +121,12 @@
         "name": "Berserker"
       },
       "pt_br": {
+        "name": "Berserker"
+      },
+      "es_es": {
+        "name": "Berserker"
+      },
+      "fr_fr": {
         "name": "Berserker"
       }
     },
@@ -100,6 +141,12 @@
       },
       "pt_br": {
         "name": "Bardo"
+      },
+      "es_es": {
+        "name": "Barde"
+      },
+      "fr_fr": {
+        "name": "Barde"
       }
     },
     "picture": "88d89f1d28b77828a719de5251dfdda5.png"

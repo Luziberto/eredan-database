@@ -3,13 +3,13 @@
     <div class="grid grid-flow-row -my-2 overflow-x-auto auto-rows-max">
       <div class="overflow-hidden lg:rounded-lg">
         <div class="min-w-full">
-          <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12">
+          <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 lg:pt-2 pt-6">
             <div
               v-for="card in cards"
               :key="`card-${card.id}`"
               class="flex justify-between cursor-pointer hover:opacity-50 col-span-1"
             >
-              <div class="px-4 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
+              <div class="px-1 py-1 text-sm leading-5 text-gray-900 whitespace-no-wrap flex-1">
                 <div
                   class="lg:flex flex-col items-center justify-center"
                   @mouseleave="closeModal(ModalType.HOVER, $event)"
